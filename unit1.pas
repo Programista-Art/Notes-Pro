@@ -799,7 +799,9 @@ begin
     //ladowanie koloru górnego ToolBaru
     ToolBar1.Color := Ini_Settings.ReadInteger('Main','ToolBarTop', clBtnFace);
     //Tryb zawsze na górze
-    Form1.FormStyle:= fsSystemStayOnTop;
+    Form1.FormStyle := fsSystemStayOnTop;
+    //Ladowanie koloru Listbox slowa kluczowe
+    ListBox1.Color := Ini_Settings.ReadInteger('Main','ListBoxKeyWords',clBtnHighlight);
   finally
     Ini_Settings.free;
   end;

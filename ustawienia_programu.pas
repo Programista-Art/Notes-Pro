@@ -19,8 +19,8 @@ type
     Button2: TButton;
     Button3: TButton;
     ColorBox1: TColorBox;
-    CBListbox: TColorButton;
     ColorBox2: TColorBox;
+    ColorBox3: TColorBox;
     ColorDialog1: TColorDialog;
     FontDialog: TFontDialog;
     ImageList1: TImageList;
@@ -63,6 +63,7 @@ type
       Shift: TShiftState; X, Y: Integer);
     procedure ColorBox1CloseUp(Sender: TObject);
     procedure ColorBox2CloseUp(Sender: TObject);
+    procedure ColorBox3CloseUp(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure ValueListEditor1Click(Sender: TObject);
   private
@@ -78,6 +79,8 @@ type
     colorToolBar: TColor;
     //Font
     memoFont: TFont;
+    //Kolor w Listbox
+    colorListbox: TColor;
   end;
 
 var
@@ -111,14 +114,13 @@ end;
 
 procedure TForm2.BitBtn1Click(Sender: TObject);
 begin
-   Ini_Settings := TIniFile.Create(ExtractFilePath(ParamStr(0))+'settings.ini');
-   try
-    Ini_Settings.WriteInteger('Main','MemoColor', colorUi);
-    Ini_Settings.WriteInteger('Main','ToolBarTop', colorToolBar);
-
-   finally
-     Ini_Settings.free;
-   end;
+   //Ini_Settings := TIniFile.Create(ExtractFilePath(ParamStr(0))+'settings.ini');
+   //try
+   // Ini_Settings.WriteInteger('Main','MemoColor', colorUi);
+   // Ini_Settings.WriteInteger('Main','ToolBarTop', colorToolBar);
+   //finally
+   //  Ini_Settings.free;
+   //end;
 end;
 
 procedure TForm2.Button2Click(Sender: TObject);
@@ -188,18 +190,44 @@ begin
   colorToolBar := ColorBox1.Selected;
   ToolBar1.Color:= colorToolBar;
   Form1.ToolBar1.Color:= colorToolBar;
+  Ini_Settings := TIniFile.Create(ExtractFilePath(ParamStr(0))+'settings.ini');
+  try
+    Ini_Settings.WriteInteger('Main','ToolBarTop', colorToolBar);
+  finally
+    Ini_Settings.free;
+  end;
 end;
 
 procedure TForm2.ColorBox2CloseUp(Sender: TObject);
 begin
-  colorUi := ColorBox1.Selected;
+  colorUi := ColorBox2.Selected;
   Form1.Memo1.Color:= ColorBox2.Selected;
   Memo1.Color:= ColorBox2.Selected;
+   Ini_Settings := TIniFile.Create(ExtractFilePath(ParamStr(0))+'settings.ini');
+   try
+     Ini_Settings.WriteInteger('Main','MemoColor', colorUi);
+   finally
+     Ini_Settings.free;
+   end;
+end;
+
+procedure TForm2.ColorBox3CloseUp(Sender: TObject);
+begin
+  colorListbox := ColorBox3.Selected;
+  Form1.ListBox1.Color:= ColorBox3.Selected;
+  LbKeys.Color:= ColorBox3.Selected;
+
+  Ini_Settings := TIniFile.Create(ExtractFilePath(ParamStr(0))+'settings.ini');
+  try
+   Ini_Settings.WriteInteger('Main','ListBoxKeyWords', colorListbox);
+  finally
+   Ini_Settings.free;
+  end;
 end;
 
 procedure TForm2.FormCreate(Sender: TObject);
 begin
- //Ini_Settings := TIniFile.Create(ExtractFilePath(ParamStr(0))+'settings.ini');
+
 end;
 
 procedure TForm2.ValueListEditor1Click(Sender: TObject);
