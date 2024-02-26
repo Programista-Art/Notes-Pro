@@ -1,11 +1,11 @@
 object Form1: TForm1
-  Left = 297
+  Left = 376
   Height = 487
-  Top = 219
+  Top = 438
   Width = 996
   Align = alClient
   BorderStyle = bsSingle
-  Caption = 'Notes Pro V1.1.5.2'
+  Caption = 'Notes Pro V1.1.5.3'
   ClientHeight = 487
   ClientWidth = 996
   FormStyle = fsSystemStayOnTop
@@ -53,13 +53,13 @@ object Form1: TForm1
       Height = 175
       Top = 1
       Width = 318
-      ActivePage = TabSheet3
+      ActivePage = TabSheet2
       Align = alTop
       BiDiMode = bdRightToLeft
       Font.Color = clBlack
       ParentBiDiMode = False
       ParentFont = False
-      TabIndex = 0
+      TabIndex = 2
       TabOrder = 0
       object TabSheet3: TTabSheet
         Caption = 'Edycja'
@@ -78,7 +78,7 @@ object Form1: TForm1
           Height = 25
           Top = 8
           Width = 75
-          Caption = 'Szukać'
+          Caption = 'Znajdź'
           OnClick = Button3Click
           TabOrder = 1
         end
@@ -95,7 +95,7 @@ object Form1: TForm1
           Height = 25
           Top = 40
           Width = 75
-          Caption = 'Zamienić'
+          Caption = 'Zamień'
           OnClick = Button4Click
           TabOrder = 3
         end
@@ -104,7 +104,7 @@ object Form1: TForm1
           Height = 25
           Top = 80
           Width = 104
-          Caption = 'Zamienić zdanie'
+          Caption = 'Zamień zdanie'
           OnClick = Button5Click
           TabOrder = 4
         end
@@ -126,8 +126,8 @@ object Form1: TForm1
           Left = 120
           Height = 15
           Top = 64
-          Width = 41
-          Caption = 'Nr. Linii'
+          Width = 54
+          Caption = 'Nr wiersza'
           ParentColor = False
         end
         object Label2: TLabel
@@ -143,7 +143,7 @@ object Form1: TForm1
           Height = 25
           Top = 112
           Width = 75
-          Caption = 'Dodać'
+          Caption = 'Dodaj'
           OnClick = ButtonAddClick
           TabOrder = 7
         end
@@ -579,7 +579,7 @@ object Form1: TForm1
       Font.Color = clBlack
       Panels = <      
         item
-          Text = 'Liczba linii'
+          Text = 'Liczba wierszy'
           Width = 200
         end      
         item

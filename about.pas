@@ -99,7 +99,7 @@ end;
 
 procedure TfAbout.wwwClick(Sender: TObject);
 begin
-  OpenURL('http://www.dmitriy.pl');
+  OpenURL('http://dimitalart.pl');
 end;
 
 procedure TfAbout.wwwMouseLeave(Sender: TObject);

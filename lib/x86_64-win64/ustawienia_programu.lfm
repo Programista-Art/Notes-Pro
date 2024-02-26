@@ -1,95 +1,324 @@
 object Form2: TForm2
-  Left = 984
-  Height = 199
-  Top = 339
-  Width = 264
+  Left = 399
+  Height = 342
+  Top = 219
+  Width = 577
   BorderStyle = bsDialog
   Caption = 'Ustawienia'
-  ClientHeight = 199
-  ClientWidth = 264
+  ClientHeight = 342
+  ClientWidth = 577
   Color = clNone
   OnClose = FormClose
   OnCreate = FormCreate
   Position = poMainFormCenter
-  LCLVersion = '2.2.4.0'
+  LCLVersion = '3.0.0.1'
   object Panel2: TPanel
     Left = 0
-    Height = 199
+    Height = 342
     Top = 0
-    Width = 264
+    Width = 577
     Align = alClient
     BevelColor = clBlack
     BorderStyle = bsSingle
-    ClientHeight = 195
-    ClientWidth = 260
+    ClientHeight = 338
+    ClientWidth = 573
     Color = clBtnFace
+    ParentBackground = False
     ParentColor = False
     TabOrder = 0
     object Panel1: TPanel
       Left = 1
-      Height = 34
-      Top = 160
-      Width = 258
+      Height = 26
+      Top = 311
+      Width = 571
       Align = alBottom
       BevelColor = clScrollBar
-      ClientHeight = 34
-      ClientWidth = 258
+      ClientHeight = 26
+      ClientWidth = 571
       Color = cl3DLight
+      ParentBackground = False
       ParentColor = False
       TabOrder = 0
       object Button1: TButton
-        Left = 8
-        Height = 25
-        Top = 5
-        Width = 56
+        Left = 1
+        Height = 24
+        Top = 1
+        Width = 55
+        Align = alLeft
         Caption = 'Kolor'
         OnClick = Button1Click
         TabOrder = 0
       end
       object Button3: TButton
-        Left = 72
-        Height = 25
-        Top = 5
+        Left = 56
+        Height = 24
+        Top = 1
         Width = 72
+        Align = alLeft
         Caption = 'Czcionka'
         OnClick = Button3Click
         TabOrder = 1
       end
       object Button2: TButton
-        Left = 152
-        Height = 25
-        Top = 5
+        Left = 128
+        Height = 24
+        Top = 1
         Width = 96
+        Align = alLeft
         Caption = 'Zresetuj dane'
         OnClick = Button2Click
         TabOrder = 2
       end
+      object BitBtn1: TBitBtn
+        Left = 420
+        Height = 24
+        Top = 1
+        Width = 75
+        Align = alRight
+        Default = True
+        DefaultCaption = True
+        Kind = bkOK
+        ModalResult = 1
+        TabOrder = 3
+      end
+      object BitBtn2: TBitBtn
+        Left = 495
+        Height = 24
+        Top = 1
+        Width = 75
+        Align = alRight
+        Cancel = True
+        Caption = 'Anuluj'
+        Kind = bkCancel
+        ModalResult = 2
+        TabOrder = 4
+      end
     end
     object PageControl1: TPageControl
       Left = 1
-      Height = 159
+      Height = 310
       Top = 1
-      Width = 258
+      Width = 571
       ActivePage = TabSheet1
       Align = alClient
       TabIndex = 0
       TabOrder = 1
       object TabSheet1: TTabSheet
         Caption = 'Ustawienia'
-        ClientHeight = 131
-        ClientWidth = 250
-        object Memo1: TMemo
+        ClientHeight = 282
+        ClientWidth = 563
+        object ToolBar1: TToolBar
           Left = 0
-          Height = 131
+          Height = 26
           Top = 0
-          Width = 250
-          Align = alClient
-          Lines.Strings = (
-            'Notes Pro'
-          )
-          ReadOnly = True
-          ScrollBars = ssVertical
+          Width = 563
+          Caption = 'ToolBar1'
+          Images = Form1.ImageList1
           TabOrder = 0
+          object ToolButton1: TToolButton
+            Left = 1
+            Top = 2
+            Caption = 'ToolButton1'
+            ImageIndex = 0
+          end
+          object ToolButton2: TToolButton
+            Left = 24
+            Top = 2
+            Caption = 'ToolButton2'
+            ImageIndex = 3
+          end
+          object ToolButton3: TToolButton
+            Left = 47
+            Top = 2
+            Caption = 'ToolButton3'
+            ImageIndex = 6
+          end
+          object ToolButton4: TToolButton
+            Left = 70
+            Top = 2
+            Caption = 'ToolButton4'
+            ImageIndex = 2
+          end
+          object ToolButton6: TToolButton
+            Left = 93
+            Top = 2
+            Caption = 'ToolButton6'
+            ImageIndex = 5
+          end
+          object ToolButton7: TToolButton
+            Left = 116
+            Top = 2
+            Caption = 'ToolButton7'
+            ImageIndex = 8
+          end
+          object ToolButton8: TToolButton
+            Left = 139
+            Top = 2
+            Caption = 'ToolButton8'
+            ImageIndex = 7
+          end
+          object ToolButton5: TToolButton
+            Left = 162
+            Top = 2
+            Caption = 'ToolButton5'
+            ImageIndex = 9
+          end
+          object ToolButton9: TToolButton
+            Left = 185
+            Top = 2
+            Caption = 'ToolButton9'
+            ImageIndex = 10
+          end
+          object ToolButton10: TToolButton
+            Left = 208
+            Top = 2
+            Caption = 'ToolButton10'
+            ImageIndex = 11
+          end
+          object ColorBox1: TColorBox
+            Left = 231
+            Height = 22
+            Top = 2
+            Width = 84
+            ItemHeight = 16
+            OnChange = ColorBox1Change
+            OnClick = ColorBox1Click
+            TabOrder = 0
+          end
+        end
+        object Panel3: TPanel
+          Left = 361
+          Height = 256
+          Top = 26
+          Width = 202
+          Align = alRight
+          ClientHeight = 256
+          ClientWidth = 202
+          ParentBackground = False
+          TabOrder = 1
+          object PageControl2: TPageControl
+            Left = 1
+            Height = 120
+            Top = 1
+            Width = 200
+            ActivePage = TabSheet2
+            Align = alTop
+            TabIndex = 0
+            TabOrder = 0
+            object TabSheet2: TTabSheet
+              Caption = 'Edycja'
+            end
+            object TabSheet3: TTabSheet
+              Caption = 'Kalkulator'
+            end
+            object TabSheet4: TTabSheet
+              Caption = 'Obliczenia'
+            end
+          end
+          object LbKeys: TListBox
+            Left = 1
+            Height = 85
+            Top = 147
+            Width = 200
+            Align = alTop
+            ItemHeight = 0
+            TabOrder = 1
+          end
+          object ToolBar2: TToolBar
+            Left = 1
+            Height = 26
+            Top = 121
+            Width = 200
+            Caption = 'ToolBar2'
+            Images = Form1.ImageList1
+            TabOrder = 2
+            object ToolButton11: TToolButton
+              Left = 1
+              Top = 2
+              Caption = 'ToolButton11'
+              ImageIndex = 4
+            end
+            object ToolButton12: TToolButton
+              Left = 24
+              Top = 2
+              Caption = 'ToolButton12'
+              ImageIndex = 6
+            end
+            object ToolButton13: TToolButton
+              Left = 47
+              Top = 2
+              Caption = 'ToolButton13'
+              ImageIndex = 5
+            end
+            object ToolButton14: TToolButton
+              Left = 70
+              Top = 2
+              Caption = 'ToolButton14'
+              ImageIndex = 3
+            end
+          end
+          object Panel6: TPanel
+            Left = 1
+            Height = 23
+            Top = 232
+            Width = 200
+            Align = alBottom
+            BevelColor = clActiveBorder
+            ClientHeight = 23
+            ClientWidth = 200
+            Color = clActiveBorder
+            ParentBackground = False
+            ParentColor = False
+            TabOrder = 3
+            object CBListbox: TColorButton
+              Left = 124
+              Height = 21
+              Top = 1
+              Width = 75
+              Align = alRight
+              BorderWidth = 2
+              ButtonColorSize = 16
+              ButtonColor = clGray
+              OnClick = CBListboxClick
+              OnMouseUp = CBListboxMouseUp
+            end
+          end
+        end
+        object Panel4: TPanel
+          Left = 0
+          Height = 256
+          Top = 26
+          Width = 361
+          Align = alClient
+          ClientHeight = 256
+          ClientWidth = 361
+          ParentBackground = False
+          TabOrder = 2
+          object Memo1: TMemo
+            Left = 1
+            Height = 231
+            Top = 1
+            Width = 359
+            Align = alTop
+            Lines.Strings = (
+              'Notes Pro'
+            )
+            ReadOnly = True
+            ScrollBars = ssVertical
+            TabOrder = 0
+          end
+          object Panel5: TPanel
+            Left = 1
+            Height = 23
+            Top = 232
+            Width = 359
+            Align = alBottom
+            BevelColor = clActiveBorder
+            Color = clActiveBorder
+            ParentBackground = False
+            ParentColor = False
+            TabOrder = 1
+          end
         end
       end
     end
@@ -126,5 +355,116 @@ object Form2: TForm2
     )
     Left = 240
     Top = 80
+  end
+  object ImageList1: TImageList
+    Left = 328
+    Top = 72
+    Bitmap = {
+      4C7A0A0000001000000010000000FD0C00000000000078DAE55A775054771E4F
+      4CB98BDEDCA5DC8D93C9E4349A223133C1964B4E9318BBA274A423B00B2C6529
+      82A0A8A834158C51509458B0A021C51ECB196254C618BDD1B34447CF82518882
+      51146B6CDFFB7EBEBB6FEFF1F6B1B4FB2333B7339F79CBDBF7F995EFEFDB1FC6
+      48638831D258CDA86F21EA18B90C02224D91141014409EDE9EE435DAAB01BC47
+      7B9387978760B4DF68793E222A82ACDC7BF8EE17E04729692954FC6931CD9B3F
+      CF86F945F3E53A65DA149A993F9372A6E750407080C2BF8DB5048F09A6B8F838
+      2A2F2FA7D2D5A5B4B2742595AE2A15942C2FA1E52B96133E172F5EA46DFFD846
+      D3674E272F1F2F52F6E2EBEF4B050505B461FD0672EEE54C1F7CF401F51FD05F
+      D0E7BD3ED4F7FDBEC2DFB77F1FA54F4AA7F51BD6D38891236CFC90D010997FDD
+      FA753467EE1C59F3FC0516CC2D9C4B85F30BE942D505FA7EEFF7B466ED1ACACE
+      CD261F5F1F1B1FB273F570A584C404DAFBC35EDAB56B970DBB2B76D3EEDDBB65
+      4F58FBACD9B368B8CB7032C5986CFC70633841065FADF98A162D5E4413274FA4
+      CCAC4CCACCFE2FA64C9D22FBDEBC6533252527515048908D8F739B9A3995CA3E
+      2FA38D9B3652E5B94AAAAC6C88733F9D93DF214F9C9187B7878DEF1FE84FD332
+      A7D192A54B640D67CF9EA53367CED0E933A76D385B7956F6FEE9A24F4546D00B
+      F5FCE0979494D08AD21574ECD8313A72E4081D3E72D886E3C78FD38A952B647F
+      730BE636E063FEEC9C6C3967CC7FE6EC195D60FDC58B8AEDD61F6A08A5304318
+      957F5B4E454545943A3E95264F99DC0038F78CA9195451514113264E105DB7F2
+      EF40177DFC7C28795CB2EC51D1BD06282DA5B5EBD6CA5940F770E6CCBDA9D88F
+      29DA2463BABABBCAEFB0A306F0F124774F77B19FA8E828C576801CC6CF8CAB8C
+      CBCDC415462DA394D5FAB1DBB76F3FC9F823E34F2DC01F188F575757FF8EC709
+      64DC52ADA93938C5E861454BB9EA315C147F92909420B6E50859D959141D1BAD
+      1EC345F15F79F97974E2E40987387CF830A58D4FB3E303F189F154B4B0487460
+      FBF6ED76807EE6CDCAA398B8185D3E001D820E631E2D3E99F38962F7767CEC7F
+      6CCA585A58BC90366CDC407BBEDF638755AB57D1EC39B329D61CABBB7FF8D643
+      870E3904FCD3B8B4710EE7FFE2CB2FC496B458B67C99D82E7CA5A3FD437E3F1E
+      FBD10E0585058DEE1FC0B9C28FC047949595D901734FCA98A41DC3B6FEDCE9B9
+      74FAF469F15D8D013A303E7DBCEEFC906BC6940C87802FD1CCEFACF6032DC489
+      AB57AF3EC557F7568C7182F13AE30DAB1D510B623F59FDCD40C6BF5AB976E0AC
+      6ABC2661883068EFD537870F7F19181C482EAE2EE2E7ADBE57970F3D00105386
+      B90CA380C00089B7981BFA8F38A3E4306A3EE6C0D8C3460CA321C3869039C12C
+      F110B9C1F419D3E9EEDDBBB477EF5E193B684C901D5FC961105FF7FF73BFE42A
+      F8DCBB7F4F6227E61D3078808CA7F2FF363E7218C475F6C9C27BF4E811D5D4D6
+      C877C463C40FC47C55DED5800F990C183480264D9E44CAE7D77BBFD2FD07F7A9
+      AEAE4E7C1664A2277FC806C89F952FF32057517F30E648D7916AB9EBF2E313E2
+      C5071F3878808EFE7854B88B962C12793672B60DCE0F3964544C144D9D36556C
+      14B11E3927CE45B36F5D3ED6876771BE180BB118EBD259778BF4CF01EA55B6D7
+      1A20EE0F66DC603C6C81FDDEB3F20DBF25FB374444B26F0C625DF395EFEAFB71
+      F15E141DE74FE1C6285DF92BDC4853183F632273A2873C6B8888E2BCC095ED2B
+      99CF3696C7F6538FADB2DF10E60792935325BDF002B19D255172EA604A491DC4
+      76934ACF3E4BD4A9731DEB91519ED3F2712F2ADA409D3AD5D2638F11BDF8E25D
+      FEDD4461C604EAD8F181DC7BF9E56B7C2F86E394BFEEFA63CD3E3CCE187AEDB5
+      9FE9C92730DF15EAF4D7ABF2BD4B97CB14191D2E72D05B3F807D27248DA2A494
+      E1E4F4E605EAD09EA84307E23D55C9FD84A491F28CBEFE5AEC2325752085B0AC
+      3ABF728BDA3F43F4CCEF31773DCB2E4EE461792E42777E738207D77A33E9F9E7
+      899E6847E4DCE310F5EC7990DA3D4EF46796A95F4026E7486EBC7E7BBE39C18B
+      028326CA9C905537A773BC8F11BC9E21D4BDFB69B9D79EF7E31F9821F368F9D1
+      B101BCC618965D0DBDF146959CB339C193E2785CC8CC89C77BE9A547A207B1E6
+      D13AF28F9233C438E0C69A7D4556009EC7FD4853A85C553A58AFD55FE811A0D5
+      DFA8E860195F7DFFB760FF616161466384B19AFDDC75C635465D33709D393F33
+      3706FE31C2C4E7C97601C0CF464647526878A8C402F8DF3161632466890F569E
+      638ED5EFDF917B4A1DC4B991521FC1F7231E22F6A0066A50F744493E70076B56
+      F35157238FFD6EE77752E7210697EF28673D4A21DF005F2DFF9A968FB9172F59
+      2C356AFF81FD05F91FE7D396AD5B242ED8729046F84AAE01602F43470CA56959
+      D368E7AE9D123FC323C21DF2953C07B242BD37236F86C443D4E7AABCC3211F5C
+      C83E77462EFDB0EF0759939B879B9EFC74F94A3F61EBB6AD928FBB79BAD9C740
+      077C9C376AE8D59FADB6E41C913AB1B789F54306C8E791EFE8C65F077CD4E2E3
+      52C7517D7DBDD41CC83D5AC2C7398D4D1E4B870E1F123D802C1DF0EF68F99033
+      64E032CA45C6D2A95914FE6DADFD2836A4CE57D476A3B51FD8206C5165BFCD01
+      ECF7227313395F6CC7730CB1FA9096F89E2F99FB0C5FDF6A430EB45A5BFFB502
+      C2878F40EF08F9AF235CBE7C59FA637AF51B7C047A448EB060E102DDFA15BA8A
+      DA1FBDAE93274F36C0B73BBE95BAD3D1FAA1E3E80DE9D5EDE87B21B777C487CE
+      A1B6D7CEADC5BE7DFB74EBF7B6F21DC90F75377A234DADBF705E21FDF2CB2F76
+      D8B3674F93F2B3E41066A9411C212B47BFFF837BF0FB4DE9CF952B57A49E69AC
+      7FD10AF46B03F728AF09F57F722BB8C7192F858686F634180D07AC715D37FEB3
+      AFA80B3784D7B12FAFE3D8700DBD7FE61C62EE7B7CAD84EE2A3E4AA9E5D4C07C
+      E8B1C297E38AE701E6C26FDD13FF176189DD61E161B61808402F860E1F2AFA5F
+      555525B687BF4DB126FCFE807115F322B6C357A377B67CE572790F00A0DF8CBE
+      39CE0D9FAAEA2AA931DDBDDCC9EA33AFA0EF8AF70BB053E810FEF60FF297EBA0
+      A183249FB876FD9AF0A103781F31CA7D94E2FFAFF8F8FB486F6A69C952792F80
+      7E3FE605907F4CCE982CBDE31B376EC81A3FFCE843A953153ED63EEBE359D2B7
+      428CAFAEAEA65BB76E5970FB96C4B1A4B149F2FE0373201EABE28F8D8F58873C
+      09EF2790FFECF86E875CD17B433E06DD2F5956227BD7E343FF31FFB1E3C7E8C2
+      850B74FEC279B9A2F79F3836917272731CF2313FF23DBC6310DFB5C7825D15BB
+      2CFD01CEA3F4F88AFCE05B51735FAAB9D460FF376FDE94F387DF461F5DBB7F9C
+      156AFE1D3B7648AC85CEA0178CF729B89AE32D678A1C0E7B445EA5E25BF407EF
+      80E615C83B1C3C837353033D7CF435901B898E5AF8D715FDC5FEBC7DBDE577CC
+      AFE8B802DC837EDBF2190BFF3EDBC04F36FBB1EA3D72443DA8730199D368B8C4
+      36D887AF072107ECA5D9301A0E33F77D6BFFB1BA95BD8B318C196DF05F150A1F
+      324819972276E80878F7A2CA636D7CC4974D5F6F92BE97A30F7A7888537AF323
+      D7C6BBAFC6C640EE00DD50F5EF2BD4FB87EECD299823EF9A1E3E7CD8805B5353
+      23711CFE456FFFEA1E36DE19A20FAD8C71E9D225D13D9D185AA1277F8C015D3E
+      75EA9470D1F7871D3892BF16D863D91765E213D327A637797E7A803F833DA9E4
+      FD7FC5479E34217D82F67D9D96FFB7C6726F6D1DA083C8A79E7EAADD73CF3DF7
+      176B1ED21274EDD0A1C3D37C4D6A45FE8EF52E637E7B8BCF32B25F8BE69A3156
+      DDDBB183E59918F533CE967A319AFABC33975E7F7D19F9FAA5B31F4893FEAD82
+      B409E329DC904A3D7B1591738F620A0A3637C8BDC20C91347C4436BDF5D646EA
+      D76F137D567680EDA792CE9F3FCFB1EB27DAB9F338F9FA6EA3B7DFDE486EEE9F
+      B08F8ED6797794C831760DF5ECB9995C5D775345452DDDB9F3806DE806C5C71F
+      A077DFDD4A66F35A7E265D7D262EEAB34A4C1ACFCF7E497DFA6C260F8F0A8E55
+      1C37130F52DFBEDB2826E62B8E6193B4E7E9A23DEF441E3F3AA68C7AF5FA9ABA
+      75DB4CEFBCB3850C86CF993B59AF0E76B1D799480A0DCBA6BFF75D4F1D3BAE23
+      67E70D2CD37C96B9C961EE6C39C7088E8389D4BB4F21F5EEBD9EBCBDB7F35E36
+      51F7EE8B596E7C06C6C6E7870EF8052450AFDE85F4EA6B2BB82E5DC9FE6E3B45
+      995651D75757D29B6F72DCF5B01BC3C60F088AE7F39D27CF0E18984D1953F2E4
+      7F11B27266D3E02199D4B5EB4A72725A421E9E693C4643F90706C7518F9EF3A9
+      4B97521A38285BF40CEF7AC19F993753F40B63E0F76EDD9692A757AAA2832EB8
+      8E724DA7CE9D5733374B9EC5986ABE45474D32069EEBF7FE2CCEA74CB6F94342
+      63C8D56D8272CF568BE05D1FDE892AF742C3A3448EA3FD926CF333F68BFC8CF6
+      76A3CE0BD46764E5FE9BEDFE05B6C13FB5C2F68157D8773CDE86FA5FEA8736D6
+      FF47FF57F53F621EF26DBDFA510DE4FFF85F8ED6D6FFC80535315C77FDD01BBC
+      C7D3D6CFE8E5A137D6141FFD3EE4ABDA5EC037E5DF484FAE25FD83E6F09B5BFF
+      3777FD986341F18256CB4FC9A35A727ECDA9FF51BB6BE2B1AD7F841CABA9FABF
+      B6B6B6D1FE512BD126FB69ABFDFE075338A603
+    }
   end
 end

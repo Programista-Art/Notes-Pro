@@ -1068,14 +1068,18 @@ begin
   //ladujemy color formy z ini
   Ini_Settings := TIniFile.Create(ExtractFilePath(ParamStr(0))+'settings.ini');
   //Memo1.Color:=Ini_Settings.ReadInteger('color','Color',Memo1.Color);
-  Memo1.Color:=Ini_Settings.ReadInteger('Main','MemoColor',0);
+  Memo1.Color := Ini_Settings.ReadInteger('Main','MemoColor',clActiveBorder);
   //czcionka
-  Memo1.Font.Name:=Ini_Settings.ReadString('Main','FontFamily',Memo1.Font.Name); //ladujemy nazwę fontu
-  Memo1.Font.Size:=Ini_Settings.ReadInteger('Main','FontSize', Memo1.Font.Size); //ladujemy rozmiar fontu
-  Memo1.Font.Color:=Ini_Settings.ReadInteger('Main','FontColor', Memo1.Font.Color);//ladujemy kolor fontu
-
+  //ladowanie nazwy fontu
+  Memo1.Font.Name := Ini_Settings.ReadString('Main','FontFamily',Memo1.Font.Name);
+  //ladowanie rozmiaru fontu
+  Memo1.Font.Size := Ini_Settings.ReadInteger('Main','FontSize', Memo1.Font.Size);
+  //ladowanie koloru fontu
+  Memo1.Font.Color := Ini_Settings.ReadInteger('Main','FontColor', Memo1.Font.Color);
+  //ladowanie koloru górnego ToolBaru
+  ToolBar1.Color := Ini_Settings.ReadInteger('Main','ToolBarTop', clBtnFace);
   //Tryb zawsze na górze
-  Form1.FormStyle:=fsSystemStayOnTop;
+  Form1.FormStyle:= fsSystemStayOnTop;
 
   inif := TIniFile.Create('fajl.ini');
   x:= inif.readInteger('position','X',0);

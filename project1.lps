@@ -10,7 +10,7 @@
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos Y="29"/>
-        <UsageCount Value="148"/>
+        <UsageCount Value="152"/>
       </Unit>
       <Unit>
         <Filename Value="unit1.pas"/>
@@ -19,11 +19,11 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit1"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="319"/>
-        <CursorPos X="34" Y="335"/>
-        <UsageCount Value="148"/>
+        <TopLine Value="1057"/>
+        <CursorPos X="76" Y="1071"/>
+        <UsageCount Value="152"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="ustawienia_programu.pas"/>
@@ -31,10 +31,13 @@
         <ComponentName Value="Form2"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="56"/>
-        <CursorPos X="13" Y="68"/>
-        <UsageCount Value="145"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="155"/>
+        <CursorPos Y="165"/>
+        <UsageCount Value="149"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="about.pas"/>
@@ -42,10 +45,12 @@
         <ComponentName Value="fAbout"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="60"/>
-        <CursorPos X="5" Y="20"/>
-        <UsageCount Value="137"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="100"/>
+        <CursorPos X="19" Y="102"/>
+        <UsageCount Value="141"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="forma2.pas"/>
@@ -56,7 +61,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="37"/>
         <CursorPos X="17" Y="71"/>
-        <UsageCount Value="117"/>
+        <UsageCount Value="121"/>
       </Unit>
       <Unit>
         <Filename Value="szyfrowanie.pas"/>
@@ -67,7 +72,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="12"/>
         <CursorPos X="20" Y="19"/>
-        <UsageCount Value="57"/>
+        <UsageCount Value="61"/>
       </Unit>
       <Unit>
         <Filename Value="..\..\1.11.2022\memo tekst\project1.lpi"/>
@@ -106,10 +111,128 @@
         <UsageCount Value="11"/>
       </Unit>
     </Units>
-    <General>
-      <ActiveWindowIndexAtStart Value="-1"/>
-    </General>
-    <JumpHistory HistoryIndex="-1"/>
+    <JumpHistory HistoryIndex="29">
+      <Position>
+        <Filename Value="ustawienia_programu.pas"/>
+        <Caret Line="119" Column="5" TopLine="103"/>
+      </Position>
+      <Position>
+        <Filename Value="ustawienia_programu.pas"/>
+        <Caret Line="120" Column="5" TopLine="104"/>
+      </Position>
+      <Position>
+        <Filename Value="ustawienia_programu.pas"/>
+        <Caret Line="119" Column="5" TopLine="103"/>
+      </Position>
+      <Position>
+        <Filename Value="ustawienia_programu.pas"/>
+        <Caret Line="120" Column="5" TopLine="104"/>
+      </Position>
+      <Position>
+        <Filename Value="ustawienia_programu.pas"/>
+        <Caret Line="119" Column="5" TopLine="103"/>
+      </Position>
+      <Position>
+        <Filename Value="ustawienia_programu.pas"/>
+        <Caret Line="120" Column="5" TopLine="104"/>
+      </Position>
+      <Position>
+        <Filename Value="ustawienia_programu.pas"/>
+        <Caret Line="121" Column="5" TopLine="105"/>
+      </Position>
+      <Position>
+        <Filename Value="ustawienia_programu.pas"/>
+        <Caret Line="122" Column="5" TopLine="106"/>
+      </Position>
+      <Position>
+        <Filename Value="ustawienia_programu.pas"/>
+        <Caret Line="125" Column="5" TopLine="109"/>
+      </Position>
+      <Position>
+        <Filename Value="ustawienia_programu.pas"/>
+        <Caret Line="75" Column="16" TopLine="71"/>
+      </Position>
+      <Position>
+        <Filename Value="ustawienia_programu.pas"/>
+        <Caret Line="144" Column="22" TopLine="139"/>
+      </Position>
+      <Position>
+        <Filename Value="ustawienia_programu.pas"/>
+        <Caret Line="94" Column="31" TopLine="91"/>
+      </Position>
+      <Position>
+        <Filename Value="ustawienia_programu.pas"/>
+        <Caret Line="144" Column="3" TopLine="142"/>
+      </Position>
+      <Position>
+        <Filename Value="ustawienia_programu.pas"/>
+        <Caret Line="152" Column="15" TopLine="142"/>
+      </Position>
+      <Position>
+        <Filename Value="ustawienia_programu.pas"/>
+        <Caret Line="96" Column="36" TopLine="91"/>
+      </Position>
+      <Position>
+        <Filename Value="ustawienia_programu.pas"/>
+        <Caret Line="153" Column="27" TopLine="147"/>
+      </Position>
+      <Position>
+        <Filename Value="ustawienia_programu.pas"/>
+        <Caret Line="150" TopLine="141"/>
+      </Position>
+      <Position>
+        <Filename Value="ustawienia_programu.pas"/>
+        <Caret Line="149" Column="8" TopLine="141"/>
+      </Position>
+      <Position>
+        <Filename Value="ustawienia_programu.pas"/>
+        <Caret Line="96" Column="34" TopLine="91"/>
+      </Position>
+      <Position>
+        <Filename Value="ustawienia_programu.pas"/>
+        <Caret Line="145" TopLine="143"/>
+      </Position>
+      <Position>
+        <Filename Value="ustawienia_programu.pas"/>
+        <Caret Line="163" Column="3" TopLine="161"/>
+      </Position>
+      <Position>
+        <Filename Value="ustawienia_programu.pas"/>
+        <Caret Line="104" Column="2" TopLine="96"/>
+      </Position>
+      <Position>
+        <Filename Value="ustawienia_programu.pas"/>
+        <Caret Line="165" Column="3" TopLine="160"/>
+      </Position>
+      <Position>
+        <Filename Value="ustawienia_programu.pas"/>
+        <Caret Line="94" TopLine="92"/>
+      </Position>
+      <Position>
+        <Filename Value="ustawienia_programu.pas"/>
+        <Caret Line="163" Column="27" TopLine="154"/>
+      </Position>
+      <Position>
+        <Filename Value="ustawienia_programu.pas"/>
+        <Caret Line="164" TopLine="161"/>
+      </Position>
+      <Position>
+        <Filename Value="ustawienia_programu.pas"/>
+        <Caret Line="171" Column="2" TopLine="167"/>
+      </Position>
+      <Position>
+        <Filename Value="ustawienia_programu.pas"/>
+        <Caret Line="135" TopLine="133"/>
+      </Position>
+      <Position>
+        <Filename Value="ustawienia_programu.pas"/>
+        <Caret Line="169" TopLine="167"/>
+      </Position>
+      <Position>
+        <Filename Value="ustawienia_programu.pas"/>
+        <Caret Line="164" Column="22" TopLine="155"/>
+      </Position>
+    </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
       <Modes ActiveMode=""/>
