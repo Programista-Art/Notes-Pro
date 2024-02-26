@@ -1,7 +1,6 @@
 
-# Notes Pro V1.1.5.0 (6.04.2023) Przedstawiam program Notes Pro V1.1.5.0 (6.04.2023) Przedstawiam Państwu program Notes Pro V1.1.5.0 z dnia 6 kwietnia 2023 roku.
-![Notes pro V1.1.5.2](img/aktualny-widok.jpg)
-### [Zobacz Wideo](https://www.youtube.com/watch?v=PagyGDDTH5Q)
+# Notes Pro V1.1.5.3 (26.04.2024) 
+![Notes pro V1.1.5.3](img/aktualny-widok.jpg)
 ### Pierwsza wersja programu została stworzona 27 grudnia 2022 roku.Program Notes Pro to notatnik z wbudowanym kalkulatorem, funkcją wyszukiwania słów oraz bazą kluczowych słów. Użytkownicy mogą zapisywać słowa kluczowe do bazy w celu późniejszego wykorzystania. Dodawanie słów kluczowych do bazy jest bardzo proste i można to zrobić z poziomu pola tekstowego.
 
 ### Program Notes Pro umożliwia zapisywanie plików w formatach txt, rtf i odt. Na dole ekranu znajduje się panel informacyjny, który wyświetla informacje o ilości liter w linii, pozycji kursora myszy oraz aktualnej dacie. W notesie można zmienić czcionkę oraz kolor pola tekstowego, a także wyrównać tekst. Program jest w języku polskim i został stworzony w Lazarus 2.2.6
