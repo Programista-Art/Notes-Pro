@@ -1,14 +1,13 @@
 object Form2: TForm2
-  Left = 399
+  Left = 488
   Height = 342
-  Top = 219
+  Top = 157
   Width = 577
   BorderStyle = bsDialog
   Caption = 'Ustawienia'
   ClientHeight = 342
   ClientWidth = 577
   Color = clNone
-  OnClose = FormClose
   OnCreate = FormCreate
   Position = poMainFormCenter
   LCLVersion = '3.0.0.1'
@@ -79,6 +78,7 @@ object Form2: TForm2
         DefaultCaption = True
         Kind = bkOK
         ModalResult = 1
+        OnClick = BitBtn1Click
         TabOrder = 3
       end
       object BitBtn2: TBitBtn
@@ -180,9 +180,10 @@ object Form2: TForm2
             Height = 22
             Top = 2
             Width = 84
+            Selected = clGray
+            Style = [cbStandardColors, cbExtendedColors, cbSystemColors, cbCustomColor, cbPrettyNames]
             ItemHeight = 16
-            OnChange = ColorBox1Change
-            OnClick = ColorBox1Click
+            OnCloseUp = ColorBox1CloseUp
             TabOrder = 0
           end
         end
@@ -314,10 +315,24 @@ object Form2: TForm2
             Width = 359
             Align = alBottom
             BevelColor = clActiveBorder
+            ClientHeight = 23
+            ClientWidth = 359
             Color = clActiveBorder
             ParentBackground = False
             ParentColor = False
             TabOrder = 1
+            object ColorBox2: TColorBox
+              Left = 1
+              Height = 22
+              Top = 1
+              Width = 84
+              Selected = clGray
+              Style = [cbStandardColors, cbExtendedColors, cbSystemColors, cbCustomColor, cbPrettyNames]
+              Align = alLeft
+              ItemHeight = 16
+              OnCloseUp = ColorBox2CloseUp
+              TabOrder = 0
+            end
           end
         end
       end

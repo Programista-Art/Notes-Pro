@@ -244,6 +244,8 @@ type
     procedure zamChange(Sender: TObject);
     procedure ZamknijClick(Sender: TObject);
     procedure ZapiszClick(Sender: TObject);
+    procedure LoadColorPalette;
+    procedure LastPositionForm;
   private
 
   public
@@ -782,6 +784,48 @@ begin
    Memo1.Lines.SaveToFile(SD.FileName);
 end;
 
+procedure TForm1.LoadColorPalette;
+begin
+  Ini_Settings := TIniFile.Create(ExtractFilePath(ParamStr(0))+'settings.ini');
+  try
+     Memo1.Color := Ini_Settings.ReadInteger('Main','MemoColor',clActiveBorder);
+    //czcionka
+    //ladowanie nazwy fontu
+    Memo1.Font.Name := Ini_Settings.ReadString('Main','FontFamily',Memo1.Font.Name);
+    //ladowanie rozmiaru fontu
+    Memo1.Font.Size := Ini_Settings.ReadInteger('Main','FontSize', Memo1.Font.Size);
+    //ladowanie koloru fontu
+    Memo1.Font.Color := Ini_Settings.ReadInteger('Main','FontColor', Memo1.Font.Color);
+    //ladowanie koloru górnego ToolBaru
+    ToolBar1.Color := Ini_Settings.ReadInteger('Main','ToolBarTop', clBtnFace);
+    //Tryb zawsze na górze
+    Form1.FormStyle:= fsSystemStayOnTop;
+  finally
+    Ini_Settings.free;
+  end;
+end;
+
+procedure TForm1.LastPositionForm;
+var
+x,y,w,h :Integer;
+begin
+  inif := TIniFile.Create('form_position.ini');
+  try
+    x:= inif.readInteger('position','X',0);
+    y:= inif.readInteger('position','Y',0);
+    w:= inif.readInteger('Size','W',0);
+    h:= inif.readInteger('Size','H',0);
+
+    //Stosuje wartości do formy
+    Form1.Left:=x;
+    Form1.Top:=y;
+    Form1.Width:=w;
+    Form1.Height:=h;
+  finally
+    FreeAndNil(inif);
+  end;
+end;
+
 procedure TForm1.ButtonAddClick(Sender: TObject);
 begin
   //ListBox1.Items.Add(Edit1.Text);
@@ -1050,8 +1094,9 @@ end;
 
 procedure TForm1.FormClose(Sender: TObject; var CloseAction: TCloseAction);
 begin
-  inif.Free;
-  Ini_Settings.Free;
+  //inif.Free;
+  //Ini_Settings.Free;
+
   if Memo1.Modified then begin
     if MessageDlg('Zapisywanie pliku',
     'Bieżący plik został zmodyfikowany. Zapisać zmiany?',
@@ -1061,44 +1106,11 @@ begin
 end;
 
 procedure TForm1.FormCreate(Sender: TObject);
-var
-x,y,w,h :Integer;
-r,g,b :Integer;
 begin
   //ladujemy color formy z ini
-  Ini_Settings := TIniFile.Create(ExtractFilePath(ParamStr(0))+'settings.ini');
-  //Memo1.Color:=Ini_Settings.ReadInteger('color','Color',Memo1.Color);
-  Memo1.Color := Ini_Settings.ReadInteger('Main','MemoColor',clActiveBorder);
-  //czcionka
-  //ladowanie nazwy fontu
-  Memo1.Font.Name := Ini_Settings.ReadString('Main','FontFamily',Memo1.Font.Name);
-  //ladowanie rozmiaru fontu
-  Memo1.Font.Size := Ini_Settings.ReadInteger('Main','FontSize', Memo1.Font.Size);
-  //ladowanie koloru fontu
-  Memo1.Font.Color := Ini_Settings.ReadInteger('Main','FontColor', Memo1.Font.Color);
-  //ladowanie koloru górnego ToolBaru
-  ToolBar1.Color := Ini_Settings.ReadInteger('Main','ToolBarTop', clBtnFace);
-  //Tryb zawsze na górze
-  Form1.FormStyle:= fsSystemStayOnTop;
-
-  inif := TIniFile.Create('fajl.ini');
-  x:= inif.readInteger('position','X',0);
-  y:= inif.readInteger('position','Y',0);
-  w:= inif.readInteger('Size','W',0);
-  h:= inif.readInteger('Size','H',0);
-  r:= inif.readInteger('color','R',0);
-  g:= inif.readInteger('color','G',0);
-  b:= inif.readInteger('color','B',0);
-  //Naglowek aplikacji
-  Caption :=inif.readString('form','title','');
-  //Odczytuje kolor z pliku ini
-  Form1.Color := RGBToColor(r,g,b);
-
-  //Stosuje wartości do formy
-  Form1.Left:=x;
-  Form1.Top:=y;
-  Form1.Width:=w;
-  Form1.Height:=h;
+  LoadColorPalette;
+  //Laduje ostatnia pozycje formy
+  LastPositionForm;
 
   //ładowanie słów kluczowych z pliku klucz_slowa.txt
   ListBox1.Items.LoadFromFile('klucz_slowa.txt');
