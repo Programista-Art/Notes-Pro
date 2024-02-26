@@ -1,0 +1,130 @@
+object Form2: TForm2
+  Left = 984
+  Height = 199
+  Top = 339
+  Width = 264
+  BorderStyle = bsDialog
+  Caption = 'Ustawienia'
+  ClientHeight = 199
+  ClientWidth = 264
+  Color = clNone
+  OnClose = FormClose
+  OnCreate = FormCreate
+  Position = poMainFormCenter
+  LCLVersion = '2.2.4.0'
+  object Panel2: TPanel
+    Left = 0
+    Height = 199
+    Top = 0
+    Width = 264
+    Align = alClient
+    BevelColor = clBlack
+    BorderStyle = bsSingle
+    ClientHeight = 195
+    ClientWidth = 260
+    Color = clBtnFace
+    ParentColor = False
+    TabOrder = 0
+    object Panel1: TPanel
+      Left = 1
+      Height = 34
+      Top = 160
+      Width = 258
+      Align = alBottom
+      BevelColor = clScrollBar
+      ClientHeight = 34
+      ClientWidth = 258
+      Color = cl3DLight
+      ParentColor = False
+      TabOrder = 0
+      object Button1: TButton
+        Left = 8
+        Height = 25
+        Top = 5
+        Width = 56
+        Caption = 'Kolor'
+        OnClick = Button1Click
+        TabOrder = 0
+      end
+      object Button3: TButton
+        Left = 72
+        Height = 25
+        Top = 5
+        Width = 72
+        Caption = 'Czcionka'
+        OnClick = Button3Click
+        TabOrder = 1
+      end
+      object Button2: TButton
+        Left = 152
+        Height = 25
+        Top = 5
+        Width = 96
+        Caption = 'Zresetuj dane'
+        OnClick = Button2Click
+        TabOrder = 2
+      end
+    end
+    object PageControl1: TPageControl
+      Left = 1
+      Height = 159
+      Top = 1
+      Width = 258
+      ActivePage = TabSheet1
+      Align = alClient
+      TabIndex = 0
+      TabOrder = 1
+      object TabSheet1: TTabSheet
+        Caption = 'Ustawienia'
+        ClientHeight = 131
+        ClientWidth = 250
+        object Memo1: TMemo
+          Left = 0
+          Height = 131
+          Top = 0
+          Width = 250
+          Align = alClient
+          Lines.Strings = (
+            'Notes Pro'
+          )
+          ReadOnly = True
+          ScrollBars = ssVertical
+          TabOrder = 0
+        end
+      end
+    end
+  end
+  object FontDialog: TFontDialog
+    MinFontSize = 0
+    MaxFontSize = 0
+    Left = 208
+    Top = 48
+  end
+  object ColorDialog1: TColorDialog
+    Color = clBlack
+    CustomColors.Strings = (
+      'ColorA=000000'
+      'ColorB=000080'
+      'ColorC=008000'
+      'ColorD=008080'
+      'ColorE=800000'
+      'ColorF=800080'
+      'ColorG=808000'
+      'ColorH=808080'
+      'ColorI=C0C0C0'
+      'ColorJ=0000FF'
+      'ColorK=00FF00'
+      'ColorL=00FFFF'
+      'ColorM=FF0000'
+      'ColorN=FF00FF'
+      'ColorO=FFFF00'
+      'ColorP=FFFFFF'
+      'ColorQ=C0DCC0'
+      'ColorR=F0CAA6'
+      'ColorS=F0FBFF'
+      'ColorT=A4A0A0'
+    )
+    Left = 240
+    Top = 80
+  end
+end

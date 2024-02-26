@@ -1,0 +1,9 @@
+programista baz danych – projektuje i zarządza zbiorami danych dla konkretnych dziedzin, np. kadry, płatności
+programista aplikacyjny – tworzy oprogramowanie o różnym zastosowaniu, między innymi edytory tekstów, programy graficzne
+programista narzędziowy – opracowuje programy systemowe (np. systemy operacyjne) i specjalne (np. sterujące procesami produkcyjnymi)
+programista aplikacji internetowych – tworzy, utrzymuje i rozbudowuje serwisy internetowe
+programista systemów łączności komputerowej – pisze programy wykorzystywane w transmisji danych
+tester aplikacji – sprawdza poprawność napisanego programu
+menadżer projektów – zarządza tworzeniem całego programu na każdym etapie jego powstawania
+projektant aplikacji – na podstawie danych zebranych od klienta przygotowuje algorytm aplikacji i systematyzuje dostęp do danych
+analityk aplikacji – odpowiada za kontakty z klientem, analizuje i przedstawia jego potrzeby zespołowi.

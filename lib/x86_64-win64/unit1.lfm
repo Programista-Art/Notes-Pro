@@ -1,0 +1,1225 @@
+object Form1: TForm1
+  Left = 297
+  Height = 487
+  Top = 219
+  Width = 996
+  Align = alClient
+  BorderStyle = bsSingle
+  Caption = 'Notes Pro V1.1.5.2'
+  ClientHeight = 487
+  ClientWidth = 996
+  FormStyle = fsSystemStayOnTop
+  Menu = MainMenu1
+  OnClose = FormClose
+  OnCreate = FormCreate
+  Position = poMainFormCenter
+  LCLVersion = '3.0.0.1'
+  object Memo1: TMemo
+    Left = 0
+    Height = 438
+    Top = 26
+    Width = 671
+    Align = alClient
+    Color = clActiveBorder
+    Font.CharSet = EASTEUROPE_CHARSET
+    Font.Color = clCaptionText
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnChange = Memo1Change
+    OnMouseMove = Memo1MouseMove
+    ParentFont = False
+    PopupMenu = PopupMenu1
+    ScrollBars = ssVertical
+    TabOrder = 0
+  end
+  object Panel1: TPanel
+    Left = 676
+    Height = 438
+    Top = 26
+    Width = 320
+    Align = alRight
+    BevelColor = clBtnFace
+    ClientHeight = 438
+    ClientWidth = 320
+    Color = clBtnFace
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 1
+    OnClick = Panel1Click
+    object PageControl1: TPageControl
+      Left = 1
+      Height = 175
+      Top = 1
+      Width = 318
+      ActivePage = TabSheet3
+      Align = alTop
+      BiDiMode = bdRightToLeft
+      Font.Color = clBlack
+      ParentBiDiMode = False
+      ParentFont = False
+      TabIndex = 0
+      TabOrder = 0
+      object TabSheet3: TTabSheet
+        Caption = 'Edycja'
+        ClientHeight = 147
+        ClientWidth = 310
+        ParentBiDiMode = False
+        object szukaj: TEdit
+          Left = 88
+          Height = 23
+          Top = 10
+          Width = 216
+          TabOrder = 0
+        end
+        object Button3: TButton
+          Left = 8
+          Height = 25
+          Top = 8
+          Width = 75
+          Caption = 'Szukać'
+          OnClick = Button3Click
+          TabOrder = 1
+        end
+        object zam: TEdit
+          Left = 88
+          Height = 23
+          Top = 40
+          Width = 216
+          OnChange = zamChange
+          TabOrder = 2
+        end
+        object Button4: TButton
+          Left = 8
+          Height = 25
+          Top = 40
+          Width = 75
+          Caption = 'Zamienić'
+          OnClick = Button4Click
+          TabOrder = 3
+        end
+        object Button5: TButton
+          Left = 8
+          Height = 25
+          Top = 80
+          Width = 104
+          Caption = 'Zamienić zdanie'
+          OnClick = Button5Click
+          TabOrder = 4
+        end
+        object Edit2: TEdit
+          Left = 120
+          Height = 23
+          Top = 82
+          Width = 55
+          TabOrder = 5
+        end
+        object Edit3: TEdit
+          Left = 184
+          Height = 23
+          Top = 82
+          Width = 120
+          TabOrder = 6
+        end
+        object Label1: TLabel
+          Left = 120
+          Height = 15
+          Top = 64
+          Width = 41
+          Caption = 'Nr. Linii'
+          ParentColor = False
+        end
+        object Label2: TLabel
+          Left = 184
+          Height = 15
+          Top = 64
+          Width = 59
+          Caption = 'Nowy tekst'
+          ParentColor = False
+        end
+        object ButtonAdd: TButton
+          Left = 8
+          Height = 25
+          Top = 112
+          Width = 75
+          Caption = 'Dodać'
+          OnClick = ButtonAddClick
+          TabOrder = 7
+        end
+        object Edit1: TEdit
+          Left = 88
+          Height = 23
+          Top = 114
+          Width = 216
+          TabOrder = 8
+        end
+      end
+      object TabSheet1: TTabSheet
+        Caption = 'Kalkulator'
+        ClientHeight = 147
+        ClientWidth = 310
+        object Edit4: TEdit
+          AnchorSideLeft.Control = Label4
+          AnchorSideTop.Control = Label4
+          AnchorSideTop.Side = asrCenter
+          Left = 23
+          Height = 23
+          Top = 16
+          Width = 40
+          Alignment = taCenter
+          Anchors = [akTop]
+          BorderSpacing.Left = 25
+          ParentBidiMode = False
+          OnKeyPress = Edit4KeyPress
+          TabOrder = 0
+        end
+        object Edit5: TEdit
+          AnchorSideLeft.Control = Label7
+          AnchorSideTop.Control = Label7
+          AnchorSideTop.Side = asrCenter
+          Left = 80
+          Height = 23
+          Top = 16
+          Width = 40
+          Alignment = taCenter
+          Anchors = []
+          BorderSpacing.Left = 24
+          ParentBidiMode = False
+          OnKeyPress = Edit5KeyPress
+          TabOrder = 1
+        end
+        object Label4: TLabel
+          Left = 8
+          Height = 15
+          Top = 20
+          Width = 8
+          Caption = 'A'
+          ParentBidiMode = False
+          ParentColor = False
+        end
+        object Label7: TLabel
+          AnchorSideLeft.Control = Edit4
+          AnchorSideTop.Control = Edit4
+          AnchorSideTop.Side = asrCenter
+          Left = 68
+          Height = 15
+          Top = 20
+          Width = 7
+          Anchors = []
+          BorderSpacing.Left = 44
+          Caption = 'B'
+          ParentBidiMode = False
+          ParentColor = False
+        end
+        object Edit6: TEdit
+          AnchorSideLeft.Control = Label8
+          AnchorSideTop.Control = Label8
+          AnchorSideTop.Side = asrCenter
+          Left = 136
+          Height = 23
+          Top = 16
+          Width = 40
+          Alignment = taCenter
+          Anchors = []
+          BorderSpacing.Left = 12
+          ReadOnly = True
+          TabOrder = 2
+        end
+        object Label8: TLabel
+          AnchorSideLeft.Control = Edit5
+          AnchorSideTop.Control = Edit5
+          AnchorSideTop.Side = asrCenter
+          Left = 124
+          Height = 15
+          Top = 20
+          Width = 8
+          BorderSpacing.Left = 44
+          Caption = '='
+          ParentColor = False
+        end
+        object Button9: TButton
+          Left = 23
+          Height = 25
+          Top = 48
+          Width = 25
+          Caption = '+'
+          OnClick = Button9Click
+          TabOrder = 3
+        end
+        object Button10: TButton
+          AnchorSideLeft.Control = Button9
+          AnchorSideTop.Control = Button9
+          Left = 53
+          Height = 25
+          Top = 48
+          Width = 25
+          BorderSpacing.Left = 30
+          Caption = '-'
+          OnClick = Button10Click
+          TabOrder = 4
+        end
+        object Button11: TButton
+          AnchorSideLeft.Control = Button10
+          AnchorSideTop.Control = Button10
+          Left = 83
+          Height = 25
+          Top = 48
+          Width = 25
+          BorderSpacing.Left = 30
+          Caption = 'x'
+          OnClick = Button11Click
+          TabOrder = 5
+        end
+        object Button12: TButton
+          AnchorSideLeft.Control = Button11
+          AnchorSideTop.Control = Button11
+          Left = 113
+          Height = 25
+          Top = 48
+          Width = 25
+          BorderSpacing.Left = 30
+          Caption = '/'
+          OnClick = Button12Click
+          TabOrder = 6
+        end
+        object Button6: TButton
+          Left = 24
+          Height = 25
+          Top = 80
+          Width = 107
+          Caption = 'Kalkulator pro'
+          OnClick = Button6Click
+          TabOrder = 7
+        end
+        object Button13: TButton
+          AnchorSideLeft.Control = Edit6
+          AnchorSideTop.Control = Edit6
+          AnchorSideTop.Side = asrCenter
+          Left = 184
+          Height = 25
+          Top = 14
+          Width = 25
+          Anchors = []
+          BorderSpacing.Left = 85
+          Caption = 'CE'
+          OnClick = Button13Click
+          TabOrder = 8
+        end
+        object Button14: TButton
+          Left = 23
+          Height = 25
+          Top = 112
+          Width = 115
+          Caption = 'usuń kalkulator'
+          OnClick = Button14Click
+          TabOrder = 9
+        end
+      end
+      object TabSheet2: TTabSheet
+        Caption = 'Obliczenia'
+        ClientHeight = 147
+        ClientWidth = 310
+        object Panel2: TPanel
+          Left = 0
+          Height = 147
+          Top = 0
+          Width = 310
+          Align = alClient
+          BevelOuter = bvNone
+          ClientHeight = 147
+          ClientWidth = 310
+          Color = clNone
+          ParentBackground = False
+          ParentColor = False
+          TabOrder = 0
+          OnClick = Panel2Click
+          object EditInch: TEdit
+            Left = 8
+            Height = 23
+            Top = 20
+            Width = 40
+            Alignment = taCenter
+            OnChange = EditInchChange
+            OnKeyPress = EditInchKeyPress
+            TabOrder = 0
+          end
+          object InchSum: TEdit
+            Left = 71
+            Height = 23
+            Top = 20
+            Width = 47
+            OnClick = InchSumClick
+            ReadOnly = True
+            TabOrder = 1
+          end
+          object Cm: TLabel
+            Left = 8
+            Height = 15
+            Top = 4
+            Width = 19
+            Caption = 'Cm'
+            ParentColor = False
+          end
+          object Label3: TLabel
+            Left = 56
+            Height = 15
+            Top = 22
+            Width = 8
+            Caption = '='
+            ParentColor = False
+          end
+          object Cale: TLabel
+            Left = 71
+            Height = 15
+            Top = 4
+            Width = 23
+            Caption = 'Cale'
+            ParentColor = False
+          end
+          object Button1: TButton
+            Left = 136
+            Height = 25
+            Top = 20
+            Width = 104
+            Caption = 'Oblicz'
+            OnClick = Button1Click
+            TabOrder = 2
+          end
+          object CheckBox1: TCheckBox
+            Left = 136
+            Height = 19
+            Top = 2
+            Width = 78
+            Caption = 'Cale w  Cm'
+            OnChange = CheckBox1Change
+            TabOrder = 3
+          end
+          object Button2: TButton
+            Left = 248
+            Height = 25
+            Top = 20
+            Width = 51
+            Caption = 'Oczyść'
+            OnClick = Button2Click
+            TabOrder = 4
+          end
+          object Button7: TButton
+            Left = 192
+            Height = 25
+            Top = 62
+            Width = 48
+            Caption = 'Oblicz'
+            OnClick = Button7Click
+            TabOrder = 5
+          end
+          object Button8: TButton
+            Left = 248
+            Height = 25
+            Top = 62
+            Width = 48
+            Caption = 'Oczyść'
+            OnClick = Button8Click
+            TabOrder = 6
+          end
+          object EditLiczba: TEdit
+            Left = 8
+            Height = 23
+            Top = 64
+            Width = 40
+            Alignment = taCenter
+            OnKeyPress = EditLiczbaKeyPress
+            TabOrder = 7
+          end
+          object EditZnizka: TEdit
+            Left = 72
+            Height = 23
+            Top = 64
+            Width = 47
+            Alignment = taCenter
+            OnKeyPress = EditZnizkaKeyPress
+            TabOrder = 8
+          end
+          object Label9: TLabel
+            Left = 56
+            Height = 15
+            Top = 64
+            Width = 8
+            Caption = '='
+            ParentColor = False
+          end
+          object Label11: TLabel
+            Left = 8
+            Height = 15
+            Top = 48
+            Width = 33
+            Caption = 'Liczba'
+            ParentColor = False
+          end
+          object Label12: TLabel
+            Left = 72
+            Height = 15
+            Top = 48
+            Width = 47
+            Alignment = taCenter
+            Caption = '% Zniżka'
+            ParentColor = False
+          end
+          object EditWynik: TEdit
+            Left = 136
+            Height = 23
+            Top = 64
+            Width = 47
+            Alignment = taCenter
+            ReadOnly = True
+            TabOrder = 9
+          end
+          object Label13: TLabel
+            Left = 136
+            Height = 15
+            Top = 48
+            Width = 49
+            Caption = 'Po zniżce'
+            ParentColor = False
+          end
+        end
+      end
+    end
+    object ListBox1: TListBox
+      Left = 1
+      Height = 212
+      Top = 202
+      Width = 318
+      Align = alClient
+      BorderStyle = bsNone
+      Color = clBtnHighlight
+      Columns = 1
+      Font.CharSet = EASTEUROPE_CHARSET
+      Font.Color = clBlack
+      Font.Height = -15
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Items.Strings = (
+        'Łatwość nauki - Delphi jest językiem programowania, który jest stosunkowo łatwy do nauki, dzięki czemu programiści mogą szybko zacząć tworzyć aplikacje.'
+        'Bogata biblioteka komponentów - Delphi oferuje szeroki wybór komponentów, dzięki którym programiści mogą szybko i łatwo tworzyć zaawansowane aplikacje.'
+        'Szybkość i wydajność - Delphi jest znany ze swojej szybkości i wydajności. Dzięki temu programiści mogą tworzyć aplikacje, które działają szybko i sprawnie.'
+        'Wieloplatformowość - Delphi pozwala na tworzenie aplikacji dla różnych platform, w tym Windows, macOS, iOS i Android.'
+        'Integracja z innymi językami - Delphi umożliwia integrację z innymi językami programowania, takimi jak C++, co pozwala na tworzenie bardziej zaawansowanych aplikacji.'
+        'Duża społeczność - Delphi ma dużą i aktywną społeczność programistów, która oferuje wsparcie i pomoc w rozwiązywaniu problemów.'
+        'Narzędzia RAD - Delphi oferuje narzędzia Rapid Application Development (RAD), które umożliwiają szybkie tworzenie aplikacji.'
+        'Możliwości rozwoju - Delphi jest językiem programowania, który stale się rozwija i oferuje nowe możliwości, co pozwala na tworzenie coraz lepszych i bardziej zaawansowanych aplikacji.'
+        'Wsparcie ze strony producenta - Delphi jest produktem firmy Embarcadero, która oferuje wsparcie techniczne oraz regularne aktualizacje.'
+        'Praktyczność - Delphi jest stosunkowo prosty w użyciu, dzięki czemu programiści mogą skupić się na tworzeniu praktycznych aplikacji, zamiast tracić czas na naukę skomplikowanych narzędzi.'
+      )
+      ItemHeight = 20
+      OnClick = ListBox1Click
+      OnDblClick = ListBox1DblClick
+      ParentFont = False
+      PopupMenu = PopupMenuForListbox
+      ScrollWidth = 1
+      TabOrder = 1
+    end
+    object ToolBar2: TToolBar
+      Left = 1
+      Height = 26
+      Top = 176
+      Width = 318
+      Caption = 'ToolBar2'
+      Color = cl3DLight
+      Images = ImageList1
+      ParentColor = False
+      TabOrder = 2
+      object ToolButton9: TToolButton
+        Left = 1
+        Hint = 'Dodać'
+        Top = 2
+        Caption = 'ToolButton9'
+        ImageIndex = 4
+        OnClick = MenuItem23Click
+        ParentShowHint = False
+        ShowHint = True
+      end
+      object ToolButton10: TToolButton
+        Left = 24
+        Hint = 'Usuń'
+        Top = 2
+        Caption = 'ToolButton10'
+        ImageIndex = 6
+        OnClick = MenuItem7Click
+        ParentShowHint = False
+        ShowHint = True
+      end
+      object ToolButton11: TToolButton
+        Left = 47
+        Hint = 'Usuń wszystko'
+        Top = 2
+        Caption = 'ToolButton11'
+        ImageIndex = 5
+        OnClick = MenuItem20Click
+        ParentShowHint = False
+        ShowHint = True
+      end
+      object ToolButton12: TToolButton
+        Left = 70
+        Hint = 'Zapisz słowa kluczowe'
+        Top = 2
+        Caption = 'ToolButton12'
+        ImageIndex = 3
+        OnClick = ToolButton12Click
+        ParentShowHint = False
+        ShowHint = True
+      end
+    end
+    object StatusBar2: TStatusBar
+      Left = 1
+      Height = 23
+      Top = 414
+      Width = 318
+      Color = clActiveCaption
+      Font.Color = clBlack
+      Panels = <      
+        item
+          Text = 'Liczba linii'
+          Width = 200
+        end      
+        item
+          Width = 50
+        end>
+      ParentColor = False
+      ParentFont = False
+      SimplePanel = False
+    end
+  end
+  object ToolBar1: TToolBar
+    Left = 0
+    Height = 26
+    Top = 0
+    Width = 996
+    Caption = 'ToolBar1'
+    Color = clBtnFace
+    Images = ImageList1
+    ParentColor = False
+    TabOrder = 2
+    object ToolButton1: TToolButton
+      Left = 1
+      Hint = 'Otwórz plik'
+      Top = 2
+      Caption = 'ToolButton1'
+      ImageIndex = 0
+      OnClick = ToolButton1Click
+      ParentShowHint = False
+      ShowHint = True
+    end
+    object ToolButton3: TToolButton
+      Left = 24
+      Hint = 'Zapisz plik'
+      Top = 2
+      Caption = 'ToolButton3'
+      ImageIndex = 3
+      OnClick = ToolButton3Click
+      ParentShowHint = False
+      ShowHint = True
+    end
+    object ToolButton4: TToolButton
+      Left = 47
+      Hint = 'Wyjść'
+      Top = 2
+      Caption = 'ToolButton4'
+      ImageIndex = 6
+      OnClick = ToolButton4Click
+      ParentShowHint = False
+      ShowHint = True
+    end
+    object ToolButton2: TToolButton
+      Left = 70
+      Hint = 'O programie'
+      Top = 2
+      HelpType = htKeyword
+      HelpKeyword = 'A'
+      HelpContext = 1
+      Caption = 'ToolButton2'
+      ImageIndex = 2
+      OnClick = ToolButton2Click
+      ParentShowHint = False
+      ShowHint = True
+    end
+    object ToolButton5: TToolButton
+      Left = 93
+      Hint = 'Usuwa tekst z pola'
+      Top = 2
+      HelpType = htKeyword
+      HelpKeyword = 'D'
+      HelpContext = 5
+      Caption = 'ToolButton5'
+      ImageIndex = 5
+      OnClick = ToolButton5Click
+      ParentShowHint = False
+      ShowHint = True
+    end
+    object ToolButton6: TToolButton
+      Left = 116
+      Hint = 'Wyrównaj do lewej'
+      Top = 2
+      Caption = 'ToolButton6'
+      ImageIndex = 8
+      OnClick = ToolButton6Click
+      ParentShowHint = False
+      ShowHint = True
+    end
+    object ToolButton7: TToolButton
+      Left = 139
+      Hint = 'Wyrównaj do środka'
+      Top = 2
+      Caption = 'ToolButton7'
+      ImageIndex = 7
+      OnClick = ToolButton7Click
+      ParentShowHint = False
+      ShowHint = True
+    end
+    object ToolButton8: TToolButton
+      Left = 162
+      Hint = 'Wyrównaj do prawej'
+      Top = 2
+      Caption = 'ToolButton8'
+      ImageIndex = 9
+      OnClick = ToolButton8Click
+      ParentShowHint = False
+      ShowHint = True
+    end
+    object ToolButton13: TToolButton
+      Left = 185
+      Hint = 'Włącz Tryb Zawsze na górze'
+      Top = 2
+      Caption = 'ToolButton13'
+      ImageIndex = 10
+      OnClick = ToolButton13Click
+      ParentShowHint = False
+      ShowHint = True
+    end
+    object ToolButton14: TToolButton
+      Left = 208
+      Hint = 'Wyłącz Tryb Zawsze na górze'
+      Top = 2
+      Caption = 'ToolButton14'
+      ImageIndex = 11
+      OnClick = ToolButton14Click
+      ParentShowHint = False
+      ShowHint = True
+    end
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 23
+    Top = 464
+    Width = 996
+    Color = clBtnFace
+    Panels = <    
+      item
+        Text = 'Liczba liter'
+        Width = 100
+      end    
+      item
+        Text = 'Liczba linii'
+        Width = 100
+      end    
+      item
+        Text = 'Liczba słów'
+        Width = 100
+      end    
+      item
+        Text = 'XY'
+        Width = 120
+      end    
+      item
+        Text = 'Data'
+        Width = 50
+      end    
+      item
+        Width = 200
+      end>
+    ParentColor = False
+    SimplePanel = False
+  end
+  object Label5: TLabel
+    Left = 8
+    Height = 15
+    Top = 8
+    Width = 19
+    Caption = 'A ='
+    ParentBidiMode = False
+    ParentColor = False
+  end
+  object Label6: TLabel
+    Left = 16
+    Height = 15
+    Top = 40
+    Width = 19
+    Caption = 'A ='
+    ParentBidiMode = False
+    ParentColor = False
+  end
+  object Cm1: TLabel
+    Left = 8
+    Height = 15
+    Top = 10
+    Width = 25
+    Caption = 'Cm1'
+    ParentColor = False
+  end
+  object Label10: TLabel
+    Left = 856
+    Height = 15
+    Top = 104
+    Width = 8
+    Caption = '='
+    ParentColor = False
+  end
+  object Label15: TLabel
+    Left = 36
+    Height = 15
+    Top = 36
+    Width = 51
+    Caption = 'Wklej link'
+    ParentColor = False
+  end
+  object Splitter1: TSplitter
+    Left = 671
+    Height = 438
+    Top = 26
+    Width = 5
+    Align = alRight
+    ResizeAnchor = akRight
+  end
+  object MainMenu1: TMainMenu
+    Images = ImageList1
+    Left = 424
+    Top = 64
+    object Plik: TMenuItem
+      Caption = 'Plik'
+      object Nowy: TMenuItem
+        Caption = 'Nowy'
+        ImageIndex = 4
+        ShortCut = 16462
+        OnClick = NowyClick
+      end
+      object Otworz: TMenuItem
+        Caption = 'Otwórz'
+        ImageIndex = 0
+        ShortCut = 16463
+        OnClick = OtworzClick
+      end
+      object MenuItem9: TMenuItem
+        Caption = 'Zapisz'
+        ImageIndex = 3
+        ShortCut = 16467
+        OnClick = MenuItem9Click
+      end
+      object Zapisz: TMenuItem
+        Caption = 'Zapisz jak'
+        ImageIndex = 3
+        ShortCut = 16458
+        OnClick = ZapiszClick
+      end
+      object Zamknij: TMenuItem
+        Caption = 'Zamknij'
+        ImageIndex = 6
+        ShortCut = 16472
+        OnClick = ZamknijClick
+      end
+    end
+    object Widok: TMenuItem
+      Caption = 'Widok'
+      OnClick = WidokClick
+      object MenuItem35: TMenuItem
+        Caption = 'Kolor okna'
+        OnClick = MenuItem35Click
+      end
+      object MenuItem36: TMenuItem
+        Caption = 'Tryb zawsze na wierzchu'
+        OnClick = MenuItem36Click
+      end
+    end
+    object Wstaw: TMenuItem
+      Caption = 'Wstaw'
+      OnClick = WstawClick
+      object MenuItem28: TMenuItem
+        Caption = 'Linie _____'
+        OnClick = MenuItem28Click
+      end
+      object MenuItem29: TMenuItem
+        Caption = 'Kropki .........'
+        OnClick = MenuItem29Click
+      end
+      object MenuItem30: TMenuItem
+        Caption = 'LInia -----'
+        OnClick = MenuItem30Click
+      end
+    end
+    object Format: TMenuItem
+      Caption = 'Tekst'
+      object Tekst: TMenuItem
+        Caption = 'Czcionka'
+        OnClick = TekstClick
+      end
+      object Odstepy: TMenuItem
+        Caption = 'Kolor Pola'
+        OnClick = OdstepyClick
+      end
+      object WyrownajTekst: TMenuItem
+        Caption = 'Wyrównaj tekst'
+        object MenuItem1: TMenuItem
+          Caption = 'Wyrównaj do lewej'
+          OnClick = MenuItem1Click
+        end
+        object MenuItem18: TMenuItem
+          Caption = 'Wyrównaj do środka'
+          OnClick = MenuItem18Click
+        end
+        object MenuItem19: TMenuItem
+          Caption = 'Wyrównaj do prawej'
+          OnClick = MenuItem19Click
+        end
+      end
+      object MenuItem25: TMenuItem
+        Caption = 'Duże litery'
+        OnClick = MenuItem25Click
+      end
+      object MenuItem24: TMenuItem
+        Caption = 'Małe litery'
+        OnClick = MenuItem24Click
+      end
+    end
+    object Pomoc: TMenuItem
+      Caption = 'Pomoc'
+      object OProgramie: TMenuItem
+        Caption = 'O Programie'
+        ImageIndex = 2
+        OnClick = OProgramieClick
+      end
+      object MenuItem6: TMenuItem
+        Caption = 'Ustawienia'
+        OnClick = MenuItem6Click
+      end
+    end
+    object MenuItem8: TMenuItem
+      Caption = 'Srawdź'
+      object MenuItem10: TMenuItem
+        Caption = 'ILe zaznzconych liter'
+        OnClick = MenuItem10Click
+      end
+    end
+  end
+  object PopupMenu1: TPopupMenu
+    Left = 272
+    Top = 328
+    object MenuItem31: TMenuItem
+      Caption = 'Usuń zaznaczony tekst'
+      OnClick = MenuItem31Click
+    end
+    object Wytnij: TMenuItem
+      Caption = 'Usuń cały tekst'
+      OnClick = WytnijClick
+    end
+    object MenuItem33: TMenuItem
+      Caption = 'Zaznacz wszystko'
+      ShortCut = 16449
+      OnClick = MenuItem33Click
+    end
+    object Kopiuj: TMenuItem
+      Caption = 'Kopiuj'
+      ShortCut = 16451
+      OnClick = KopiujClick
+    end
+    object Wklej: TMenuItem
+      Caption = 'Wklej'
+      ShortCut = 16470
+      OnClick = WklejClick
+    end
+    object MenuItem21: TMenuItem
+      Caption = 'Wytnij'
+      ShortCut = 16472
+      OnClick = MenuItem21Click
+    end
+    object MenuItem32: TMenuItem
+      Caption = 'Dodaj do bazy'
+      ShortCut = 16450
+      OnClick = MenuItem32Click
+    end
+    object MenuItem14: TMenuItem
+      Caption = 'Tekst'
+      OnClick = MenuItem14Click
+      object MenuItem15: TMenuItem
+        Caption = 'Duże litery'
+        ShortCut = 16452
+        OnClick = MenuItem25Click
+      end
+      object MenuItem16: TMenuItem
+        Caption = 'Małe litery'
+        ShortCut = 16461
+        OnClick = MenuItem24Click
+      end
+      object MenuItem17: TMenuItem
+        Caption = 'Czcionka'
+        OnClick = MenuItem17Click
+      end
+    end
+    object MenuItem2: TMenuItem
+      Caption = 'Czcionka rozmiar'
+      OnClick = MenuItem2Click
+      object MenuItem38: TMenuItem
+        Caption = '12'
+        OnClick = MenuItem38Click
+      end
+      object MenuItem3: TMenuItem
+        Caption = '15'
+        OnClick = MenuItem3Click
+      end
+      object MenuItem4: TMenuItem
+        Caption = '20'
+        OnClick = MenuItem4Click
+      end
+      object MenuItem5: TMenuItem
+        Caption = '25'
+        OnClick = MenuItem5Click
+      end
+    end
+    object MenuItem22: TMenuItem
+      Caption = 'Zawijanie tekstu'
+      OnClick = MenuItem22Click
+    end
+    object MenuItem34: TMenuItem
+      Caption = 'Cofnij'
+      ShortCut = 16474
+      OnClick = MenuItem34Click
+    end
+  end
+  object OD: TOpenDialog
+    DefaultExt = '.*.'
+    Filter = 'Plik tekstowy|*.txt|Odt|*.odt|Ritch Text|*.rtf|Wszystkie pliki|*.*'
+    InitialDir = 'C:'
+    Left = 56
+    Top = 128
+  end
+  object SD: TSaveDialog
+    DefaultExt = '.*txt'
+    FileName = 'Notatka'
+    Filter = 'Plik tekstowy|*.txt|Odt|*.odt|Rich Text|*.rtf|Wszystkie pliki|*.*'
+    InitialDir = 'C:'
+    Left = 264
+    Top = 216
+  end
+  object ImageList1: TImageList
+    Left = 256
+    Top = 400
+    Bitmap = {
+      4C7A0C0000001000000010000000670F00000000000078DAE55A075094671A4E
+      4CB98BDE5CDADD38994C4EA3291233136CB9E434C6D81545AA5471975DBA3445
+      54EC02F658B0C7820A1A34B1C7126350E48CE506B172781654C08211143B96F7
+      DEE7DDFDD77F977F97626EE6E66E679EF977FFFF7BBEF27E6FFDFED5E974AD0D
+      46439E21C450C1B861BE5AC11862AC0836045704060556041B836F18438D15CC
+      39A2D3E93EE76B516878288584859031CC48DCBE1AB83DE90C3A0AD205C915ED
+      01E65EE2E75521E1CC0D3192B78F37E983F5D25EE1864584518F5E3D287E483C
+      959494D0A09841F23B3C2A1CCF1F31CA31AE8FBF0FCD9A3D8BBE5FF73DADC858
+      4199AB3305DF2CFE8676FCB883AE5FBF4EF8949496D0D46953C9CDD30DFC9B8C
+      EBFE81FE3476FC58FA39FB678A8E8D26FCF60BF4936BD71E5D2975522ADDB879
+      43F877EFDEA5B9F3E6525FB7BE6496D7756F3F6F4A9B9346CBD29751EF3EBD69
+      CEBC39322EB074D9521A3D66348D1937866EDDBA2573FCF2AB2F292C32CCC2C7
+      DCA77F3D9D162F594CFD7DFB53696929DDB973C784BB77A8B2B292E207C7D394
+      6953648C7E1EFD14595BF197AF584E1E5E1EB471D346DABD673765EFCE96EBAE
+      9F77912E5847C9A9C994BE3C5DD6AEC55FB274898C7FB2E024151717D3C5E28B
+      723D7FE13CC50D8EA3D489A90EF918DFDDD39DB66EDB4AFB7ED947FBF6999093
+      9B237B39EDEB699A7C457E0B162E20573757BA72F58AD5FA6FDFBE2DFB3F72F4
+      48CACCCCACB67EECD5B8F1E3283B3B9BC223C3456762E36329362E56AED131A6
+      3DDDB67D9BACD1CDC36A7C93FEF8F950DADC34DAB07183B4C1BEA991B92A9332
+      323388F5DFA4A326FE4D457FB13E2F1F2F798EF1151D57807BD06FD8007E9BF9
+      0FD9062E58ECC7ACF7C121C19AC073C5CE644CA3E10ADB603BBE1E861CB0965A
+      C36838CADC2F747A9D13DBF636C65EC60E809F5583F2CC8CDD06832157AFD77F
+      C9CFB62AF3C71AF506BDE800ECC3D5DD55AE806F80AF4516682BF61F6238CCF2
+      3A81DFD837AFFE5EA2BFE393C7D38C9933C44EA157D3674CA7C84191D4C7B58F
+      F4AF925F31F3F3200B70131213A8BCA29CEC7D366DDE24EDF446CBFE9D071F32
+      F7F4F6A46DDBB6D193C74FE8F4E9D354585848A74E9D12E07BD9B532FAF5D75F
+      297178A2ECA39A1F383050FC52EEDF7329676F0EFDB4EBA76AF871E78F74ECF8
+      315AB06881AC51CD0F1810206B527C8CA30F7C5A4F979E2243853F503F90D837
+      D3C58B176BE4CF993B477C949A0F79604D05FF2CA8913F79EA64EADBAFAF15DF
+      106A90BDDE7F607F8DFC09C913D4F6277C7CC79CB6EFD85E237F78D270D92B35
+      1F73E9D9BB27AD59BBC62117BE1BFEDDD7DFD79ACFFA83F1E1831C7D4E9F394D
+      7E017E0479ABF8A2BFB807DF79E0C001BB7CC41145768AFEB2FD64637CC403F8
+      28AC6DF69CD994B12A43FC0EFC25BEC38FF573EF47A111A116FBE79859C036D8
+      91FB2804B8DF7C9E47BE4B1F97FCEE3DBBE7B34CF23956CA77DEDF7C3C674E3E
+      B73DC9B8C87ECC97F946BE576AF6659AF15F0337997389B991B01D990BCF49E6
+      05DBE63922DE78787B882F806CE01B94755BFC9729C6DF937BA126C00F4006B0
+      87C54B1753FA8A74B17DD80CFA50DA99E5770F7356F3A1C79033E2DEA26F1689
+      0C7765EF12DF803865C3BF61CBC7D8F0FF88D39DBA7412206E2176607F957CC6
+      1E1F73843D03584B8FDE3DC49FEDC9D923BAA3F8717B7C25064056B013D85BDE
+      E13C1A37619C8C5FD3FC951801D94F9C3C910E1C3C207382EE68C84F938F1836
+      60E000B1C721438748BC159FAB6AE3888FFD869F5CFDED6AF14B21A121D6DC5A
+      CC1F3288888A781A2FEBC0F7F6F5A6A18943256F424E82B851173EF669F090C1
+      74E4E811D103C8D201FF9E2D1F72860C5CFABA485FD0033BFCBBB6F6A3D89092
+      0FA863BE551BB3FDC006618B2AFBAD0D60BF97991BC7FD07314A199575440563
+      A23247EC11FC17ECD4B3BFA7151073E10700458755EBABC277F8E484610962B3
+      C8AF15CC9B3F4FAEC8CF91FFC2B6FD07F82BFCBB980B7415F177D7AE5D121F91
+      A7215F03E03F56AC5C21FEF7F2E5CB520B4C9A32C91443CC6B91DC2F2D8D366D
+      DC44CE6D9CA9E3571DA953E74E82769FB7A3F65FB417FEC1430729695492E4D7
+      88170A1F3A8AF1913B425F30E7790B4C802F473D505C524CBFECFF85D6AD5F47
+      2913534C3984990FD9217E225F450CCDC9C9B1606FEE5EDABB77AFAC0973472E
+      D4CBA597A253C257EC15B50F6A08E4C988B313529E62ECB8B1B26EE4E6C8A561
+      970A1FFB06FF92B5268B366FD94C45E78BA8A8C81AA801F01CF2C41EB97BB95B
+      F8D0F1F113C68BAFC51CCE9D3B4767CF9EA53367CF5870AEE89CAC1D35116404
+      BD508F0F7E7A7A3AADCC5C49274F9EA463C78ED1D163472D282828A095192B65
+      7DB3D3665BF1317E4A6A8AEC33C63F7BEEAC2630FF458B17559B3F6A52E495A8
+      93E6CF9F2FBE6BF4D8D156C0BEA386CBCDCDA511234788AE9BF9F7A08BF039F0
+      9558A3A27B56E0BA65FD86F5B2174A7C63EE6D4BDC8B08973E51FFE039ECC80A
+      EC83100F603F567E3CD498CAB8C428675CAB25AE33CA18998C0F19A7CD7DD5D6
+      F6C93C5E17467E35DF66F6818A3FB0F5672A9C53F56705E40FA839478E1A6975
+      8E60834A7B7CE483D84F7CC035EB7BADF988DBC821143EE2794D7CF59947F75E
+      DDE53C011FD82764A1B10EE14356582FEC1A806F716AE9445BB66C113EEEC117
+      E13ECE3E60EB6AFB87EF84EEC1666027478E1CA1FDFBF7D3B56BD7848FDF7979
+      79F21CB50D7C297CB2C2872D41A71F3D7A24EDABAAAAE8C18307F4F8F163CB6F
+      00B5113EF0C3D053B5FF82FD601EA8C581F61DDB4BCD830F6A3FD4FCB88F1C0C
+      6B35EBBF95FC10331574EEDA59FC393EF0AFD07BE599921FD5B47F38FFA8CBFE
+      D9EA8FB27FC20FAA1B1F7B94343249EA57CEB54507ECF04F6BF1B1BF884BC85D
+      1CD80FECBE1BE316E3711DECB7CACC37FCA7ECBF96B06BFF5AD0F00195B5E12B
+      39B98BABCBD3F3033B7C45D68829A8B3FD03FCC5FE3036EC08714695875BF8CA
+      D907F486EB2DA933110FA1BB93264FA2FBF7EF8B4DA26F9C17D8F2951C06F1F5
+      D03F0E49AE22B6F7B04A6227C6EDDCADB3F4A7F2FF163E7405711D352E3E4F9E
+      3CA1AB6557E53BE231E287E4E2D67A64E14326B0B951A34759EAD507550FE8E1
+      A38754515121351864A2257FC5AF4D9B3E4DC641AEA2FEA04FE8B1461E6FC58F
+      898D91331FD43BC74F1C172E6A40C8D3CEDE5AED1FFC0FEA689C05E29C00B11E
+      3927F6C58EFD58F1153F86FD455FF071989766FD5107FD7300BBF65F4BFC4FD9
+      BF212494FD5E20EB9A8F7C57DF1F14E3491183B87E368669CA5FE18686EBB94D
+      3845C7B94B5B4308CE825DD9BE86F0DE4671DFBEEABE55F61BC4FC0072722AA2
+      37DF44CC89A72189DD2821B12BDB4D22BDF61A5193A615AC47466967CBC7BDB0
+      080335695246CF3D47F4D65BF7F97938E98DB1D4B8F123B9F7CE3B37F85E24D7
+      B57E9AF38F8AF6E67E06D2FBEF5FA2175FC078D7A9C95FCAE57BB366D7283422
+      58E4A0357F53DD1ECE6BED4BF109BDC8E9A3626AD490A85123E23595C8FDD8F8
+      3ED2465B7F4DF69190D8858258564DDFBD430D5F217AE5F718BB92653748E461
+      6A17A2397E74AC3BE71553E88D37885E6840E4DCEA08B56E7D981A3C4FF42796
+      A9AFFF048A89EBC7F3AFCE8F8EF5A480C091322664D5C2E93CAFA337CFA73BB5
+      6C7946EE35E4F5F8058C91716CF91151FE3CC74896DD55FAF0C312D9E7E8580F
+      1AC4FD42664EDCDFDB6F3F113D888AEEAF21FF30D943F4036E54B48FC80A407B
+      DC0F0DD7C955A58395B6FA0B3D026CF5372C6280F4AFBEFFDF60FFEC629FE398
+      F122E38F8C57EB803F309E2F2D2DFD1DF713C0B853C7B963DDADCCB853CFF5A3
+      0F17256EE38C14B5B52324A724CBB992AA0F17C5F723F6149E2A7488A3478FD2
+      B0E1C3AAF18198B8189ABF70BED4803B77EEAC06D4A753A74F9558AAC50790C7
+      A386C538B698396BA6D6599265FD831306D3C2450BE53D87BC7FB3C1AAD5AB68
+      C6AC19ACCF519AEBC7D90A721C47C0F9C4D061431D8EBFF6BBB5527BD9026771
+      A8DD91E7385A3FE477E2E4896AC0F9BCBDF59B7C40849C23E08C202B2BAB1A30
+      F6A831A36CFBB0CC7FE2A48974E6CC1939BBB007E800720BADF121D73163C738
+      04CE126CC677569F03D41185E5E5E52FF1D5AD1E7D14323E601B6EC0D7EE661F
+      5217FE77CC7D85AF1F3F430EB4DA76FFEB01E1C3A6707684FCD7115013E37C4C
+      6BFFF08E0067448E8077D45AFA0BDD83EDE3AC4B796FA8007524F4CED1FC617F
+      381BD2B25B9C7B21B777C4474D00DBB61DDB16070F1ED4B4DF67E53B921FEC0E
+      BEB1A6F9E3DD24DEB1DA02FF21A8497EA61C225A6A1047C07F20B4FC3FEEE1BD
+      4F4DFA83FF91A09EB1E7BFEA810ECFC03DCE7382FD0FA907B780F1F633D8BFF0
+      9FD1FE8FFF56F68FFDC3D9B296FEA881FFFFE02CB7BEF68F9A1E7A56D3FE4F99
+      3A45EA785BFB416D8BF3E59AF8388FC73B475B5F80FF122046D6C57FD4865F5B
+      FBAFEDFC3106FEEB505FF9CD4A9B2567F675D9BFDAD83F6CD7E6FCDC123F706E
+      5193FD979595D98D1FF5C433D9CF6F60BFCEE6F77FF539BB18C898FC0C6BCF55
+      F8D0DF84A1097236ED0838A756ED9F858FF8B2E5872D72EEE5E8831C1676AE35
+      3EDEB5E3DD97BD3E903B2046A8F2F75CF5FA91D7297AAB9C9D2B9FAB57AF4A1C
+      B7D1FD5C5BF9C18FE19D21F250A58F2B57AE886E6AC4D05C2DF9A30FFC970D67
+      FDE022EF476DE448FEB6C01AB3D66649EE8273EC9AF64F0BC8C3F14E5425EFFF
+      2B3EF2A41149236CFD8D2DFFAFF66CD7C1B9BF82D0975E7EA9C1EBAFBFFE67B3
+      1FAA0B9A376AD4E865BEC6D7C3FF60BECB99DFD074BE61A4205D040D1818A53E
+      DBA906539B48751B67D37B9F086AF7E96CFAE083E5E4E39BC47E6098D4580A86
+      8D184EC186446ADD663E39B75A448103A2AD7CAFDE104ABD7AA7D0C71F6FA60E
+      1DB6D0B759796C3F45F27FB8F3172ED09E3D05E4E3B3833EF96433F5739B49C1
+      C6088DDA318EE207AFA3D6ADB792ABEB5ECACD2DA37BF71EB10DDDA298983CFA
+      ECB3ED141DBD9EDB24A9F7C445BD5771F1C3B9ED77D4AEDD567277CFA5CCCCF3
+      14177798DAB7DF419191DF730E3FCA763F5D6CF73B8EFB8F88CCA2366D7EA016
+      2DB6D2A79F6E2383610D73476B9D43BB54D79950D2E953E86FED3752E3C61BC8
+      D97913CB741ACB3CDC61EE6CDAC710F2F18BA3B6EDE650DBB61BC9CB6B27AF65
+      0BB56CB984E5C67B60B43F3E74C0D73F96DAB49D43EFBDBF92F4FA0CF6773B29
+      2C7C15357F2F833EFA6809B9B957EBC3C2F70F8CE1FD9D2B6D3B7749E15A79AA
+      FC172139750675EB3E819A37CF2027A7A5E4EE318CFBB0967FC08041D4AAF53C
+      6AD62C93BA744D113DC3590FF8C8C3A05FE803CF5BB458461E9E898A0EBAE0DA
+      D735899A365DCDDC64698B3ED57C938E864B1F68D7E18BE9A40B0EB78C1FA48B
+      24D77E23947B965C04B53ECE449EBED30E1339F6F78DB78CCF3824F23356B71B
+      F5FF82D57B64E6FE8BEDFE4DB6C157EB61FBC0BBEC3B9EFF37A4D9B728
+    }
+  end
+  object FontDialog: TFontDialog
+    MinFontSize = 0
+    MaxFontSize = 0
+    Left = 120
+    Top = 392
+  end
+  object ColorDialog1: TColorDialog
+    Color = clBlack
+    CustomColors.Strings = (
+      'ColorA=000000'
+      'ColorB=000080'
+      'ColorC=008000'
+      'ColorD=008080'
+      'ColorE=800000'
+      'ColorF=800080'
+      'ColorG=808000'
+      'ColorH=808080'
+      'ColorI=C0C0C0'
+      'ColorJ=0000FF'
+      'ColorK=00FF00'
+      'ColorL=00FFFF'
+      'ColorM=FF0000'
+      'ColorN=FF00FF'
+      'ColorO=FFFF00'
+      'ColorP=FFFFFF'
+      'ColorQ=C0DCC0'
+      'ColorR=F0CAA6'
+      'ColorS=F0FBFF'
+      'ColorT=A4A0A0'
+    )
+    Left = 176
+    Top = 392
+  end
+  object PopupMenuForListbox: TPopupMenu
+    Left = 136
+    Top = 248
+    object MenuItem37: TMenuItem
+      Caption = 'Kopiuj'
+      OnClick = MenuItem37Click
+    end
+    object MenuItem7: TMenuItem
+      Caption = 'Usuń'
+      OnClick = MenuItem7Click
+    end
+    object MenuItem20: TMenuItem
+      Caption = 'Usuń wszystko'
+      OnClick = MenuItem20Click
+    end
+    object MenuItem23: TMenuItem
+      Caption = 'Dodaj nowe zdanie'
+      OnClick = MenuItem23Click
+    end
+    object MenuItem26: TMenuItem
+      Caption = 'Rozmiar Tekstu'
+      object MenuItem27: TMenuItem
+        Caption = '10'
+        OnClick = MenuItem27Click
+      end
+      object MenuItem39: TMenuItem
+        Caption = '15'
+        OnClick = MenuItem39Click
+      end
+      object MenuItem40: TMenuItem
+        Caption = '20'
+        OnClick = MenuItem40Click
+      end
+    end
+  end
+  object ODszyfr: TOpenDialog
+    Title = 'Otwórz zaszyfrowany plik'
+    DefaultExt = '.*.sz'
+    FileName = 'sz'
+    Filter = 'Plik|*.sz'
+    Left = 168
+    Top = 88
+  end
+  object SDszyfr: TSaveDialog
+    Title = 'Zapisz zaszyfrowany plik'
+    DefaultExt = '.*.sz'
+    FileName = 'sz'
+    Filter = 'Plik|*.sz'
+    Left = 328
+    Top = 64
+  end
+end

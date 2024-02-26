@@ -1,0 +1,232 @@
+object fAbout: TfAbout
+  Cursor = crHelp
+  Left = 765
+  Height = 169
+  Top = 224
+  Width = 309
+  BorderStyle = bsToolWindow
+  Caption = 'O programie'
+  ClientHeight = 169
+  ClientWidth = 309
+  Color = clForm
+  Position = poMainFormCenter
+  LCLVersion = '2.2.4.0'
+  object Panel1: TPanel
+    Left = 60
+    Height = 0
+    Top = 55
+    Width = 0
+    Align = alCustom
+    BevelColor = clHighlightText
+    TabOrder = 0
+  end
+  object BitBtn1: TBitBtn
+    Left = 464
+    Height = 30
+    Top = 40
+    Width = 75
+    Align = alCustom
+    Caption = 'Zamknij'
+    Glyph.Data = {
+      36040000424D3604000000000000360000002800000010000000100000000100
+      2000000000000004000064000000640000000000000000000000040103000401
+      0390040103E4040103F2040103F2040103F2040103F2040103F2040103F20401
+      03F2040103F2040103F2040103F2040103E40401039004010300040103900401
+      03FF040103FF040103FF040103FF040103FF040103FF040103FF040103FF0401
+      03FF040103FF040103FF040103FF040103FF040103FF04010390040103F90401
+      03FF040103FF040103FF040103FF040103FF040103FF040103FF040103FF0401
+      03FF040103FF040103FF040103FF040103FF040103FF040103F9040103F80401
+      03FF040103FF040103FF040103FF040103FF040103FF040103FF040103FF0401
+      03FF040103FF040103FF040103FF040103FF040103FF040103F8040103F20401
+      03FF040103FF040103FF181517FF898788FF1F1C1EFF040103FF040103FF1F1C
+      1EFF898788FF181517FF040103FF040103FF040103FF040103F2040103F20401
+      03FF040103FF040103FF979596FFFFFFFFFFDDDCDCFF040103FF040103FFDDDC
+      DCFFFFFFFFFF979596FF040103FF040103FF040103FF040103F2040103F20401
+      03FF040103FF040103FF2D2B2DFFDAD9D9FFFFFFFFFFC5C4C5FFC5C4C5FFFFFF
+      FFFFDAD9D9FF2D2B2DFF040103FF040103FF040103FF040103F2040103F20401
+      03FF040103FF040103FF040103FF040103FFC1C0C1FFFFFFFFFFFFFFFFFFC1C0
+      C1FF040103FF040103FF040103FF040103FF040103FF040103F2040103F20401
+      03FF040103FF040103FF040103FF040103FFC1C0C1FFFFFFFFFFFFFFFFFFC1C0
+      C1FF040103FF040103FF040103FF040103FF040103FF040103F2040103F20401
+      03FF040103FF040103FF2D2B2DFFDAD9D9FFFFFFFFFFC4C3C4FFC4C3C4FFFFFF
+      FFFFDAD9D9FF2D2B2DFF040103FF040103FF040103FF040103F2040103F20401
+      03FF040103FF040103FF969495FFFFFFFFFFDDDCDCFF040103FF040103FFDDDC
+      DCFFFFFFFFFF979596FF040103FF040103FF040103FF040103F2040103F20401
+      03FF040103FF040103FF171416FF898788FF1F1C1EFF040103FF040103FF1F1C
+      1EFF898788FF181517FF040103FF040103FF040103FF040103F2040103F80401
+      03FF040103FF040103FF040103FF040103FF040103FF040103FF040103FF0401
+      03FF040103FF040103FF040103FF040103FF040103FF040103F8040103F90401
+      03FF040103FF040103FF040103FF040103FF040103FF040103FF040103FF0401
+      03FF040103FF040103FF040103FF040103FF040103FF040103F9040103900401
+      03FF040103FF040103FF040103FF040103FF040103FF040103FF040103FF0401
+      03FF040103FF040103FF040103FF040103FF040103FF04010390040103000401
+      0390040103E4040103F2040103F2040103F2040103F2040103F2040103F20401
+      03F2040103F2040103F2040103F2040103E40401039004010300
+    }
+    OnClick = BitBtn1Click
+    TabOrder = 1
+  end
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 169
+    Top = 0
+    Width = 309
+    ActivePage = TabSheet1
+    Align = alClient
+    Font.Color = clBtnFace
+    ParentFont = False
+    TabIndex = 0
+    TabOrder = 2
+    object TabSheet1: TTabSheet
+      Caption = 'O programie'
+      ClientHeight = 141
+      ClientWidth = 301
+      object Memo1: TMemo
+        Cursor = crHelp
+        Left = 0
+        Height = 99
+        Top = 0
+        Width = 301
+        Align = alClient
+        Alignment = taCenter
+        BorderStyle = bsNone
+        Color = clBtnFace
+        DoubleBuffered = False
+        Enabled = False
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -16
+        Font.Name = 'Calibri'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Lines.Strings = (
+          'Program Notes Pro stworzony przez Dymitra Wygowskiego (Dmitriy Vygovskiy)'
+          'W środowisku Lazarus 2.2.4'
+          'Wersja FPC: 3.2.2'
+          'V1.1.5.2 (04.06.2023)'
+        )
+        ParentBidiMode = False
+        ParentDoubleBuffered = False
+        ParentFont = False
+        ReadOnly = True
+        TabOrder = 0
+      end
+      object www: TLabel
+        Cursor = crHandPoint
+        Left = 0
+        Height = 21
+        Top = 99
+        Width = 301
+        Align = alBottom
+        Alignment = taCenter
+        Caption = 'www.dmitriy.pl'
+        Color = cl3DLight
+        DragCursor = crHandPoint
+        Font.CharSet = EASTEUROPE_CHARSET
+        Font.Color = clBlack
+        Font.Height = -16
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        Transparent = False
+        OnClick = wwwClick
+        OnMouseLeave = wwwMouseLeave
+        OnMouseMove = wwwMouseMove
+        OnMouseUp = wwwMouseUp
+      end
+      object email: TLabel
+        Cursor = crHandPoint
+        Left = 0
+        Height = 21
+        Top = 120
+        Width = 301
+        Align = alBottom
+        Alignment = taCenter
+        Caption = 'E-Mail: programista.art@gmail.com'
+        DragCursor = crHandPoint
+        Font.CharSet = EASTEUROPE_CHARSET
+        Font.Color = clBlack
+        Font.Height = -16
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentColor = False
+        ParentFont = False
+        OnClick = Label1Click
+        OnMouseLeave = emailMouseLeave
+        OnMouseMove = emailMouseMove
+        OnMouseUp = emailMouseUp
+      end
+    end
+    object TabSheet3: TTabSheet
+      Caption = 'Licencja'
+      ClientHeight = 141
+      ClientWidth = 301
+      Font.Color = clWindowText
+      ParentFont = False
+      object Memo2: TMemo
+        Left = 0
+        Height = 141
+        Top = 0
+        Width = 301
+        Align = alClient
+        BorderStyle = bsNone
+        Color = clBtnFace
+        Lines.Strings = (
+          'This program is free software: you can redistribute it and/or modify'
+          'it under the terms of the GNU General Public License as published by'
+          'the Free Software Foundation, either version 3 of the License, or'
+          '(at your option) any later version.'
+          ''
+          'This program is distributed in the hope that it will be useful,'
+          'but WITHOUT ANY WARRANTY; without even the implied warranty of'
+          'MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the'
+          'GNU General Public License for more details.'
+          ''
+          'You should have received a copy of the GNU General Public License'
+          'along with this program.  '
+          'If not, see https://www.gnu.org/licenses/gpl-3.0.txt '
+        )
+        ReadOnly = True
+        ScrollBars = ssAutoBoth
+        TabOrder = 0
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Hot Key'
+      ClientHeight = 141
+      ClientWidth = 301
+      object Memo3: TMemo
+        Left = 0
+        Height = 141
+        Top = 0
+        Width = 301
+        Align = alClient
+        Font.CharSet = EASTEUROPE_CHARSET
+        Font.Color = clBlack
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Lines.Strings = (
+          'Przyciski Hot Key'
+          ''
+          'Ctrł +N     Nowy Plik'
+          'Ctrl +O     Otwórz Plik'
+          'Ctrl+S       Zapisz Plik'
+          'Ctrl+J        Zapisz Jak'
+          ''
+          'Tekst'
+          'Ctrl+D        Duże Litery'
+          'Ctrl+M       Male Litery'
+          'Ctrl+A        Zaznacz wszystko'
+          'Ctrl+C        Kopiuj'
+          'Ctrl+V        Wklej'
+          'Ctrl+X        Wytnij'
+        )
+        ParentFont = False
+        ReadOnly = True
+        ScrollBars = ssVertical
+        TabOrder = 0
+      end
+    end
+  end
+end
