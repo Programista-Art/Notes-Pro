@@ -1,7 +1,7 @@
 object Form2: TForm2
-  Left = 416
+  Left = 405
   Height = 342
-  Top = 569
+  Top = 234
   Width = 577
   BorderStyle = bsDialog
   Caption = 'Ustawienia'
@@ -280,6 +280,7 @@ object Form2: TForm2
               Style = [cbStandardColors, cbExtendedColors, cbSystemColors, cbCustomColor, cbPrettyNames]
               Align = alLeft
               ItemHeight = 16
+              OnChange = ColorBox3Change
               OnCloseUp = ColorBox3CloseUp
               TabOrder = 0
             end

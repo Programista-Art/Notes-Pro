@@ -63,6 +63,7 @@ type
       Shift: TShiftState; X, Y: Integer);
     procedure ColorBox1CloseUp(Sender: TObject);
     procedure ColorBox2CloseUp(Sender: TObject);
+    procedure ColorBox3Change(Sender: TObject);
     procedure ColorBox3CloseUp(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure ValueListEditor1Click(Sender: TObject);
@@ -131,19 +132,27 @@ begin
   Form1.Memo1.Font.Size := 12;
   Form1.Memo1.Font.Color := clCaptionText;
   Form1.Memo1.Color := clActiveBorder;
+  Form1.ListBox1.Color := clBtnHighlight;
 
+  Ini_Settings := TIniFile.Create(ExtractFilePath(ParamStr(0))+'settings.ini');
+  try
   Ini_Settings.WriteInteger('Main','MemoColor',clActiveBorder);
-  //czcionka
-  //zapisuje nazwa fonta
-  Ini_Settings.WriteString('Main','FontFamily','Arial');
-  //zapisuje rozmiar fonta
-  Ini_Settings.WriteInteger('Main','FontSize',12);
-  //zapisuje color fonta
-  Ini_Settings.WriteInteger('Main','FontColor',clCaptionText);
-  //zapisuje kolor paneli ikonek
-  Ini_Settings.WriteInteger('Main','ToolBarTop',clBtnFace);
+    //czcionka
+    //zapisuje nazwa fonta
+    Ini_Settings.WriteString('Main','FontFamily','Arial');
+    //zapisuje rozmiar fonta
+    Ini_Settings.WriteInteger('Main','FontSize',12);
+    //zapisuje color fonta
+    Ini_Settings.WriteInteger('Main','FontColor',clCaptionText);
+    //zapisuje kolor paneli ikonek
+    Ini_Settings.WriteInteger('Main','ToolBarTop',clBtnFace);
+    //zapisuje kolor ListBox slowa kluczowe
+    Ini_Settings.WriteInteger('Main','ListBoxKeyWords',clBtnHighlight);
+    //MessageDlg('Dane zapisane!' + #10 + 'Zrestartuj program!',mtInformation,[mbOk],0);
+  finally
+   FreeAndNil(Ini_Settings);
+  end;
 
-  //MessageDlg('Dane zapisane!' + #10 + 'Zrestartuj program!',mtInformation,[mbOk],0);
 end;
 
 procedure TForm2.Button3Click(Sender: TObject);
@@ -209,6 +218,11 @@ begin
    finally
      Ini_Settings.free;
    end;
+end;
+
+procedure TForm2.ColorBox3Change(Sender: TObject);
+begin
+
 end;
 
 procedure TForm2.ColorBox3CloseUp(Sender: TObject);
