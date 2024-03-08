@@ -110,7 +110,7 @@ type
     SD: TSaveDialog;
     SDszyfr: TSaveDialog;
     Splitter1: TSplitter;
-    StatusBar1: TStatusBar;
+    Status: TStatusBar;
     StatusBar2: TStatusBar;
     szukaj: TEdit;
     TabSheet1: TTabSheet;
@@ -199,7 +199,6 @@ type
     procedure MenuItem27Click(Sender: TObject);
     procedure MenuItem28Click(Sender: TObject);
     procedure MenuItem29Click(Sender: TObject);
-    procedure MenuItem2Click(Sender: TObject);
     procedure MenuItem30Click(Sender: TObject);
     procedure MenuItem31Click(Sender: TObject);
     procedure MenuItem32Click(Sender: TObject);
@@ -221,8 +220,6 @@ type
     procedure OdstepyClick(Sender: TObject);
     procedure OProgramieClick(Sender: TObject);
     procedure OtworzClick(Sender: TObject);
-    procedure Panel1Click(Sender: TObject);
-    procedure Panel2Click(Sender: TObject);
     procedure TekstClick(Sender: TObject);
     procedure ToolButton12Click(Sender: TObject);
     procedure ToolButton13Click(Sender: TObject);
@@ -237,15 +234,14 @@ type
     procedure ToolButton6Click(Sender: TObject);
     procedure ToolButton7Click(Sender: TObject);
     procedure ToolButton8Click(Sender: TObject);
-    procedure WidokClick(Sender: TObject);
     procedure WklejClick(Sender: TObject);
     procedure WstawClick(Sender: TObject);
     procedure WytnijClick(Sender: TObject);
-    procedure zamChange(Sender: TObject);
     procedure ZamknijClick(Sender: TObject);
     procedure ZapiszClick(Sender: TObject);
     procedure LoadColorPalette;
     procedure LastPositionForm;
+    procedure DeleteAllTextinMemo;
   private
 
   public
@@ -292,7 +288,8 @@ begin
   if listBox1.selected[y] then
   begin
     Memo1.Lines.add(ListBox1.Items.Strings[y]);
-    PodliczLinijki(ListBox1, StatusBar2); //wywołujemy procedurę PodliczLinijki
+    PodliczLinijki(ListBox1, StatusBar2);
+    Status.Panels.Items[5].Text := ' ';
   end;
 end;
 
@@ -302,11 +299,11 @@ procedure TForm1.Memo1Change(Sender: TObject);
 begin
   //liczenie liczb i spacje
   kol:=Memo1.GetTextLen;
-  Statusbar1.Panels.Items[0].Text:=('Liczba liter ')+IntToStr(kol);
+  Status.Panels.Items[0].Text:=('Liczba liter ')+IntToStr(kol);
 
   //liczenie linijek
   kolli:=Memo1.Lines.Count;
-  Statusbar1.Panels.Items[1].Text:=('Liczba linii ')+IntToStr(kolli);
+  Status.Panels.Items[1].Text:=('Liczba linii ')+IntToStr(kolli);
 
 
 
@@ -315,7 +312,7 @@ end;
 procedure TForm1.Memo1MouseMove(Sender: TObject; Shift: TShiftState; X,
   Y: Integer);
 begin
-  Statusbar1.Panels.Items[3].Text:=('Pozycja: X: ')+IntToStr(X) + ', Y: ' +IntToStr(Y);
+  Status.Panels.Items[3].Text:=('Pozycja: X: ')+IntToStr(X) + ', Y: ' +IntToStr(Y);
 end;
 
 procedure TForm1.MenuItem10Click(Sender: TObject);
@@ -334,7 +331,7 @@ begin
     //begin
       Inc(Count);
       ShowMessage('Количество выделенных букв и цифр: ' + IntToStr(Count));
-        Statusbar1.Panels.Items[0].Text:=('ZL ')+IntToStr(Count);
+        Status.Panels.Items[0].Text:=('ZL ')+IntToStr(Count);
     //end;
   end;
 end;
@@ -356,7 +353,6 @@ begin
   //   Memo1.SelStart:= nn_pos -1; // скакой позиции начать выделять
   //   Memo1.SelLength:= Length(szukaj.text); //выделяем столько сколько длина текста
       //Memo1.Text.Upercase;
-
 
 end;
 
@@ -396,7 +392,6 @@ begin
   else
   if r = mrCancel then
   //nic nie robimy
-
 end;
 
 procedure TForm1.MenuItem21Click(Sender: TObject);
@@ -434,7 +429,6 @@ stroka:=InputBox('Nowe zdanie','Wpisz zdanie','');
   begin
     //nie dodajemy pusteh linii
   end;
-
 end;
 
 procedure TForm1.MenuItem24Click(Sender: TObject);
@@ -460,11 +454,6 @@ end;
 procedure TForm1.MenuItem29Click(Sender: TObject);
 begin
    Memo1.Lines.Add('.....................................................');
-end;
-
-procedure TForm1.MenuItem2Click(Sender: TObject);
-begin
-
 end;
 
 procedure TForm1.MenuItem30Click(Sender: TObject);
@@ -510,9 +499,9 @@ begin
 SelectedText := ListBox1.GetSelectedText;
   if SelectedText <> '' then
   begin
-  // Копируем выбранный текст в буфер обмена
-  Clipboard.AsText := SelectedText;
-     ShowMessage('Wybrany tekst: ' + SelectedText + sLineBreak + ' Tekst skopiowany do schowka');
+  // kopiowanie do schowka
+    Clipboard.AsText := SelectedText;
+    Status.Panels.Items[5].Text := 'Wiersz skopiowany';
   end
   else
     ShowMessage('Текст не выбран');
@@ -549,10 +538,8 @@ begin
 end;
 
 
-
 procedure TForm1.MenuItem6Click(Sender: TObject);
 begin
-   //
    ustawienia_programu.Form2.ShowModal;
 end;
 
@@ -626,7 +613,6 @@ begin
          mtConfirmation, [mbYes, mbNo], 0) = mrYes then
             ZapiszClick(Sender);
   end;
-
   {wyczyść nazwę pliku w oknie dialogowym OpenDialog, zmień tytuł i
   wywołaj metodę LoadFromFile, jeśli dialog miał miejsce}
   OD.FileName:= '';
@@ -639,19 +625,7 @@ begin
     //gdzie zapisać:
     SD.FileName:= OD.FileName;
   end;
-
 end;
-
-procedure TForm1.Panel1Click(Sender: TObject);
-begin
-
-end;
-
-procedure TForm1.Panel2Click(Sender: TObject);
-begin
-
-end;
-
 
 
 procedure TForm1.TekstClick(Sender: TObject);
@@ -669,7 +643,6 @@ begin
      Ini_Settings.WriteInteger('Main','FontColor',Memo1.Font.Color);  //zapisujemy color fonta
     //f:=FontDialog.Font;
     end
-
 end;
 
 procedure TForm1.ToolButton12Click(Sender: TObject);
@@ -701,10 +674,6 @@ begin
 end;
 
 
-
-
-
-
 procedure TForm1.ToolButton1Click(Sender: TObject);
 begin
   if OD.Execute then
@@ -729,7 +698,7 @@ end;
 
 procedure TForm1.ToolButton5Click(Sender: TObject);
 begin
-  Memo1.Clear;
+  DeleteAllTextinMemo;
 end;
 
 procedure TForm1.ToolButton6Click(Sender: TObject);
@@ -747,10 +716,6 @@ begin
   Memo1.Alignment:=taRightJustify;
 end;
 
-procedure TForm1.WidokClick(Sender: TObject);
-begin
-
-end;
 
 procedure TForm1.WklejClick(Sender: TObject);
 begin
@@ -764,12 +729,7 @@ end;
 
 procedure TForm1.WytnijClick(Sender: TObject);
 begin
-  Memo1.Clear;
-end;
-
-procedure TForm1.zamChange(Sender: TObject);
-begin
-
+  DeleteAllTextinMemo;
 end;
 
 procedure TForm1.ZamknijClick(Sender: TObject);
@@ -825,6 +785,21 @@ begin
     Form1.Height:=h;
   finally
     FreeAndNil(inif);
+  end;
+end;
+
+procedure TForm1.DeleteAllTextinMemo;
+begin
+  //Memo1.Clear;
+  if Memo1.Modified then
+  begin
+  //jeśli użytkownik wyrazi zgodę na zapisanie zmian:
+  if MessageDlg('Usuwanie tekstu',
+                'Czy usunąć cały tekst?',
+       mtConfirmation, [mbYes, mbNo], 0) = mrYes then
+  begin
+    Memo1.Clear;
+  end;
   end;
 end;
 
@@ -1117,7 +1092,7 @@ begin
   //ładowanie słów kluczowych z pliku klucz_slowa.txt
   ListBox1.Items.LoadFromFile('klucz_slowa.txt');
   //Data
-  Statusbar1.Panels.Items[4].Text:='Data: ' + DateToStr(Date);
+  Status.Panels.Items[4].Text:='Data: ' + DateToStr(Date);
   //wywołujemy procedurę PodliczLinijki
   PodliczLinijki(ListBox1, StatusBar2);
 end;
