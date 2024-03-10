@@ -10,7 +10,7 @@ uses
   athreads,
   {$ENDIF}
   Interfaces, // this includes the LCL widgetset
-  Forms, Unit1, ustawienia_programu, about, forma2, szyfrowanie
+  Forms, Unit1, ustawienia_programu, about, forma2, text_comparison
   { you can add units after this };
 
 {$R *.res}
@@ -24,7 +24,7 @@ begin
   Application.CreateForm(TForm2, Form2);
   Application.CreateForm(TfAbout, fAbout);
   Application.CreateForm(TForm3, Form3);
-  Application.CreateForm(TFszyfrowanie, Fszyfrowanie);
+  Application.CreateForm(TFtext_comparison, Ftext_comparison);
   Application.Run;
 end.
 

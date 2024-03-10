@@ -7,7 +7,7 @@ interface
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, Menus,
   ExtCtrls, ComCtrls, Buttons, ActnList,
-  IniFiles, ustawienia_programu, forma2, about,Clipbrd, Character;
+  IniFiles, ustawienia_programu, forma2, about,Clipbrd,text_comparison, Character;
 
 type
 
@@ -62,6 +62,7 @@ type
     ListBox1: TListBox;
     MenuItem1: TMenuItem;
     MenuItem10: TMenuItem;
+    MenuItem11: TMenuItem;
     MenuItem12: TMenuItem;
     MenuItem13: TMenuItem;
     MenuItem14: TMenuItem;
@@ -124,6 +125,7 @@ type
     ToolButton12: TToolButton;
     ToolButton13: TToolButton;
     ToolButton14: TToolButton;
+    ToolButton15: TToolButton;
     ToolButton2: TToolButton;
     ToolButton3: TToolButton;
     ToolButton4: TToolButton;
@@ -182,10 +184,7 @@ type
     procedure ListBox1DblClick(Sender: TObject);
     procedure Memo1Change(Sender: TObject);
     procedure Memo1MouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer);
-    procedure MenuItem10Click(Sender: TObject);
-    procedure MenuItem13Click(Sender: TObject);
-    procedure MenuItem14Click(Sender: TObject);
-    procedure MenuItem15Click(Sender: TObject);
+    procedure MenuItem11Click(Sender: TObject);
     procedure MenuItem17Click(Sender: TObject);
     procedure MenuItem18Click(Sender: TObject);
     procedure MenuItem19Click(Sender: TObject);
@@ -226,6 +225,7 @@ type
     procedure ToolButton14Click(Sender: TObject);
     procedure ToolButton14MouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Integer);
+    procedure ToolButton15Click(Sender: TObject);
     procedure ToolButton1Click(Sender: TObject);
     procedure ToolButton2Click(Sender: TObject);
     procedure ToolButton3Click(Sender: TObject);
@@ -255,7 +255,7 @@ type
 var
   Form1: TForm1;
   kol,kolli,score,zaznaczony_tekst:integer;
-   count:Integer;
+  count:Integer;
 
 
 implementation
@@ -294,7 +294,6 @@ begin
 end;
 
 
-
 procedure TForm1.Memo1Change(Sender: TObject);
 begin
   //liczenie liczb i spacje
@@ -304,9 +303,6 @@ begin
   //liczenie linijek
   kolli:=Memo1.Lines.Count;
   Status.Panels.Items[1].Text:=('Liczba linii ')+IntToStr(kolli);
-
-
-
 end;
 
 procedure TForm1.Memo1MouseMove(Sender: TObject; Shift: TShiftState; X,
@@ -315,46 +311,11 @@ begin
   Status.Panels.Items[3].Text:=('Pozycja: X: ')+IntToStr(X) + ', Y: ' +IntToStr(Y);
 end;
 
-procedure TForm1.MenuItem10Click(Sender: TObject);
-var
-i: Integer;
+procedure TForm1.MenuItem11Click(Sender: TObject);
 begin
-  //считаем символы в выделенном тексте
-  // Получаем выделенный текст из компонента Edit
-  selectedTextMemo := Edit1.SelText;
-  // Инициализируем счетчик
-  Count := 0;
-  for i := 1 to Length(selectedTextMemo) do
-  begin
-    // Проверяем, является ли символ буквой
-    //if IsLetterOrDigit(selectedTextMemo[i]) then
-    //begin
-      Inc(Count);
-      ShowMessage('Количество выделенных букв и цифр: ' + IntToStr(Count));
-        Status.Panels.Items[0].Text:=('ZL ')+IntToStr(Count);
-    //end;
-  end;
+  Ftext_comparison.ShowModal;
 end;
 
-procedure TForm1.MenuItem13Click(Sender: TObject);
-begin
-  ListBox1.Items.Add('Wydruk zdjęcia na płótnie'); //добавляем запись
-end;
-
-procedure TForm1.MenuItem14Click(Sender: TObject);
-begin
-
-end;
-
-procedure TForm1.MenuItem15Click(Sender: TObject);
-
-begin
-  //Memo1.SetFocus; // сделать себя активным
-  //   Memo1.SelStart:= nn_pos -1; // скакой позиции начать выделять
-  //   Memo1.SelLength:= Length(szukaj.text); //выделяем столько сколько длина текста
-      //Memo1.Text.Upercase;
-
-end;
 
 procedure TForm1.MenuItem17Click(Sender: TObject);
 begin
@@ -673,6 +634,11 @@ begin
    MessageDlg('Wyłączony tryb zawsze na górze',mtInformation,[mbOk],0);
 end;
 
+procedure TForm1.ToolButton15Click(Sender: TObject);
+begin
+
+end;
+
 
 procedure TForm1.ToolButton1Click(Sender: TObject);
 begin
@@ -989,17 +955,18 @@ procedure TForm1.Button3Click(Sender: TObject);
 var
 nn_pos:integer;
 begin
-   nn_pos:= Pos (szukaj.Text,Memo1.Lines.text);
-     if nn_pos = 0 then
-      begin
-        ShowMessage('Nie ma tekstu');
-      end
-    else
-      begin
-     ShowMessage('Tekst znaleziony');
-     Memo1.SetFocus; // aktywne
-     Memo1.SelStart:= nn_pos -1; // z jakiej pozycji zaczac zanzcaczaс
-     Memo1.SelLength:= Length(szukaj.text); //zaznaczam tyle ile wynosi długość tekstu
+   nn_pos:= Pos (szukaj.Text, Memo1.Lines.Text);
+   if nn_pos = 0 then
+    begin
+      //ShowMessage('Tekst nie znaleziony');
+      MessageDlg('Informacja','Tekst nie znaleziony',mtInformation,[mbOk,mbCancel],0);
+    end
+   else
+    begin
+    MessageDlg('Informacja','Tekst znaleziony',mtInformation,[mbOk],0);
+    Memo1.SetFocus;
+    Memo1.SelStart := nn_pos -1; // z jakiej pozycji zaczac zanzcaczaс
+    Memo1.SelLength := Length(szukaj.text); //zaznaczam tyle ile wynosi długość tekstu
     end;
 end;
 
@@ -1088,7 +1055,6 @@ begin
   LoadColorPalette;
   //Laduje ostatnia pozycje formy
   LastPositionForm;
-
   //ładowanie słów kluczowych z pliku klucz_slowa.txt
   ListBox1.Items.LoadFromFile('klucz_slowa.txt');
   //Data

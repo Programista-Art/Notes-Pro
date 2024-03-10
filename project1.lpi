@@ -114,10 +114,13 @@
         <ResourceBaseClass Value="Form"/>
       </Unit>
       <Unit>
-        <Filename Value="szyfrowanie.pas"/>
+        <Filename Value="text_comparison.lfm"/>
         <IsPartOfProject Value="True"/>
-        <ComponentName Value="Fszyfrowanie"/>
-        <HasResources Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="text_comparison.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Ftext_comparison"/>
         <ResourceBaseClass Value="Form"/>
       </Unit>
     </Units>

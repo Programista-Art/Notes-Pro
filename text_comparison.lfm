@@ -1,0 +1,437 @@
+object Ftext_comparison: TFtext_comparison
+  Left = 350
+  Height = 374
+  Top = 250
+  Width = 595
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Porównaj dane'
+  ClientHeight = 374
+  ClientWidth = 595
+  OnCreate = FormCreate
+  Position = poMainFormCenter
+  object ListBox1: TListBox
+    Left = 0
+    Height = 287
+    Top = 64
+    Width = 144
+    Align = alLeft
+    ItemHeight = 0
+    PopupMenu = PMenuList1
+    TabOrder = 0
+    OnClick = ListBox1Click
+  end
+  object ListBox2: TListBox
+    Left = 144
+    Height = 287
+    Top = 64
+    Width = 144
+    Align = alLeft
+    ItemHeight = 0
+    PopupMenu = PMenuList2
+    TabOrder = 1
+    OnClick = ListBox2Click
+  end
+  object ListBox3: TListBox
+    Left = 288
+    Height = 287
+    Top = 64
+    Width = 144
+    Align = alLeft
+    ItemHeight = 0
+    PopupMenu = PMenuListUnic
+    TabOrder = 2
+    OnClick = ListBox3Click
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 64
+    Top = 0
+    Width = 595
+    Align = alTop
+    ClientHeight = 64
+    ClientWidth = 595
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 3
+    object Label1: TLabel
+      Left = 80
+      Height = 21
+      Top = 38
+      Width = 41
+      Caption = '1 lista'
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -16
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+    end
+    object Label2: TLabel
+      Left = 224
+      Height = 21
+      Top = 38
+      Width = 45
+      Caption = '2  lista'
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -16
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+    end
+    object Label3: TLabel
+      Left = 344
+      Height = 21
+      Top = 39
+      Width = 61
+      Caption = 'Unikalne'
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -16
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+    end
+    object ButOpen1_list: TSpeedButton
+      Left = 0
+      Height = 22
+      Hint = 'Otwórz plik tekstowy'
+      Top = 38
+      Width = 23
+      Images = ImageList1
+      ImageIndex = 2
+      OnClick = ButOpen1_listClick
+      ShowHint = True
+      ParentShowHint = False
+    end
+    object ButSave1_list: TSpeedButton
+      Left = 24
+      Height = 22
+      Hint = 'Zapisz plik tekstowy'
+      Top = 38
+      Width = 23
+      Images = ImageList1
+      ImageIndex = 3
+      OnClick = ButSave1_listClick
+      ShowHint = True
+      ParentShowHint = False
+    end
+    object ButOpen2_Lst: TSpeedButton
+      Left = 144
+      Height = 22
+      Hint = 'Otwórz plik tekstowy'
+      Top = 39
+      Width = 23
+      Images = ImageList1
+      ImageIndex = 2
+      OnClick = ButOpen2_LstClick
+      ShowHint = True
+      ParentShowHint = False
+    end
+    object ButSave2_list: TSpeedButton
+      Left = 168
+      Height = 22
+      Hint = 'Zapisz plik tekstowy'
+      Top = 39
+      Width = 23
+      Images = ImageList1
+      ImageIndex = 3
+      OnClick = ButSave2_listClick
+      ShowHint = True
+      ParentShowHint = False
+    end
+    object ButAllDelete1_list: TSpeedButton
+      Left = 48
+      Height = 22
+      Hint = 'Usuń  wszystko z listy 1'
+      Top = 38
+      Width = 23
+      Images = ImageList1
+      ImageIndex = 0
+      OnClick = ButAllDelete1_listClick
+      ShowHint = True
+      ParentShowHint = False
+    end
+    object ButAllDelete2_list: TSpeedButton
+      Left = 192
+      Height = 22
+      Hint = 'Usuń  wszystko z listy 2'
+      Top = 39
+      Width = 23
+      Images = ImageList1
+      ImageIndex = 0
+      OnClick = ButAllDelete2_listClick
+      ShowHint = True
+      ParentShowHint = False
+    end
+    object SpeedButton1: TSpeedButton
+      Left = 312
+      Height = 22
+      Hint = 'Usuń  wszystko z listy Unikalne'
+      Top = 39
+      Width = 23
+      Images = ImageList1
+      ImageIndex = 0
+      OnClick = SpeedButton1Click
+      ShowHint = True
+      ParentShowHint = False
+    end
+    object SpeedButton2: TSpeedButton
+      Left = 288
+      Height = 22
+      Hint = 'Zapisz plik tekstowy'
+      Top = 39
+      Width = 23
+      Images = ImageList1
+      ImageIndex = 3
+      OnClick = SpeedButton2Click
+      ShowHint = True
+      ParentShowHint = False
+    end
+  end
+  object PanelBocznyPrawy: TPanel
+    Left = 432
+    Height = 287
+    Top = 64
+    Width = 163
+    Align = alClient
+    ClientHeight = 287
+    ClientWidth = 163
+    TabOrder = 4
+    object Button1: TButton
+      Left = 32
+      Height = 25
+      Top = 8
+      Width = 88
+      Caption = 'Porównaj '
+      TabOrder = 0
+      OnClick = Button1Click
+    end
+    object GroupBox1: TGroupBox
+      Left = 1
+      Height = 177
+      Top = 109
+      Width = 161
+      Align = alBottom
+      Caption = 'Wyszukaj wiersz'
+      ClientHeight = 157
+      ClientWidth = 157
+      TabOrder = 1
+      object SearchText: TLabeledEdit
+        Left = 8
+        Height = 23
+        Top = 24
+        Width = 120
+        EditLabel.Height = 15
+        EditLabel.Width = 120
+        EditLabel.Caption = 'Szukaj w Unikalnych'
+        TabOrder = 0
+      end
+      object ButSearchUnic: TSpeedButton
+        Left = 128
+        Height = 22
+        Hint = 'Szukaj'
+        Top = 24
+        Width = 23
+        Images = ImageList1
+        ImageIndex = 4
+        OnClick = ButSearchUnicClick
+        ShowHint = True
+        ParentShowHint = False
+      end
+      object SearchTextList1: TLabeledEdit
+        Left = 8
+        Height = 23
+        Top = 72
+        Width = 120
+        EditLabel.Height = 15
+        EditLabel.Width = 120
+        EditLabel.Caption = 'Lista 1'
+        TabOrder = 1
+      end
+      object SearchTextList2: TLabeledEdit
+        Left = 8
+        Height = 23
+        Top = 120
+        Width = 120
+        EditLabel.Height = 15
+        EditLabel.Width = 120
+        EditLabel.Caption = 'Lista 2'
+        TabOrder = 2
+      end
+      object ButSearch1: TSpeedButton
+        Left = 128
+        Height = 22
+        Hint = 'Szukaj'
+        Top = 72
+        Width = 23
+        Images = ImageList1
+        ImageIndex = 4
+        OnClick = ButSearch1Click
+        ShowHint = True
+        ParentShowHint = False
+      end
+      object ButSearch2: TSpeedButton
+        Left = 128
+        Height = 22
+        Hint = 'Szukaj'
+        Top = 120
+        Width = 23
+        Images = ImageList1
+        ImageIndex = 4
+        OnClick = ButSearch2Click
+        ShowHint = True
+        ParentShowHint = False
+      end
+    end
+    object Label4: TLabel
+      Left = 32
+      Height = 15
+      Top = 40
+      Width = 93
+      Caption = 'Unikalne wiersze: '
+    end
+    object LabInfo: TLabel
+      Left = 64
+      Height = 1
+      Top = 56
+      Width = 1
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -16
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+    end
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 23
+    Top = 351
+    Width = 595
+    Panels = <    
+      item
+        Text = 'Wierszy'
+        Width = 145
+      end    
+      item
+        Text = 'Wierszy'
+        Width = 145
+      end    
+      item
+        Text = 'Wierszy'
+        Width = 145
+      end>
+    SimplePanel = False
+  end
+  object ImageList1: TImageList
+    Left = 343
+    Top = 108
+    Bitmap = {
+      4C7A0500000010000000100000004C0800000000000078DAA5587B4C935916C7
+      CD64D738D9906C266EF6EFFD6333FF4D32996C36937567D91D4579286F04144A
+      0B2D0814060610798383F29267019141DAEAA80B489D8028CC0C6F10072A303C
+      4CA520ACC38A0C55900245387BCEA55FB7E5D5EA7EC92FDFD7DEEF77EFB9E775
+      CFF90481823F0902052A0420162C04BD3B8FF80742A9FFFD2E501BCD6716FC00
+      FED6FF162CE10B8384E07DCA1BEC1CED80C7E741A02870577E803080E1A4F749
+      B0B5B3052F6F2F386A7794ADFDE8D123483F9F0EEE9EEEDBF8B406CD6D7BCC16
+      0EDB1E86507128547C5D01A7FD4E43C6850C58595981EEEE6E36B78FAFCF36FE
+      29DF5310121602955595D0FBB017666666802EDD9A0ED4136AB6AECDE7366C3E
+      5A6B2BDFE3A4074444468056AB65BC8D8D0D783EFB9C3DABD56A707673069FD3
+      3E6CFD9DF4473AB1F9A70DC427C40377ADEA5661EDCD1A68341A080E09663AD9
+      49FFA41B425676165B47269781F14573DA3BDA1BEB7D477E98380C32B332A1AF
+      BF0F867E1A62DCF28A72A6CF5D6C6B623F4F2F4F10060B2139251962E362A1AC
+      BC0C9C5C9C985DB6EC7B473EC947EF927D692EC7138E4CAE1DE47E2BFFDB030B
+      46B1F72EF819F1396211B1FE16F1ABD3F3F97E3CBF0FFDF9FE0D88364423812F
+      E06F0337A6C70F7C3EBF9DC7E3FD0DC7EA493FA45F2E0648E70E271CC0D1C991
+      DD099EDE9E4C8FDCBB7447DDF6FB0BFC7FA2DFA26011B8BABB82B3AB33A4A4A5
+      40EEA55CE60BD939D9909D9BCDFC8F7CC810BF42960FA691DF17200A60DCA8E8
+      2898D7CCC36E97E28E82BDC713F038FE24F1C9C62E6E2ED0D0D0001BEB1BA052
+      A9606C6C0C1E3F7ECC40CFB32F66616E6E0EA263A3C1CDC3CD844FF14CB1DBDE
+      D10EAD6DADD0D4DCB40DF7EEDF83C1A14128292B617B34E6536EA23DBD7CF512
+      CC5DF2EB72969748671CDF97E7CB627B6A6ACA2CBFB0A8108ED91F33E1933E68
+      4F23A32366F917322F80C37107133E3F90CF6CDDDDD36D969F9A960A279C4F98
+      EC9F9E49A6BB8D77CDF229AEC956C67C9285F2EECD5B37F7E4526EA4BC4CB16D
+      C247FFA1F50B0A0BF6E4AB9EA8580E247D1BF199FFD27F94377A7A7A76E59FCF
+      386FD01DE7BF183FDFD3FA94B7BC7CBCD8DEF20BF341764DC6CE8FCAAB95EC59
+      1C2186E34EC7213068D3F7892308108C600C1EC239C60838AF12E550DAD9DB29
+      31672A5127CA23478FB067B4AF92C691A3C4778711533C7F9E278A65F5FF6163
+      DFD2ABF93F68175E32E0F3C145CD8B038B9A392B7340AE956E75F9B7D5B9B1EA
+      2669BEFA7E559EBAAE28B15712E51E5228763E581CEEFAC1564822DC3F288DF2
+      DC8FB05A5DD65AADAFAD590FB5371A74AC99FD19EE56E6A8BF8E17545CCF104B
+      AE67849B409A229294467AFC19F9EF11FF0DF207DB1A6079691134CF9FC1ABB9
+      FFC04B9C63EED924FC32330DF35BD0FF9D02F282EC8325116EBF47FEBEF5376B
+      D68F5ABE85B1872DD0A990425F530DD07C233DCD30DCDDB40D1D7557A12A59F8
+      7D59945724F27FFD46B76ADD7AAB0C7EBC570D2A65274C0EF7ED89E9C7033031
+      D40B57627D9B5797970EA0FEAC6B0B1240D5DF01965E33EA3128123BE7AD6A5F
+      FF46B7A2B596A506C3D3917E8BF983AD0D902B3A2A5CD1BE461D2E595F39EB0B
+      B3534F2CE677D456AEE7041EB141FEAF50076C7DED82C63232D6350D1599F3B9
+      41C7FEB8AA5D22FFB1BE539286797BDD223ACA0B37B3A2FAF3431D0FE2B3D51A
+      EABF05F56FE935FB540557E27C6F17863BFD8EF8BA9565EB6F32C2A149960FE8
+      C36651931707E83B49255F78BC4FFE8773EC2F0E73BE9C1D70A43E4770786F04
+      1CAECF0F72909586F87D581AECBF8FF814833407EAF2C0AA4558DA4F7ECB71B1
+      06388D78F616B503070DE22BE3DA89F2179D6D2EEE2E26A033976A0202573B1B
+      D5633A7AA69C1C1513056597CBA0A8B8C880624931BB27A524C1C5AC8B2C877A
+      9DF2E2F85A9285AB9D9B9B9BD9F948F5A7FC9A9C81EAE92A69D5A6DF634DDD78
+      AF11322E666C9E21FABD50ED5C5050008A3A057CF4F14770E8EF87E0339BCF18
+      3EF9CB27F0E95F3F65FC07BD0F202E3E0EEA1475ECBCE0F85493D3FAB7EB6E43
+      5E7E1E93B9B8641394CB0B8B0B61FADFD3D0D5DD0535B53590FE55FA660DA1E7
+      93EEE8FC14878BD919DADADA6A405B7B1BB4B5B5B13D91EC540B513F42F512C7
+      C73388F50FD535D5507EA51CCE259C63E76C6AFAFF90949CC4F65DDF50CFFA04
+      AA17383ED92D3935196EDCBC0177BEBD031393133031618AC9A7936C9CF44936
+      72727532F0E94C4C494D61E715C940FDC6F8F8383C197F6200F530B4F7CBE597
+      998EC82F8CD7277E65652548E552181E1E86C1C14118181C3060646404A43229
+      DB5F7E41BE099FD6A7FE88EC4CEB8FABC77704C94F3DC156F9FDF87EACAE6CFE
+      AE19241209ABF11292124C40764F4C4E84F6F676387BEE2CF3753D7F997CD1CD
+      D30D22BF8C647BE47CCF047239D4DEAE65B620DFD3F714AFB9F8110589D89CD4
+      73D038C59109B0AFA2BA89E2C7A8FF239CD7F701D48FBFB010BF2066117294DD
+      1671E11D21D2DF0D7D33C976263404E3211482CE0481F1D80EE8E0F8A40FAA71
+      32B3B2D08E72F8E6C62D8CA312888E89C69A4768964FEB554965F0B0F721C6CA
+      35AC9BAAA0A5A5156BFABB68AF38B3FC84A44456BBA5A6A519C6C511E1A05028
+      985F53BCEDC617A2EDB27373A1B3A363DB3B25A5A528CB5508FF22620FBE90ED
+      BBB3B30B75166C18279D5449A56C5F61E1617BCA1F733606FB8F4EB65E18E611
+      92F76266268BA37F55D7309BECC5A7FE2AE7D225CC31F759AF4279A2B3AB8BF5
+      3C63D803D1FE44C141BBF2B939D2300EA966A558A43CD88E3AD1E974303A3AC6
+      C6B8FE6F27FE4E48C6BC40DF03E8FB49577737C4C4C6BC159FD6A3EF01030303
+      B0B8F81A6A6BEB8C756996CFCD9188F9737474947D0B292A9670FE60119F9BE3
+      5C423CFAD803CC3FE59C9D2DE66F623346CE849E31965FA4BFBF0B24FF051D95
+      EF59
+    }
+  end
+  object OPD: TOpenDialog
+    DefaultExt = '.*.txt'
+    Filter = 'Plik tekstowy|*.txt|Odt|*.odt|Ritch tekst|*.rtf|Wszystkie pliki|*.*'
+    Left = 328
+    Top = 184
+  end
+  object SD: TSaveDialog
+    DefaultExt = '.*.txt'
+    Filter = 'Plik tekstowy|*.txt|Odt|*.odt|Ritch tekst|*.rtf|Wszystkie pliki|*.*'
+    Left = 333
+    Top = 248
+  end
+  object PMenuList1: TPopupMenu
+    Left = 432
+    Top = 8
+    object MenuItem1: TMenuItem
+      Caption = 'Usuń wszystko'
+      OnClick = MenuItem1Click
+    end
+  end
+  object PMenuList2: TPopupMenu
+    Left = 472
+    Top = 8
+    object MenuItem2: TMenuItem
+      Caption = 'Usuń wszystko'
+      OnClick = MenuItem2Click
+    end
+  end
+  object PMenuListUnic: TPopupMenu
+    Left = 520
+    Top = 8
+    object MenuItem3: TMenuItem
+      Caption = 'Usuń wszystko'
+      OnClick = MenuItem3Click
+    end
+  end
+end
