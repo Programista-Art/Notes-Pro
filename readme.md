@@ -20,3 +20,7 @@
 2. Poprawiony optymalizowany kod w module ustawienia programu. 
 ![Ustawienia programu](img/widok_ustawienia_1.jpg)
 ![Ustawienia programu](img/widok_ustawienia.jpg)
+## Zmiany 10.03.2024
+### Dodany nowy modul "porównaj dane" znajduje się on w Narzędzia > Porównaj Tekst
+### Porównuje dwie listy z tekstem i unikalne dane umieszcza w kolumnie "Unikalne" dalej można je zapisać, w każdej z kolumn można wyszukać tekst. 
+![Ustawienia programu](img/modul_porównaj.jpg)
