@@ -86,7 +86,6 @@ type
     MenuItem32: TMenuItem;
     MenuItem33: TMenuItem;
     MenuItem34: TMenuItem;
-    MenuItem35: TMenuItem;
     MenuItem36: TMenuItem;
     MenuItem37: TMenuItem;
     MenuItem38: TMenuItem;
@@ -184,6 +183,7 @@ type
     procedure ListBox1DblClick(Sender: TObject);
     procedure Memo1Change(Sender: TObject);
     procedure Memo1MouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer);
+    procedure MenuItem10Click(Sender: TObject);
     procedure MenuItem11Click(Sender: TObject);
     procedure MenuItem17Click(Sender: TObject);
     procedure MenuItem18Click(Sender: TObject);
@@ -216,7 +216,6 @@ type
     procedure MenuItem7Click(Sender: TObject);
     procedure MenuItem9Click(Sender: TObject);
     procedure NowyClick(Sender: TObject);
-    procedure OdstepyClick(Sender: TObject);
     procedure OProgramieClick(Sender: TObject);
     procedure OtworzClick(Sender: TObject);
     procedure TekstClick(Sender: TObject);
@@ -271,7 +270,7 @@ count:Integer;
 begin
   //oblicza ilosc linijek w ListBox1
   count:=ListBox1.Items.Count;
-  Statusbar2.Panels[0].Text:='Liczba linii: '+IntToStr(count);
+  Statusbar2.Panels[0].Text:='Liczba wierszy: '+IntToStr(count);
 end;
 
 
@@ -289,7 +288,7 @@ begin
   begin
     Memo1.Lines.add(ListBox1.Items.Strings[y]);
     PodliczLinijki(ListBox1, StatusBar2);
-    Status.Panels.Items[5].Text := ' ';
+    Status.Panels.Items[4].Text := ' ';
   end;
 end;
 
@@ -308,8 +307,14 @@ end;
 procedure TForm1.Memo1MouseMove(Sender: TObject; Shift: TShiftState; X,
   Y: Integer);
 begin
-  Status.Panels.Items[3].Text:=('Pozycja: X: ')+IntToStr(X) + ', Y: ' +IntToStr(Y);
+  Status.Panels.Items[2].Text:=('Pozycja: X: ')+IntToStr(X) + ', Y: ' +IntToStr(Y);
 end;
+
+procedure TForm1.MenuItem10Click(Sender: TObject);
+begin
+  FormStyle:=fsNormal;
+end;
+
 
 procedure TForm1.MenuItem11Click(Sender: TObject);
 begin
@@ -444,13 +449,12 @@ end;
 
 procedure TForm1.MenuItem35Click(Sender: TObject);
 begin
-  if ColorDialog1.Execute then
-Memo1.Color:=ColorDialog1.Color;
+
 end;
 
 procedure TForm1.MenuItem36Click(Sender: TObject);
 begin
-  FormStyle:=fsStayOnTop;
+  FormStyle:=fsSystemStayOnTop;
 end;
 
 procedure TForm1.MenuItem37Click(Sender: TObject);
@@ -548,16 +552,6 @@ begin
   SD.FileName:= '';
 end;
 
-procedure TForm1.OdstepyClick(Sender: TObject);
-begin
-  if ColorDialog1.Execute then
-begin
-//c:=ColorDialog1.Color;
-Ini_Settings.WriteInteger('Main','MemoColor',ColorDialog1.Color );   //zapisujemy color tla
-Memo1.Color:=ColorDialog1.Color;
-end
-end;
-
 procedure TForm1.OProgramieClick(Sender: TObject);
 begin
   about.fAbout.ShowModal;
@@ -599,10 +593,18 @@ begin
    begin
       //font1:=FontDialog1.Font;
     Form1.Memo1.Font:=FontDialog.Font;
-     Ini_Settings.WriteString('Main','FontFamily',Memo1.Font.Name);  //zapisujemy nazwa fonta
-     Ini_Settings.WriteInteger('Main','FontSize',Memo1.Font.Size);  //zapisujemy rozmiar fonta
-     Ini_Settings.WriteInteger('Main','FontColor',Memo1.Font.Color);  //zapisujemy color fonta
-    //f:=FontDialog.Font;
+     Ini_Settings := TIniFile.Create(ExtractFilePath(ParamStr(0))+'settings.ini');
+     try
+       //zapisujemy nazwa fonta
+       Ini_Settings.WriteString('Main','FontFamily',Memo1.Font.Name);
+       //zapisujemy rozmiar fonta
+       Ini_Settings.WriteInteger('Main','FontSize',Memo1.Font.Size);
+       //zapisujemy color fonta
+       Ini_Settings.WriteInteger('Main','FontColor',Memo1.Font.Color);
+       //f:=FontDialog.Font;
+     finally
+       FreeAndNil(Ini_Settings);
+     end;
     end
 end;
 
@@ -1058,7 +1060,7 @@ begin
   //ładowanie słów kluczowych z pliku klucz_slowa.txt
   ListBox1.Items.LoadFromFile('klucz_slowa.txt');
   //Data
-  Status.Panels.Items[4].Text:='Data: ' + DateToStr(Date);
+  Status.Panels.Items[3].Text:='Data: ' + DateToStr(Date);
   //wywołujemy procedurę PodliczLinijki
   PodliczLinijki(ListBox1, StatusBar2);
 end;

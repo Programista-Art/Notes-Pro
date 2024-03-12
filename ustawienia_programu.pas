@@ -27,7 +27,7 @@ type
     LbKeys: TListBox;
     Memo1: TMemo;
     PageControl1: TPageControl;
-    PageControl2: TPageControl;
+    PageControl: TPageControl;
     Panel1: TPanel;
     Panel2: TPanel;
     Panel3: TPanel;
@@ -65,8 +65,6 @@ type
     procedure ColorBox2CloseUp(Sender: TObject);
     procedure ColorBox3Change(Sender: TObject);
     procedure ColorBox3CloseUp(Sender: TObject);
-    procedure FormCreate(Sender: TObject);
-    procedure ValueListEditor1Click(Sender: TObject);
   private
 
   public
@@ -238,17 +236,6 @@ begin
    Ini_Settings.free;
   end;
 end;
-
-procedure TForm2.FormCreate(Sender: TObject);
-begin
-
-end;
-
-procedure TForm2.ValueListEditor1Click(Sender: TObject);
-begin
-
-end;
-
 
 
 end.

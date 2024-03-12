@@ -105,7 +105,7 @@ object fAbout: TfAbout
           'Dymitr Wygowski'
           'W środowisku Lazarus 3.0RC1'
           'Wersja FPC: 3.2.2'
-          'V1.1.5.3 (26.02.2024)'
+          'V1.1.5.3 (12.03.2024)'
         )
         ParentBidiMode = False
         ParentDoubleBuffered = False
