@@ -1,7 +1,7 @@
 object Form2: TForm2
-  Left = 998
+  Left = 804
   Height = 342
-  Top = 278
+  Top = 150
   Width = 577
   BorderStyle = bsDialog
   Caption = 'Ustawienia'

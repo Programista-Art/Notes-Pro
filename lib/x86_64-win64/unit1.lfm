@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 385
+  Left = 438
   Height = 497
-  Top = 171
+  Top = 208
   Width = 996
   Align = alClient
   BorderStyle = bsSingle
@@ -889,6 +889,13 @@ object Form1: TForm1
         OnClick = MenuItem24Click
       end
     end
+    object MenuItem8: TMenuItem
+      Caption = 'Narzedzia'
+      object MenuItem11: TMenuItem
+        Caption = 'Porównaj Tekst'
+        OnClick = MenuItem11Click
+      end
+    end
     object Pomoc: TMenuItem
       Caption = 'Pomoc'
       object OProgramie: TMenuItem
@@ -902,11 +909,19 @@ object Form1: TForm1
         OnClick = MenuItem6Click
       end
     end
-    object MenuItem8: TMenuItem
-      Caption = 'Narzedzia'
-      object MenuItem11: TMenuItem
-        Caption = 'Porównaj Tekst'
-        OnClick = MenuItem11Click
+    object MenuItem12: TMenuItem
+      Caption = 'Język'
+      object MenuItem13: TMenuItem
+        Caption = 'Angielski'
+        OnClick = MenuItem13Click
+      end
+      object MenuItem35: TMenuItem
+        Caption = 'Polski'
+        OnClick = MenuItem35Click
+      end
+      object MenuItem41: TMenuItem
+        Caption = 'Rosyjski'
+        OnClick = MenuItem41Click
       end
     end
   end
@@ -1230,21 +1245,5 @@ object Form1: TForm1
         OnClick = MenuItem40Click
       end
     end
-  end
-  object ODszyfr: TOpenDialog
-    Title = 'Otwórz zaszyfrowany plik'
-    DefaultExt = '.*.sz'
-    FileName = 'sz'
-    Filter = 'Plik|*.sz'
-    Left = 168
-    Top = 88
-  end
-  object SDszyfr: TSaveDialog
-    Title = 'Zapisz zaszyfrowany plik'
-    DefaultExt = '.*.sz'
-    FileName = 'sz'
-    Filter = 'Plik|*.sz'
-    Left = 328
-    Top = 64
   end
 end

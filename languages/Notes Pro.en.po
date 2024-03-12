@@ -1,0 +1,815 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Dymitr Wygowski <programista.art@gmail.com>\n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#: tfabout.bitbtn1.caption
+#, fuzzy
+msgctxt "tfabout.bitbtn1.caption"
+msgid "Zamknij"
+msgstr "Close"
+
+#: tfabout.caption
+#, fuzzy
+msgctxt "tfabout.caption"
+msgid "O programie"
+msgstr "About program"
+
+#: tfabout.email.caption
+msgid "E-Mail: programista.art@gmail.com"
+msgstr "E-Mail: programista.art@gmail.com"
+
+#: tfabout.tabsheet1.caption
+#, fuzzy
+msgctxt "tfabout.tabsheet1.caption"
+msgid "O programie"
+msgstr "About program"
+
+#: tfabout.tabsheet2.caption
+msgid "Hot Key"
+msgstr "Hot Key"
+
+#: tfabout.tabsheet3.caption
+msgid "Licencja"
+msgstr "License"
+
+#: tfabout.www.caption
+msgid "www.dimitalart.pl"
+msgstr "www.dimitalart.pl"
+
+#: tform1.button1.caption
+msgctxt "tform1.button1.caption"
+msgid "Oblicz"
+msgstr "Calc"
+
+#: tform1.button10.caption
+msgid "-"
+msgstr "-"
+
+#: tform1.button11.caption
+msgid "x"
+msgstr "x"
+
+#: tform1.button12.caption
+msgid "/"
+msgstr "/"
+
+#: tform1.button13.caption
+msgid "CE"
+msgstr "CE"
+
+#: tform1.button14.caption
+msgid "usuń kalkulator"
+msgstr "remove calculator"
+
+#: tform1.button2.caption
+msgctxt "tform1.button2.caption"
+msgid "Oczyść"
+msgstr "Cleanse"
+
+#: tform1.button3.caption
+msgid "Znajdź"
+msgstr "Find"
+
+#: tform1.button4.caption
+msgid "Zamień"
+msgstr "Replace"
+
+#: tform1.button5.caption
+msgid "Zamień zdanie"
+msgstr "Change your mind"
+
+#: tform1.button6.caption
+msgid "Kalkulator pro"
+msgstr "Pro calculator"
+
+#: tform1.button7.caption
+msgctxt "tform1.button7.caption"
+msgid "Oblicz"
+msgstr "Calc"
+
+#: tform1.button8.caption
+msgctxt "tform1.button8.caption"
+msgid "Oczyść"
+msgstr "Clear"
+
+#: tform1.button9.caption
+msgid "+"
+msgstr "+"
+
+#: tform1.buttonadd.caption
+msgid "Dodaj"
+msgstr "Add"
+
+#: tform1.cale.caption
+msgid "Cale"
+msgstr "Inches"
+
+#: tform1.caption
+msgid "Notes Pro V1.1.5.3"
+msgstr "Notes Pro V1.1.5.3"
+
+#: tform1.checkbox1.caption
+msgid "Cale w  Cm"
+msgstr "Inches in cm"
+
+#: tform1.cm.caption
+msgid "Cm"
+msgstr "Cm"
+
+#: tform1.cm1.caption
+msgid "Cm1"
+msgstr "Cm1"
+
+#: tform1.format.caption
+msgctxt "tform1.format.caption"
+msgid "Tekst"
+msgstr "Text"
+
+#: tform1.kopiuj.caption
+msgctxt "tform1.kopiuj.caption"
+msgid "Kopiuj"
+msgstr "Copy"
+
+#: tform1.label1.caption
+msgid "Nr wiersza"
+msgstr "Line No"
+
+#: tform1.label10.caption
+msgctxt "tform1.label10.caption"
+msgid "="
+msgstr "="
+
+#: tform1.label11.caption
+msgid "Liczba"
+msgstr "Number"
+
+#: tform1.label12.caption
+msgid "% Zniżka"
+msgstr "% Discount"
+
+#: tform1.label13.caption
+msgid "Po zniżce"
+msgstr "After the discount"
+
+#: tform1.label15.caption
+msgid "Wklej link"
+msgstr "Paste the link"
+
+#: tform1.label2.caption
+msgid "Nowy tekst"
+msgstr "New text"
+
+#: tform1.label3.caption
+msgctxt "tform1.label3.caption"
+msgid "="
+msgstr "="
+
+#: tform1.label4.caption
+msgid "A"
+msgstr "A"
+
+#: tform1.label5.caption
+msgctxt "tform1.label5.caption"
+msgid "A ="
+msgstr "A ="
+
+#: tform1.label6.caption
+msgctxt "tform1.label6.caption"
+msgid "A ="
+msgstr "A ="
+
+#: tform1.label7.caption
+msgid "B"
+msgstr "B"
+
+#: tform1.label8.caption
+msgctxt "tform1.label8.caption"
+msgid "="
+msgstr "="
+
+#: tform1.label9.caption
+msgctxt "tform1.label9.caption"
+msgid "="
+msgstr "="
+
+#: tform1.menuitem1.caption
+msgctxt "tform1.menuitem1.caption"
+msgid "Wyrównaj do lewej"
+msgstr "Align left"
+
+#: tform1.menuitem10.caption
+msgid "Tryb normalny"
+msgstr "Normal mode"
+
+#: tform1.menuitem11.caption
+msgid "Porównaj Tekst"
+msgstr "Compare Text"
+
+#: tform1.menuitem12.caption
+msgid "Język"
+msgstr "Language"
+
+#: tform1.menuitem13.caption
+msgid "Angielski"
+msgstr "English"
+
+#: tform1.menuitem14.caption
+msgctxt "tform1.menuitem14.caption"
+msgid "Tekst"
+msgstr "Text"
+
+#: tform1.menuitem15.caption
+msgctxt "tform1.menuitem15.caption"
+msgid "Duże litery"
+msgstr "Uppercase"
+
+#: tform1.menuitem16.caption
+msgctxt "tform1.menuitem16.caption"
+msgid "Małe litery"
+msgstr "Lower case"
+
+#: tform1.menuitem17.caption
+msgctxt "tform1.menuitem17.caption"
+msgid "Czcionka"
+msgstr "Font"
+
+#: tform1.menuitem18.caption
+msgctxt "tform1.menuitem18.caption"
+msgid "Wyrównaj do środka"
+msgstr "Align to center"
+
+#: tform1.menuitem19.caption
+msgctxt "tform1.menuitem19.caption"
+msgid "Wyrównaj do prawej"
+msgstr "Align right"
+
+#: tform1.menuitem2.caption
+msgid "Czcionka rozmiar"
+msgstr "Font size"
+
+#: tform1.menuitem20.caption
+msgctxt "tform1.menuitem20.caption"
+msgid "Usuń wszystko"
+msgstr "Delete all"
+
+#: tform1.menuitem21.caption
+msgid "Wytnij"
+msgstr "Cut"
+
+#: tform1.menuitem22.caption
+msgid "Zawijanie tekstu"
+msgstr "Text wrapping"
+
+#: tform1.menuitem23.caption
+msgid "Dodaj nowe zdanie"
+msgstr "Add a new sentence"
+
+#: tform1.menuitem24.caption
+msgctxt "tform1.menuitem24.caption"
+msgid "Małe litery"
+msgstr "Lower case"
+
+#: tform1.menuitem25.caption
+msgctxt "tform1.menuitem25.caption"
+msgid "Duże litery"
+msgstr "Uppercase"
+
+#: tform1.menuitem26.caption
+msgid "Rozmiar Tekstu"
+msgstr "Text Size"
+
+#: tform1.menuitem27.caption
+msgid "10"
+msgstr "10"
+
+#: tform1.menuitem28.caption
+msgid "Linie _____"
+msgstr "Lines _____"
+
+#: tform1.menuitem29.caption
+msgid "Kropki ........."
+msgstr "Dots ........."
+
+#: tform1.menuitem3.caption
+msgctxt "tform1.menuitem3.caption"
+msgid "15"
+msgstr "15"
+
+#: tform1.menuitem30.caption
+msgid "LInia -----"
+msgstr "Line -----"
+
+#: tform1.menuitem31.caption
+msgid "Usuń zaznaczony tekst"
+msgstr "Delete selected text"
+
+#: tform1.menuitem32.caption
+msgid "Dodaj do bazy"
+msgstr "Add to database"
+
+#: tform1.menuitem33.caption
+msgid "Zaznacz wszystko"
+msgstr "Select all"
+
+#: tform1.menuitem34.caption
+msgid "Cofnij"
+msgstr "Undo"
+
+#: tform1.menuitem35.caption
+msgid "Polski"
+msgstr "Polish"
+
+#: tform1.menuitem36.caption
+msgid "Tryb zawsze na wierzchu"
+msgstr "Always on top mode"
+
+#: tform1.menuitem37.caption
+msgctxt "tform1.menuitem37.caption"
+msgid "Kopiuj"
+msgstr "Copy"
+
+#: tform1.menuitem38.caption
+msgid "12"
+msgstr "12"
+
+#: tform1.menuitem39.caption
+msgctxt "tform1.menuitem39.caption"
+msgid "15"
+msgstr "15"
+
+#: tform1.menuitem4.caption
+msgctxt "tform1.menuitem4.caption"
+msgid "20"
+msgstr "20"
+
+#: tform1.menuitem40.caption
+msgctxt "tform1.menuitem40.caption"
+msgid "20"
+msgstr "20"
+
+#: tform1.menuitem41.caption
+msgid "Rosyjski"
+msgstr "Russian"
+
+#: tform1.menuitem5.caption
+msgid "25"
+msgstr "25"
+
+#: tform1.menuitem6.caption
+msgctxt "tform1.menuitem6.caption"
+msgid "Ustawienia"
+msgstr "Settings"
+
+#: tform1.menuitem7.caption
+msgctxt "tform1.menuitem7.caption"
+msgid "Usuń"
+msgstr "Delete"
+
+#: tform1.menuitem8.caption
+msgid "Narzedzia"
+msgstr "Tools"
+
+#: tform1.menuitem9.caption
+msgid "Zapisz"
+msgstr "Save"
+
+#: tform1.nowy.caption
+msgid "Nowy"
+msgstr "New"
+
+#: tform1.odstepy.caption
+msgid "Kolor Pola"
+msgstr "Field Color"
+
+#: tform1.oprogramie.caption
+msgid "O Programie"
+msgstr "About program"
+
+#: tform1.otworz.caption
+msgid "Otwórz"
+msgstr "Open"
+
+#: tform1.plik.caption
+msgid "Plik"
+msgstr "File"
+
+#: tform1.pomoc.caption
+msgid "Pomoc"
+msgstr "Help"
+
+#: tform1.status.panels[0].text
+msgid "Liczba liter"
+msgstr "Number of letters"
+
+#: tform1.status.panels[1].text
+msgid "Liczba linii"
+msgstr "Number of lines"
+
+#: tform1.status.panels[2].text
+msgid "XY"
+msgstr "Position: XY"
+
+#: tform1.status.panels[3].text
+msgid "Data"
+msgstr "Date"
+
+#: tform1.status.panels[4].text
+msgid "Info"
+msgstr "Info"
+
+#: tform1.statusbar2.panels[0].text
+msgid "Liczba wierszy"
+msgstr "Number of rows"
+
+#: tform1.tabsheet1.caption
+msgctxt "tform1.tabsheet1.caption"
+msgid "Kalkulator"
+msgstr "Calculator"
+
+#: tform1.tabsheet2.caption
+msgctxt "tform1.tabsheet2.caption"
+msgid "Obliczenia"
+msgstr "Calculations"
+
+#: tform1.tabsheet3.caption
+msgctxt "tform1.tabsheet3.caption"
+msgid "Edycja"
+msgstr "Edit"
+
+#: tform1.tekst.caption
+msgctxt "tform1.tekst.caption"
+msgid "Czcionka"
+msgstr "Font"
+
+#: tform1.toolbar1.caption
+msgctxt "tform1.toolbar1.caption"
+msgid "ToolBar1"
+msgstr "ToolBar1"
+
+#: tform1.toolbar2.caption
+msgctxt "tform1.toolbar2.caption"
+msgid "ToolBar2"
+msgstr "ToolBar2"
+
+#: tform1.toolbutton1.caption
+msgctxt "tform1.toolbutton1.caption"
+msgid "ToolButton1"
+msgstr "ToolButton1"
+
+#: tform1.toolbutton1.hint
+msgid "Otwórz plik"
+msgstr "Open file"
+
+#: tform1.toolbutton10.caption
+msgctxt "tform1.toolbutton10.caption"
+msgid "ToolButton10"
+msgstr "ToolButton10"
+
+#: tform1.toolbutton10.hint
+msgctxt "tform1.toolbutton10.hint"
+msgid "Usuń"
+msgstr "Delete"
+
+#: tform1.toolbutton11.caption
+msgctxt "tform1.toolbutton11.caption"
+msgid "ToolButton11"
+msgstr "ToolButton11"
+
+#: tform1.toolbutton11.hint
+msgctxt "tform1.toolbutton11.hint"
+msgid "Usuń wszystko"
+msgstr "Delete all"
+
+#: tform1.toolbutton12.caption
+msgctxt "tform1.toolbutton12.caption"
+msgid "ToolButton12"
+msgstr "ToolButton12"
+
+#: tform1.toolbutton12.hint
+msgid "Zapisz słowa kluczowe"
+msgstr "Write down your keywords"
+
+#: tform1.toolbutton13.caption
+msgctxt "tform1.toolbutton13.caption"
+msgid "ToolButton13"
+msgstr "ToolButton13"
+
+#: tform1.toolbutton13.hint
+msgid "Włącz Tryb Zawsze na górze"
+msgstr "Enable Always on top mode"
+
+#: tform1.toolbutton14.caption
+msgctxt "tform1.toolbutton14.caption"
+msgid "ToolButton14"
+msgstr "ToolButton14"
+
+#: tform1.toolbutton14.hint
+msgid "Wyłącz Tryb Zawsze na górze"
+msgstr "Turn off Always on top mode"
+
+#: tform1.toolbutton15.caption
+msgid "ToolButton15"
+msgstr "ToolButton15"
+
+#: tform1.toolbutton2.caption
+msgctxt "tform1.toolbutton2.caption"
+msgid "ToolButton2"
+msgstr "ToolButton2"
+
+#: tform1.toolbutton2.hint
+msgctxt "tform1.toolbutton2.hint"
+msgid "O programie"
+msgstr "About program"
+
+#: tform1.toolbutton3.caption
+msgctxt "tform1.toolbutton3.caption"
+msgid "ToolButton3"
+msgstr "ToolButton3"
+
+#: tform1.toolbutton3.hint
+msgid "Zapisz plik"
+msgstr "Save file"
+
+#: tform1.toolbutton4.caption
+msgctxt "tform1.toolbutton4.caption"
+msgid "ToolButton4"
+msgstr "ToolButton4"
+
+#: tform1.toolbutton4.hint
+msgid "Wyjść"
+msgstr "Exit"
+
+#: tform1.toolbutton5.caption
+msgctxt "tform1.toolbutton5.caption"
+msgid "ToolButton5"
+msgstr "ToolButton5"
+
+#: tform1.toolbutton5.hint
+msgid "Usuwa tekst z pola"
+msgstr "Deletes text from the field"
+
+#: tform1.toolbutton6.caption
+msgctxt "tform1.toolbutton6.caption"
+msgid "ToolButton6"
+msgstr "ToolButton6"
+
+#: tform1.toolbutton6.hint
+msgctxt "tform1.toolbutton6.hint"
+msgid "Wyrównaj do lewej"
+msgstr "Align left"
+
+#: tform1.toolbutton7.caption
+msgctxt "tform1.toolbutton7.caption"
+msgid "ToolButton7"
+msgstr "ToolButton7"
+
+#: tform1.toolbutton7.hint
+msgctxt "tform1.toolbutton7.hint"
+msgid "Wyrównaj do środka"
+msgstr "Align to center"
+
+#: tform1.toolbutton8.caption
+msgctxt "tform1.toolbutton8.caption"
+msgid "ToolButton8"
+msgstr "ToolButton8"
+
+#: tform1.toolbutton8.hint
+msgctxt "tform1.toolbutton8.hint"
+msgid "Wyrównaj do prawej"
+msgstr "Align right"
+
+#: tform1.toolbutton9.caption
+msgctxt "tform1.toolbutton9.caption"
+msgid "ToolButton9"
+msgstr "ToolButton9"
+
+#: tform1.toolbutton9.hint
+msgid "Dodać"
+msgstr "Add"
+
+#: tform1.widok.caption
+msgid "Widok"
+msgstr "View"
+
+#: tform1.wklej.caption
+msgid "Wklej"
+msgstr "Paste"
+
+#: tform1.wstaw.caption
+msgid "Wstaw"
+msgstr "Insert"
+
+#: tform1.wyrownajtekst.caption
+msgid "Wyrównaj tekst"
+msgstr "Align text"
+
+#: tform1.wytnij.caption
+msgid "Usuń cały tekst"
+msgstr "Delete all text"
+
+#: tform1.zamknij.caption
+msgctxt "tform1.zamknij.caption"
+msgid "Zamknij"
+msgstr "Close"
+
+#: tform1.zapisz.caption
+msgid "Zapisz jak"
+msgstr "Write down how"
+
+#: tform2.bitbtn2.caption
+msgid "Anuluj"
+msgstr ""
+
+#: tform2.button1.caption
+msgid "Kolor"
+msgstr ""
+
+#: tform2.button2.caption
+msgid "Zresetuj dane"
+msgstr ""
+
+#: tform2.button3.caption
+#, fuzzy
+msgctxt "tform2.button3.caption"
+msgid "Czcionka"
+msgstr "Font"
+
+#: tform2.caption
+#, fuzzy
+msgctxt "tform2.caption"
+msgid "Ustawienia"
+msgstr "Settings"
+
+#: tform2.tabsheet1.caption
+#, fuzzy
+msgctxt "tform2.tabsheet1.caption"
+msgid "Ustawienia"
+msgstr "Settings"
+
+#: tform2.tabsheet2.caption
+#, fuzzy
+msgctxt "tform2.tabsheet2.caption"
+msgid "Edycja"
+msgstr "Edit"
+
+#: tform2.tabsheet3.caption
+#, fuzzy
+msgctxt "tform2.tabsheet3.caption"
+msgid "Kalkulator"
+msgstr "Calculator"
+
+#: tform2.tabsheet4.caption
+#, fuzzy
+msgctxt "tform2.tabsheet4.caption"
+msgid "Obliczenia"
+msgstr "Calculations"
+
+#: tform2.toolbar1.caption
+#, fuzzy
+msgctxt "tform2.toolbar1.caption"
+msgid "ToolBar1"
+msgstr "ToolBar1"
+
+#: tform2.toolbar2.caption
+#, fuzzy
+msgctxt "tform2.toolbar2.caption"
+msgid "ToolBar2"
+msgstr "ToolBar2"
+
+#: tform2.toolbutton1.caption
+#, fuzzy
+msgctxt "tform2.toolbutton1.caption"
+msgid "ToolButton1"
+msgstr "ToolButton1"
+
+#: tform2.toolbutton10.caption
+#, fuzzy
+msgctxt "tform2.toolbutton10.caption"
+msgid "ToolButton10"
+msgstr "ToolButton10"
+
+#: tform2.toolbutton11.caption
+#, fuzzy
+msgctxt "tform2.toolbutton11.caption"
+msgid "ToolButton11"
+msgstr "ToolButton11"
+
+#: tform2.toolbutton12.caption
+#, fuzzy
+msgctxt "tform2.toolbutton12.caption"
+msgid "ToolButton12"
+msgstr "ToolButton12"
+
+#: tform2.toolbutton13.caption
+#, fuzzy
+msgctxt "tform2.toolbutton13.caption"
+msgid "ToolButton13"
+msgstr "ToolButton13"
+
+#: tform2.toolbutton14.caption
+#, fuzzy
+msgctxt "tform2.toolbutton14.caption"
+msgid "ToolButton14"
+msgstr "ToolButton14"
+
+#: tform2.toolbutton2.caption
+#, fuzzy
+msgctxt "tform2.toolbutton2.caption"
+msgid "ToolButton2"
+msgstr "ToolButton2"
+
+#: tform2.toolbutton3.caption
+#, fuzzy
+msgctxt "tform2.toolbutton3.caption"
+msgid "ToolButton3"
+msgstr "ToolButton3"
+
+#: tform2.toolbutton4.caption
+#, fuzzy
+msgctxt "tform2.toolbutton4.caption"
+msgid "ToolButton4"
+msgstr "ToolButton4"
+
+#: tform2.toolbutton5.caption
+#, fuzzy
+msgctxt "tform2.toolbutton5.caption"
+msgid "ToolButton5"
+msgstr "ToolButton5"
+
+#: tform2.toolbutton6.caption
+#, fuzzy
+msgctxt "tform2.toolbutton6.caption"
+msgid "ToolButton6"
+msgstr "ToolButton6"
+
+#: tform2.toolbutton7.caption
+#, fuzzy
+msgctxt "tform2.toolbutton7.caption"
+msgid "ToolButton7"
+msgstr "ToolButton7"
+
+#: tform2.toolbutton8.caption
+#, fuzzy
+msgctxt "tform2.toolbutton8.caption"
+msgid "ToolButton8"
+msgstr "ToolButton8"
+
+#: tform2.toolbutton9.caption
+#, fuzzy
+msgctxt "tform2.toolbutton9.caption"
+msgid "ToolButton9"
+msgstr "ToolButton9"
+
+#: unit1.addnewsentencecaption
+msgid "Nowe zdanie"
+msgstr ""
+
+#: unit1.filemodified
+msgid "Bieżący plik został zmodyfikowany. Zapisać zmiany?"
+msgstr ""
+
+#: unit1.isdeletealltext
+msgid "Czy usunąć cały tekst?"
+msgstr "Delete all text?"
+
+#: unit1.isdeletealltextdatabase
+msgid "Czy napewno chcesz usunąć cały tekst?"
+msgstr ""
+
+#: unit1.isdeletealltextinfo
+msgid "Usuwanie tekstu"
+msgstr "Removing text"
+
+#: unit1.isdeleteitem
+msgid "Czy napewno chcesz usunąć wybrany element?"
+msgstr ""
+
+#: unit1.linecopy
+msgid "Wiersz skopiowany"
+msgstr ""
+
+#: unit1.openexistingfile
+msgid "Otwórz istniejący plik"
+msgstr ""
+
+#: unit1.positionmouse
+msgid "Pozycja: X:"
+msgstr ""
+
+#: unit1.savefilecaption
+msgid "Zapisywanie pliku"
+msgstr ""
+
+#: unit1.writenewsentence
+msgid "Wpisz zdanie"
+msgstr ""
+

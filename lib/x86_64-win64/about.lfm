@@ -1,8 +1,8 @@
 object fAbout: TfAbout
   Cursor = crHelp
-  Left = 1109
+  Left = 1392
   Height = 169
-  Top = 161
+  Top = 215
   Width = 309
   BorderStyle = bsToolWindow
   Caption = 'O programie'

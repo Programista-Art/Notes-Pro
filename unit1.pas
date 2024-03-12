@@ -7,7 +7,7 @@ interface
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, Menus,
   ExtCtrls, ComCtrls, Buttons, ActnList,
-  IniFiles, ustawienia_programu, forma2, about,Clipbrd,text_comparison, Character;
+  IniFiles, ustawienia_programu, forma2, about,Clipbrd,text_comparison, LCLTranslator, DefaultTranslator, Character;
 
 type
 
@@ -86,15 +86,16 @@ type
     MenuItem32: TMenuItem;
     MenuItem33: TMenuItem;
     MenuItem34: TMenuItem;
+    MenuItem35: TMenuItem;
     MenuItem36: TMenuItem;
     MenuItem37: TMenuItem;
     MenuItem38: TMenuItem;
     MenuItem39: TMenuItem;
     MenuItem40: TMenuItem;
+    MenuItem41: TMenuItem;
     MenuItem7: TMenuItem;
     MenuItem8: TMenuItem;
     MenuItem9: TMenuItem;
-    ODszyfr: TOpenDialog;
     PageControl1: TPageControl;
     Panel1: TPanel;
     Panel2: TPanel;
@@ -108,7 +109,6 @@ type
     MenuItem6: TMenuItem;
     OD: TOpenDialog;
     SD: TSaveDialog;
-    SDszyfr: TSaveDialog;
     Splitter1: TSplitter;
     Status: TStatusBar;
     StatusBar2: TStatusBar;
@@ -185,6 +185,7 @@ type
     procedure Memo1MouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer);
     procedure MenuItem10Click(Sender: TObject);
     procedure MenuItem11Click(Sender: TObject);
+    procedure MenuItem13Click(Sender: TObject);
     procedure MenuItem17Click(Sender: TObject);
     procedure MenuItem18Click(Sender: TObject);
     procedure MenuItem19Click(Sender: TObject);
@@ -210,6 +211,7 @@ type
     procedure MenuItem39Click(Sender: TObject);
     procedure MenuItem3Click(Sender: TObject);
     procedure MenuItem40Click(Sender: TObject);
+    procedure MenuItem41Click(Sender: TObject);
     procedure MenuItem4Click(Sender: TObject);
     procedure MenuItem5Click(Sender: TObject);
     procedure MenuItem6Click(Sender: TObject);
@@ -255,8 +257,20 @@ var
   Form1: TForm1;
   kol,kolli,score,zaznaczony_tekst:integer;
   count:Integer;
-
-
+resourcestring
+  isDeleteAllTextInfo = 'Usuwanie tekstu';
+  isDeleteAllText = 'Czy usunąć cały tekst?';
+  //Menu pop up Baza danych
+  LineCopy = 'Wiersz skopiowany';
+  isDeleteItem = 'Czy napewno chcesz usunąć wybrany element?';
+  isDeleteAllTextDataBase = 'Czy napewno chcesz usunąć cały tekst?';
+  addNewSentenceCaption = 'Nowe zdanie';
+  writeNewSentence = 'Wpisz zdanie';
+  //Main Menu
+  saveFileCaption = 'Zapisywanie pliku';
+  fileModified ='Bieżący plik został zmodyfikowany. Zapisać zmiany?';
+  openExistingFile = 'Otwórz istniejący plik';
+  positionMouse = 'Pozycja: X:';
 implementation
 
 {$R *.lfm}
@@ -307,7 +321,7 @@ end;
 procedure TForm1.Memo1MouseMove(Sender: TObject; Shift: TShiftState; X,
   Y: Integer);
 begin
-  Status.Panels.Items[2].Text:=('Pozycja: X: ')+IntToStr(X) + ', Y: ' +IntToStr(Y);
+  Status.Panels.Items[2].Text:=(positionMouse)+IntToStr(X) + ', Y: ' +IntToStr(Y);
 end;
 
 procedure TForm1.MenuItem10Click(Sender: TObject);
@@ -319,6 +333,11 @@ end;
 procedure TForm1.MenuItem11Click(Sender: TObject);
 begin
   Ftext_comparison.ShowModal;
+end;
+
+procedure TForm1.MenuItem13Click(Sender: TObject);
+begin
+  SetDefaultLang('en');
 end;
 
 
@@ -349,7 +368,7 @@ procedure TForm1.MenuItem20Click(Sender: TObject);
 var
   r:integer;
 begin
-  r:=MessageDlg('Czy napewno chcesz usunąć cały tekst?',mtConfirmation,[mbOk,mbCancel],0);
+  r:=MessageDlg(isDeleteAllTextDataBase,mtConfirmation,[mbOk,mbCancel],0);
   if r = mrOk then
   begin
     ListBox1.Items.Clear;
@@ -385,10 +404,10 @@ procedure TForm1.MenuItem23Click(Sender: TObject);
 var
   stroka:string;
 begin
-stroka:=InputBox('Nowe zdanie','Wpisz zdanie','');
+stroka:=InputBox(addNewSentenceCaption, writeNewSentence,'');
   If stroka <> '' then
   begin
-    ListBox1.Items.Add(stroka); //добавляем запись
+    ListBox1.Items.Add(stroka);
      PodliczLinijki(ListBox1, StatusBar2);
   end
   else
@@ -449,7 +468,7 @@ end;
 
 procedure TForm1.MenuItem35Click(Sender: TObject);
 begin
-
+  SetDefaultLang('pl');
 end;
 
 procedure TForm1.MenuItem36Click(Sender: TObject);
@@ -466,7 +485,7 @@ SelectedText := ListBox1.GetSelectedText;
   begin
   // kopiowanie do schowka
     Clipboard.AsText := SelectedText;
-    Status.Panels.Items[5].Text := 'Wiersz skopiowany';
+    Status.Panels.Items[4].Text := LineCopy;
   end
   else
     ShowMessage('Текст не выбран');
@@ -492,14 +511,19 @@ begin
     ListBox1.Font.Size:=20;
 end;
 
+procedure TForm1.MenuItem41Click(Sender: TObject);
+begin
+  SetDefaultLang('ru');
+end;
+
 procedure TForm1.MenuItem4Click(Sender: TObject);
 begin
-    Memo1.Font.Size:=20;
+  Memo1.Font.Size:=20;
 end;
 
 procedure TForm1.MenuItem5Click(Sender: TObject);
 begin
-    Memo1.Font.Size:=25;
+  Memo1.Font.Size:=25;
 end;
 
 
@@ -512,7 +536,7 @@ procedure TForm1.MenuItem7Click(Sender: TObject);
 var
 r:integer;
 begin
-r:=MessageDlg('Czy napewno chcesz usunąć wybrany element?',mtConfirmation,[mbOk,mbCancel],0);
+r:=MessageDlg(isDeleteItem,mtConfirmation,[mbOk,mbCancel],0);
   if r = mrOk then
   begin
     ListBox1.Items.Delete(ListBox1.ItemIndex);
@@ -541,8 +565,8 @@ begin
   //Memo1.Clear;
   if Memo1.Modified then begin
     //jeśli użytkownik wyrazi zgodę na zapisanie zmian:
-    if MessageDlg('Zapisywanie pliku',
-                  'Bieżący plik został zmodyfikowany. Zapisać zmiany?',
+    if MessageDlg(saveFileCaption,
+                  fileModified,
          mtConfirmation, [mbYes, mbNo], 0) = mrYes then
             ZapiszClick(Sender);
   end;
@@ -563,15 +587,15 @@ begin
    Memo1.Lines.LoadFromFile(OD.FileName);}
   if Memo1.Modified then begin //czy sa zmiany
     //jeśli użytkownik wyrazi zgodę na zapisanie zmian:
-    if MessageDlg('Zapisywanie pliku',
-                  'Bieżący plik został zmodyfikowany. Zapisać zmiany?',
+    if MessageDlg(saveFileCaption,
+                  fileModified,
          mtConfirmation, [mbYes, mbNo], 0) = mrYes then
             ZapiszClick(Sender);
   end;
   {wyczyść nazwę pliku w oknie dialogowym OpenDialog, zmień tytuł i
   wywołaj metodę LoadFromFile, jeśli dialog miał miejsce}
   OD.FileName:= '';
-  OD.Title:= 'Otwórz istniejący plik';
+  OD.Title:= openExistingFile;
   if OD.Execute then begin
     // wyczyść Memo, jeśli jest tekst:
     if Memo1.Text <> '' then Memo1.Clear;
@@ -707,8 +731,7 @@ end;
 
 procedure TForm1.ZapiszClick(Sender: TObject);
 begin
-    //zapis
-     if SD.Execute then
+   if SD.Execute then
    Memo1.Lines.SaveToFile(SD.FileName);
 end;
 
@@ -762,8 +785,8 @@ begin
   if Memo1.Modified then
   begin
   //jeśli użytkownik wyrazi zgodę na zapisanie zmian:
-  if MessageDlg('Usuwanie tekstu',
-                'Czy usunąć cały tekst?',
+  if MessageDlg(isDeleteAllTextInfo,
+                  isDeleteAllText,
        mtConfirmation, [mbYes, mbNo], 0) = mrYes then
   begin
     Memo1.Clear;
