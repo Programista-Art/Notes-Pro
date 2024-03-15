@@ -12,26 +12,23 @@ msgstr ""
 "X-Generator: Poedit 3.4.2\n"
 
 #: tfabout.bitbtn1.caption
-#, fuzzy
 msgctxt "tfabout.bitbtn1.caption"
 msgid "Zamknij"
 msgstr "Close"
 
 #: tfabout.caption
-#, fuzzy
 msgctxt "tfabout.caption"
 msgid "O programie"
-msgstr "About program"
+msgstr "About"
 
 #: tfabout.email.caption
 msgid "E-Mail: programista.art@gmail.com"
 msgstr "E-Mail: programista.art@gmail.com"
 
 #: tfabout.tabsheet1.caption
-#, fuzzy
 msgctxt "tfabout.tabsheet1.caption"
 msgid "O programie"
-msgstr "About program"
+msgstr "About"
 
 #: tfabout.tabsheet2.caption
 msgid "Hot Key"
@@ -73,7 +70,7 @@ msgstr "remove calculator"
 #: tform1.button2.caption
 msgctxt "tform1.button2.caption"
 msgid "Oczyść"
-msgstr "Cleanse"
+msgstr "Clear"
 
 #: tform1.button3.caption
 msgid "Znajdź"
@@ -407,10 +404,12 @@ msgid "Pomoc"
 msgstr "Help"
 
 #: tform1.status.panels[0].text
+msgctxt "tform1.status.panels[0].text"
 msgid "Liczba liter"
 msgstr "Number of letters"
 
 #: tform1.status.panels[1].text
+msgctxt "tform1.status.panels[1].text"
 msgid "Liczba linii"
 msgstr "Number of lines"
 
@@ -623,25 +622,31 @@ msgstr "Close"
 
 #: tform1.zapisz.caption
 msgid "Zapisz jak"
-msgstr "Write down how"
+msgstr "Save as"
 
-#: tform2.bitbtn2.caption
-msgid "Anuluj"
-msgstr ""
-
-#: tform2.button1.caption
-msgid "Kolor"
-msgstr ""
-
-#: tform2.button2.caption
-msgid "Zresetuj dane"
-msgstr ""
-
-#: tform2.button3.caption
+#: tform2.butcancelsettings.caption
 #, fuzzy
-msgctxt "tform2.button3.caption"
+msgctxt "tform2.butcancelsettings.caption"
+msgid "Anuluj"
+msgstr "Cancel"
+
+#: tform2.butcolorsettings.caption
+#, fuzzy
+msgctxt "tform2.butcolorsettings.caption"
+msgid "Kolor"
+msgstr "Color"
+
+#: tform2.butfontsettings.caption
+#, fuzzy
+msgctxt "tform2.butfontsettings.caption"
 msgid "Czcionka"
 msgstr "Font"
+
+#: tform2.butresetsettings.caption
+#, fuzzy
+msgctxt "tform2.butresetsettings.caption"
+msgid "Zresetuj dane"
+msgstr "Reset data"
 
 #: tform2.caption
 #, fuzzy
@@ -769,13 +774,148 @@ msgctxt "tform2.toolbutton9.caption"
 msgid "ToolButton9"
 msgstr "ToolButton9"
 
+#: tftext_comparison.butalldelete1_list.hint
+msgid "Usuń  wszystko z listy 1"
+msgstr "Delete everything from the list 1"
+
+#: tftext_comparison.butalldelete2_list.hint
+msgid "Usuń  wszystko z listy 2"
+msgstr "Delete everything from the list 2"
+
+#: tftext_comparison.butopen1_list.hint
+msgctxt "tftext_comparison.butopen1_list.hint"
+msgid "Otwórz plik tekstowy"
+msgstr "Open text file"
+
+#: tftext_comparison.butopen2_lst.hint
+msgctxt "tftext_comparison.butopen2_lst.hint"
+msgid "Otwórz plik tekstowy"
+msgstr "Open text file"
+
+#: tftext_comparison.butsave1_list.hint
+msgctxt "tftext_comparison.butsave1_list.hint"
+msgid "Zapisz plik tekstowy"
+msgstr "Save the text file"
+
+#: tftext_comparison.butsave2_list.hint
+msgctxt "tftext_comparison.butsave2_list.hint"
+msgid "Zapisz plik tekstowy"
+msgstr "Save the text file"
+
+#: tftext_comparison.butsearch1.hint
+msgctxt "tftext_comparison.butsearch1.hint"
+msgid "Szukaj"
+msgstr "Search"
+
+#: tftext_comparison.butsearch2.hint
+msgctxt "tftext_comparison.butsearch2.hint"
+msgid "Szukaj"
+msgstr "Search"
+
+#: tftext_comparison.butsearchunic.hint
+msgctxt "tftext_comparison.butsearchunic.hint"
+msgid "Szukaj"
+msgstr "Search"
+
+#: tftext_comparison.button1.caption
+msgid "Porównaj "
+msgstr "Compare "
+
+#: tftext_comparison.caption
+msgid "Porównaj dane"
+msgstr "Compare data"
+
+#: tftext_comparison.groupbox1.caption
+msgid "Wyszukaj wiersz"
+msgstr "Search for a row"
+
+#: tftext_comparison.label1.caption
+msgid "1 lista"
+msgstr "1 list"
+
+#: tftext_comparison.label2.caption
+msgid "2  lista"
+msgstr "2 list"
+
+#: tftext_comparison.label3.caption
+msgid "Unikalne"
+msgstr "Unique"
+
+#: tftext_comparison.label4.caption
+msgid "Unikalne wiersze: "
+msgstr "Unique lines: "
+
+#: tftext_comparison.menuitem1.caption
+#, fuzzy
+msgctxt "tftext_comparison.menuitem1.caption"
+msgid "Usuń wszystko"
+msgstr "Delete all"
+
+#: tftext_comparison.menuitem2.caption
+#, fuzzy
+msgctxt "tftext_comparison.menuitem2.caption"
+msgid "Usuń wszystko"
+msgstr "Delete all"
+
+#: tftext_comparison.menuitem3.caption
+#, fuzzy
+msgctxt "tftext_comparison.menuitem3.caption"
+msgid "Usuń wszystko"
+msgstr "Delete all"
+
+#: tftext_comparison.searchtext.editlabel.caption
+msgid "Szukaj w Unikalnych"
+msgstr "Search in Unique"
+
+#: tftext_comparison.searchtextlist1.editlabel.caption
+msgid "Lista 1"
+msgstr "List 1"
+
+#: tftext_comparison.searchtextlist2.editlabel.caption
+msgid "Lista 2"
+msgstr "List 2"
+
+#: tftext_comparison.speedbutton1.hint
+msgid "Usuń  wszystko z listy Unikalne"
+msgstr "Remove everything from the Unique list"
+
+#: tftext_comparison.speedbutton2.hint
+msgctxt "tftext_comparison.speedbutton2.hint"
+msgid "Zapisz plik tekstowy"
+msgstr "Save the text file"
+
+#: tftext_comparison.statusbar1.panels[0].text
+msgctxt "tftext_comparison.statusbar1.panels[0].text"
+msgid "Wierszy"
+msgstr "Lines"
+
+#: tftext_comparison.statusbar1.panels[1].text
+msgctxt "tftext_comparison.statusbar1.panels[1].text"
+msgid "Wierszy"
+msgstr "Lines"
+
+#: tftext_comparison.statusbar1.panels[2].text
+msgctxt "tftext_comparison.statusbar1.panels[2].text"
+msgid "Wierszy"
+msgstr "Lines"
+
 #: unit1.addnewsentencecaption
 msgid "Nowe zdanie"
-msgstr ""
+msgstr "New sentence"
+
+#: unit1.countline
+msgctxt "unit1.countline"
+msgid "Liczba linii"
+msgstr "Nb of lines"
+
+#: unit1.countword
+msgctxt "unit1.countword"
+msgid "Liczba liter"
+msgstr "Nb of letters"
 
 #: unit1.filemodified
 msgid "Bieżący plik został zmodyfikowany. Zapisać zmiany?"
-msgstr ""
+msgstr "The current file has been modified. Save changes?"
 
 #: unit1.isdeletealltext
 msgid "Czy usunąć cały tekst?"
@@ -783,7 +923,7 @@ msgstr "Delete all text?"
 
 #: unit1.isdeletealltextdatabase
 msgid "Czy napewno chcesz usunąć cały tekst?"
-msgstr ""
+msgstr "Are you sure you want to delete all text?"
 
 #: unit1.isdeletealltextinfo
 msgid "Usuwanie tekstu"
@@ -791,25 +931,25 @@ msgstr "Removing text"
 
 #: unit1.isdeleteitem
 msgid "Czy napewno chcesz usunąć wybrany element?"
-msgstr ""
+msgstr "Are you sure you want to delete the selected item?"
 
 #: unit1.linecopy
 msgid "Wiersz skopiowany"
-msgstr ""
+msgstr "Line copied"
 
 #: unit1.openexistingfile
 msgid "Otwórz istniejący plik"
-msgstr ""
+msgstr "Open an existing file"
 
 #: unit1.positionmouse
 msgid "Pozycja: X:"
-msgstr ""
+msgstr "Position: X:"
 
 #: unit1.savefilecaption
 msgid "Zapisywanie pliku"
-msgstr ""
+msgstr "Saving the file"
 
 #: unit1.writenewsentence
 msgid "Wpisz zdanie"
-msgstr ""
+msgstr "Enter a sentence"
 

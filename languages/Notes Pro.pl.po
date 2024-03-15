@@ -404,10 +404,12 @@ msgid "Pomoc"
 msgstr ""
 
 #: tform1.status.panels[0].text
+msgctxt "tform1.status.panels[0].text"
 msgid "Liczba liter"
 msgstr ""
 
 #: tform1.status.panels[1].text
+msgctxt "tform1.status.panels[1].text"
 msgid "Liczba linii"
 msgstr ""
 
@@ -622,21 +624,24 @@ msgstr ""
 msgid "Zapisz jak"
 msgstr ""
 
-#: tform2.bitbtn2.caption
+#: tform2.butcancelsettings.caption
+msgctxt "tform2.butcancelsettings.caption"
 msgid "Anuluj"
 msgstr ""
 
-#: tform2.button1.caption
+#: tform2.butcolorsettings.caption
+msgctxt "tform2.butcolorsettings.caption"
 msgid "Kolor"
 msgstr ""
 
-#: tform2.button2.caption
-msgid "Zresetuj dane"
+#: tform2.butfontsettings.caption
+msgctxt "tform2.butfontsettings.caption"
+msgid "Czcionka"
 msgstr ""
 
-#: tform2.button3.caption
-msgctxt "tform2.button3.caption"
-msgid "Czcionka"
+#: tform2.butresetsettings.caption
+msgctxt "tform2.butresetsettings.caption"
+msgid "Zresetuj dane"
 msgstr ""
 
 #: tform2.caption
@@ -744,8 +749,140 @@ msgctxt "tform2.toolbutton9.caption"
 msgid "ToolButton9"
 msgstr ""
 
+#: tftext_comparison.butalldelete1_list.hint
+msgid "Usuń  wszystko z listy 1"
+msgstr ""
+
+#: tftext_comparison.butalldelete2_list.hint
+msgid "Usuń  wszystko z listy 2"
+msgstr ""
+
+#: tftext_comparison.butopen1_list.hint
+msgctxt "tftext_comparison.butopen1_list.hint"
+msgid "Otwórz plik tekstowy"
+msgstr ""
+
+#: tftext_comparison.butopen2_lst.hint
+msgctxt "tftext_comparison.butopen2_lst.hint"
+msgid "Otwórz plik tekstowy"
+msgstr ""
+
+#: tftext_comparison.butsave1_list.hint
+msgctxt "tftext_comparison.butsave1_list.hint"
+msgid "Zapisz plik tekstowy"
+msgstr ""
+
+#: tftext_comparison.butsave2_list.hint
+msgctxt "tftext_comparison.butsave2_list.hint"
+msgid "Zapisz plik tekstowy"
+msgstr ""
+
+#: tftext_comparison.butsearch1.hint
+msgctxt "tftext_comparison.butsearch1.hint"
+msgid "Szukaj"
+msgstr ""
+
+#: tftext_comparison.butsearch2.hint
+msgctxt "tftext_comparison.butsearch2.hint"
+msgid "Szukaj"
+msgstr ""
+
+#: tftext_comparison.butsearchunic.hint
+msgctxt "tftext_comparison.butsearchunic.hint"
+msgid "Szukaj"
+msgstr ""
+
+#: tftext_comparison.button1.caption
+msgid "Porównaj "
+msgstr ""
+
+#: tftext_comparison.caption
+msgid "Porównaj dane"
+msgstr ""
+
+#: tftext_comparison.groupbox1.caption
+msgid "Wyszukaj wiersz"
+msgstr ""
+
+#: tftext_comparison.label1.caption
+msgid "1 lista"
+msgstr ""
+
+#: tftext_comparison.label2.caption
+msgid "2  lista"
+msgstr ""
+
+#: tftext_comparison.label3.caption
+msgid "Unikalne"
+msgstr ""
+
+#: tftext_comparison.label4.caption
+msgid "Unikalne wiersze: "
+msgstr ""
+
+#: tftext_comparison.menuitem1.caption
+msgctxt "tftext_comparison.menuitem1.caption"
+msgid "Usuń wszystko"
+msgstr ""
+
+#: tftext_comparison.menuitem2.caption
+msgctxt "tftext_comparison.menuitem2.caption"
+msgid "Usuń wszystko"
+msgstr ""
+
+#: tftext_comparison.menuitem3.caption
+msgctxt "tftext_comparison.menuitem3.caption"
+msgid "Usuń wszystko"
+msgstr ""
+
+#: tftext_comparison.searchtext.editlabel.caption
+msgid "Szukaj w Unikalnych"
+msgstr ""
+
+#: tftext_comparison.searchtextlist1.editlabel.caption
+msgid "Lista 1"
+msgstr ""
+
+#: tftext_comparison.searchtextlist2.editlabel.caption
+msgid "Lista 2"
+msgstr ""
+
+#: tftext_comparison.speedbutton1.hint
+msgid "Usuń  wszystko z listy Unikalne"
+msgstr ""
+
+#: tftext_comparison.speedbutton2.hint
+msgctxt "tftext_comparison.speedbutton2.hint"
+msgid "Zapisz plik tekstowy"
+msgstr ""
+
+#: tftext_comparison.statusbar1.panels[0].text
+msgctxt "tftext_comparison.statusbar1.panels[0].text"
+msgid "Wierszy"
+msgstr ""
+
+#: tftext_comparison.statusbar1.panels[1].text
+msgctxt "tftext_comparison.statusbar1.panels[1].text"
+msgid "Wierszy"
+msgstr ""
+
+#: tftext_comparison.statusbar1.panels[2].text
+msgctxt "tftext_comparison.statusbar1.panels[2].text"
+msgid "Wierszy"
+msgstr ""
+
 #: unit1.addnewsentencecaption
 msgid "Nowe zdanie"
+msgstr ""
+
+#: unit1.countline
+msgctxt "unit1.countline"
+msgid "Liczba linii"
+msgstr ""
+
+#: unit1.countword
+msgctxt "unit1.countword"
+msgid "Liczba liter"
 msgstr ""
 
 #: unit1.filemodified

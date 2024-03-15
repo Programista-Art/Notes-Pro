@@ -1,7 +1,7 @@
 object Ftext_comparison: TFtext_comparison
-  Left = 350
+  Left = 1112
   Height = 374
-  Top = 250
+  Top = 543
   Width = 595
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
@@ -10,6 +10,7 @@ object Ftext_comparison: TFtext_comparison
   ClientWidth = 595
   OnCreate = FormCreate
   Position = poMainFormCenter
+  LCLVersion = '3.0.0.1'
   object ListBox1: TListBox
     Left = 0
     Height = 287
@@ -17,9 +18,9 @@ object Ftext_comparison: TFtext_comparison
     Width = 144
     Align = alLeft
     ItemHeight = 0
+    OnClick = ListBox1Click
     PopupMenu = PMenuList1
     TabOrder = 0
-    OnClick = ListBox1Click
   end
   object ListBox2: TListBox
     Left = 144
@@ -28,9 +29,9 @@ object Ftext_comparison: TFtext_comparison
     Width = 144
     Align = alLeft
     ItemHeight = 0
+    OnClick = ListBox2Click
     PopupMenu = PMenuList2
     TabOrder = 1
-    OnClick = ListBox2Click
   end
   object ListBox3: TListBox
     Left = 288
@@ -39,9 +40,9 @@ object Ftext_comparison: TFtext_comparison
     Width = 144
     Align = alLeft
     ItemHeight = 0
+    OnClick = ListBox3Click
     PopupMenu = PMenuListUnic
     TabOrder = 2
-    OnClick = ListBox3Click
   end
   object Panel1: TPanel
     Left = 0
@@ -205,8 +206,8 @@ object Ftext_comparison: TFtext_comparison
       Top = 8
       Width = 88
       Caption = 'Porównaj '
-      TabOrder = 0
       OnClick = Button1Click
+      TabOrder = 0
     end
     object GroupBox1: TGroupBox
       Left = 1

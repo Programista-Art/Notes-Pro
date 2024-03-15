@@ -1,13 +1,13 @@
 object Form1: TForm1
-  Left = 438
+  Left = 441
   Height = 497
-  Top = 208
-  Width = 996
+  Top = 209
+  Width = 1041
   Align = alClient
   BorderStyle = bsSingle
   Caption = 'Notes Pro V1.1.5.3'
   ClientHeight = 497
-  ClientWidth = 996
+  ClientWidth = 1041
   FormStyle = fsSystemStayOnTop
   Menu = MainMenu1
   OnClose = FormClose
@@ -18,7 +18,7 @@ object Form1: TForm1
     Left = 0
     Height = 448
     Top = 26
-    Width = 671
+    Width = 716
     Align = alClient
     Color = clActiveBorder
     Font.CharSet = EASTEUROPE_CHARSET
@@ -35,7 +35,7 @@ object Form1: TForm1
     TabOrder = 0
   end
   object Panel1: TPanel
-    Left = 676
+    Left = 721
     Height = 448
     Top = 26
     Width = 320
@@ -598,7 +598,7 @@ object Form1: TForm1
     Left = 0
     Height = 26
     Top = 0
-    Width = 996
+    Width = 1041
     Caption = 'ToolBar1'
     Color = clBtnFace
     Images = ImageList1
@@ -715,7 +715,7 @@ object Form1: TForm1
     Left = 0
     Height = 23
     Top = 474
-    Width = 996
+    Width = 1041
     Color = clBtnFace
     Panels = <    
       item
@@ -784,7 +784,7 @@ object Form1: TForm1
     ParentColor = False
   end
   object Splitter1: TSplitter
-    Left = 671
+    Left = 716
     Height = 448
     Top = 26
     Width = 5

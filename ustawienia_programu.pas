@@ -5,28 +5,28 @@ unit ustawienia_programu;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, ExtCtrls,
-  Buttons, ComCtrls, ValEdit, ColorBox, IniFiles, about;
+  Classes,LCLTranslator, DefaultTranslator, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, ExtCtrls,
+  Buttons, ComCtrls, ColorBox, IniFiles;
 
 type
 
   { TForm2 }
 
   TForm2 = class(TForm)
-    BitBtn1: TBitBtn;
-    BitBtn2: TBitBtn;
-    Button1: TButton;
-    Button2: TButton;
-    Button3: TButton;
-    ColorBox1: TColorBox;
-    ColorBox2: TColorBox;
-    ColorBox3: TColorBox;
+    ButOkSettings: TBitBtn;
+    ButCancelSettings: TBitBtn;
+    ButColorSettings: TButton;
+    ButResetSettings: TButton;
+    ButFontSettings: TButton;
+    ColorBox1Settings: TColorBox;
+    ColorBox2Settings: TColorBox;
+    ColorBoxSettings: TColorBox;
     ColorDialog1: TColorDialog;
     FontDialog: TFontDialog;
     ImageList1: TImageList;
     LbKeys: TListBox;
     Memo1: TMemo;
-    PageControl1: TPageControl;
+    PageControlSettings: TPageControl;
     PageControl: TPageControl;
     Panel1: TPanel;
     Panel2: TPanel;
@@ -54,17 +54,17 @@ type
     ToolButton7: TToolButton;
     ToolButton8: TToolButton;
     ToolButton9: TToolButton;
-    procedure BitBtn1Click(Sender: TObject);
-    procedure Button1Click(Sender: TObject);
-    procedure Button2Click(Sender: TObject);
-    procedure Button3Click(Sender: TObject);
+    procedure ButOkSettingsClick(Sender: TObject);
+    procedure ButColorSettingsClick(Sender: TObject);
+    procedure ButResetSettingsClick(Sender: TObject);
+    procedure ButFontSettingsClick(Sender: TObject);
     procedure CBListboxClick(Sender: TObject);
     procedure CBListboxMouseUp(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Integer);
-    procedure ColorBox1CloseUp(Sender: TObject);
-    procedure ColorBox2CloseUp(Sender: TObject);
-    procedure ColorBox3Change(Sender: TObject);
-    procedure ColorBox3CloseUp(Sender: TObject);
+    procedure ColorBox1SettingsCloseUp(Sender: TObject);
+    procedure ColorBox2SettingsCloseUp(Sender: TObject);
+    procedure ColorBoxSettingsChange(Sender: TObject);
+    procedure ColorBoxSettingsCloseUp(Sender: TObject);
   private
 
   public
@@ -94,7 +94,7 @@ uses
 
 { TForm2 }
 
-procedure TForm2.Button1Click(Sender: TObject);
+procedure TForm2.ButColorSettingsClick(Sender: TObject);
 begin
 
 if ColorDialog1.Execute then
@@ -111,7 +111,7 @@ end
 
 end;
 
-procedure TForm2.BitBtn1Click(Sender: TObject);
+procedure TForm2.ButOkSettingsClick(Sender: TObject);
 begin
    //Ini_Settings := TIniFile.Create(ExtractFilePath(ParamStr(0))+'settings.ini');
    //try
@@ -122,7 +122,7 @@ begin
    //end;
 end;
 
-procedure TForm2.Button2Click(Sender: TObject);
+procedure TForm2.ButResetSettingsClick(Sender: TObject);
 begin
   //nadaje wartosci natychnisat
   Form1.ToolBar1.Color:= clBtnFace;
@@ -153,7 +153,7 @@ begin
 
 end;
 
-procedure TForm2.Button3Click(Sender: TObject);
+procedure TForm2.ButFontSettingsClick(Sender: TObject);
 begin
 if FontDialog.Execute then
  begin
@@ -192,9 +192,9 @@ begin
 
 end;
 
-procedure TForm2.ColorBox1CloseUp(Sender: TObject);
+procedure TForm2.ColorBox1SettingsCloseUp(Sender: TObject);
 begin
-  colorToolBar := ColorBox1.Selected;
+  colorToolBar := ColorBox1Settings.Selected;
   ToolBar1.Color:= colorToolBar;
   Form1.ToolBar1.Color:= colorToolBar;
   Ini_Settings := TIniFile.Create(ExtractFilePath(ParamStr(0))+'settings.ini');
@@ -205,11 +205,11 @@ begin
   end;
 end;
 
-procedure TForm2.ColorBox2CloseUp(Sender: TObject);
+procedure TForm2.ColorBox2SettingsCloseUp(Sender: TObject);
 begin
-  colorUi := ColorBox2.Selected;
-  Form1.Memo1.Color:= ColorBox2.Selected;
-  Memo1.Color:= ColorBox2.Selected;
+  colorUi := ColorBox2Settings.Selected;
+  Form1.Memo1.Color:= ColorBox2Settings.Selected;
+  Memo1.Color:= ColorBox2Settings.Selected;
    Ini_Settings := TIniFile.Create(ExtractFilePath(ParamStr(0))+'settings.ini');
    try
      Ini_Settings.WriteInteger('Main','MemoColor', colorUi);
@@ -218,16 +218,16 @@ begin
    end;
 end;
 
-procedure TForm2.ColorBox3Change(Sender: TObject);
+procedure TForm2.ColorBoxSettingsChange(Sender: TObject);
 begin
 
 end;
 
-procedure TForm2.ColorBox3CloseUp(Sender: TObject);
+procedure TForm2.ColorBoxSettingsCloseUp(Sender: TObject);
 begin
-  colorListbox := ColorBox3.Selected;
-  Form1.ListBox1.Color:= ColorBox3.Selected;
-  LbKeys.Color:= ColorBox3.Selected;
+  colorListbox := ColorBoxSettings.Selected;
+  Form1.ListBox1.Color:= ColorBoxSettings.Selected;
+  LbKeys.Color:= ColorBoxSettings.Selected;
 
   Ini_Settings := TIniFile.Create(ExtractFilePath(ParamStr(0))+'settings.ini');
   try

@@ -7,7 +7,7 @@ interface
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, Menus,
   ExtCtrls, ComCtrls, Buttons, ActnList,
-  IniFiles, ustawienia_programu, forma2, about,Clipbrd,text_comparison, LCLTranslator, DefaultTranslator, Character;
+  IniFiles, ustawienia_programu, forma2, about,Clipbrd,text_comparison, LCLTranslator, DefaultTranslator;
 
 type
 
@@ -243,12 +243,15 @@ type
     procedure LoadColorPalette;
     procedure LastPositionForm;
     procedure DeleteAllTextinMemo;
+    procedure LoadLang;
   private
 
   public
     var
   inif: TIniFile;
   Ini_Settings: TIniFile;
+  ini_lang: TIniFile;
+  lang: String;
   selectedTextMemo: string;
   Count: Integer;
   end;
@@ -271,6 +274,9 @@ resourcestring
   fileModified ='Bieżący plik został zmodyfikowany. Zapisać zmiany?';
   openExistingFile = 'Otwórz istniejący plik';
   positionMouse = 'Pozycja: X:';
+  //memo
+  CountWord  ='Liczba liter';
+  CountLine  = 'Liczba linii';
 implementation
 
 {$R *.lfm}
@@ -311,11 +317,11 @@ procedure TForm1.Memo1Change(Sender: TObject);
 begin
   //liczenie liczb i spacje
   kol:=Memo1.GetTextLen;
-  Status.Panels.Items[0].Text:=('Liczba liter ')+IntToStr(kol);
+  Status.Panels.Items[0].Text:=(CountWord )+IntToStr(kol);
 
   //liczenie linijek
   kolli:=Memo1.Lines.Count;
-  Status.Panels.Items[1].Text:=('Liczba linii ')+IntToStr(kolli);
+  Status.Panels.Items[1].Text:=(CountLine )+IntToStr(kolli);
 end;
 
 procedure TForm1.Memo1MouseMove(Sender: TObject; Shift: TShiftState; X,
@@ -338,6 +344,7 @@ end;
 procedure TForm1.MenuItem13Click(Sender: TObject);
 begin
   SetDefaultLang('en');
+  lang := 'en';
 end;
 
 
@@ -469,6 +476,7 @@ end;
 procedure TForm1.MenuItem35Click(Sender: TObject);
 begin
   SetDefaultLang('pl');
+  lang := 'pl';
 end;
 
 procedure TForm1.MenuItem36Click(Sender: TObject);
@@ -514,6 +522,7 @@ end;
 procedure TForm1.MenuItem41Click(Sender: TObject);
 begin
   SetDefaultLang('ru');
+  lang := 'ru';
 end;
 
 procedure TForm1.MenuItem4Click(Sender: TObject);
@@ -794,6 +803,26 @@ begin
   end;
 end;
 
+procedure TForm1.LoadLang;
+begin
+  //ini_lang := TIniFile.Create(ExtractFilePath(ParamStr(0)) + 'lang.ini');
+   ini_lang := TIniFile.Create(ExtractFilePath(ParamStr(0)) + 'lang.ini');
+  try
+    lang := ini_lang.ReadString('main','langdefault','en');
+    case lang of
+    'en': SetDefaultLang('en');
+    'pl': SetDefaultLang('pl');
+    'ru': SetDefaultLang('ru');
+    else
+      SetDefaultLang('en');
+    end;
+      FreeAndNil(ini_lang);
+    finally
+  end;
+end;
+
+
+
 procedure TForm1.ButtonAddClick(Sender: TObject);
 begin
   //ListBox1.Items.Add(Edit1.Text);
@@ -1063,13 +1092,15 @@ end;
 
 procedure TForm1.FormClose(Sender: TObject; var CloseAction: TCloseAction);
 begin
-  //inif.Free;
-  //Ini_Settings.Free;
+  ini_lang := TIniFile.Create(ExtractFilePath(ParamStr(0)) + 'lang.ini');
+  try
+    ini_lang.WriteString('main','langdefault',lang);
+  finally
+    freeAndNil(ini_lang);
+  end;
 
   if Memo1.Modified then begin
-    if MessageDlg('Zapisywanie pliku',
-    'Bieżący plik został zmodyfikowany. Zapisać zmiany?',
-     mtConfirmation, [mbYes, mbNo], 0) = mrYes then
+    if MessageDlg(saveFileCaption, fileModified, mtConfirmation,[mbYes, mbNo], 0) = mrYes then
      ZapiszClick(Sender);
   end;
 end;
@@ -1086,6 +1117,7 @@ begin
   Status.Panels.Items[3].Text:='Data: ' + DateToStr(Date);
   //wywołujemy procedurę PodliczLinijki
   PodliczLinijki(ListBox1, StatusBar2);
+  LoadLang;
 end;
 
 procedure TForm1.InchSumClick(Sender: TObject);
