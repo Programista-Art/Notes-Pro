@@ -54,16 +54,12 @@ type
     ToolButton7: TToolButton;
     ToolButton8: TToolButton;
     ToolButton9: TToolButton;
-    procedure ButOkSettingsClick(Sender: TObject);
     procedure ButColorSettingsClick(Sender: TObject);
     procedure ButResetSettingsClick(Sender: TObject);
     procedure ButFontSettingsClick(Sender: TObject);
-    procedure CBListboxClick(Sender: TObject);
-    procedure CBListboxMouseUp(Sender: TObject; Button: TMouseButton;
-      Shift: TShiftState; X, Y: Integer);
+
     procedure ColorBox1SettingsCloseUp(Sender: TObject);
     procedure ColorBox2SettingsCloseUp(Sender: TObject);
-    procedure ColorBoxSettingsChange(Sender: TObject);
     procedure ColorBoxSettingsCloseUp(Sender: TObject);
   private
 
@@ -85,11 +81,11 @@ type
 var
   Form2: TForm2;
 
+resourcestring
+  CountLines  = 'Liczba wierszy ';
 implementation
 uses
   unit1;
-
-
 {$R *.lfm}
 
 { TForm2 }
@@ -111,16 +107,6 @@ end
 
 end;
 
-procedure TForm2.ButOkSettingsClick(Sender: TObject);
-begin
-   //Ini_Settings := TIniFile.Create(ExtractFilePath(ParamStr(0))+'settings.ini');
-   //try
-   // Ini_Settings.WriteInteger('Main','MemoColor', colorUi);
-   // Ini_Settings.WriteInteger('Main','ToolBarTop', colorToolBar);
-   //finally
-   //  Ini_Settings.free;
-   //end;
-end;
 
 procedure TForm2.ButResetSettingsClick(Sender: TObject);
 begin
@@ -174,24 +160,6 @@ if FontDialog.Execute then
   end
 end;
 
-procedure TForm2.CBListboxClick(Sender: TObject);
-begin
-  // if CBListbox.ColorDialog.Execute then
-  //begin
-  // LbKeysColor := CBListbox.ColorDialog.Color;
-  // //Ustawiam kolor LbKeys
-  // LbKeys.Color := LbKeysColor;
-  //end;
-end;
-
-procedure TForm2.CBListboxMouseUp(Sender: TObject; Button: TMouseButton;
-  Shift: TShiftState; X, Y: Integer);
-begin
-
-
-
-end;
-
 procedure TForm2.ColorBox1SettingsCloseUp(Sender: TObject);
 begin
   colorToolBar := ColorBox1Settings.Selected;
@@ -216,11 +184,6 @@ begin
    finally
      Ini_Settings.free;
    end;
-end;
-
-procedure TForm2.ColorBoxSettingsChange(Sender: TObject);
-begin
-
 end;
 
 procedure TForm2.ColorBoxSettingsCloseUp(Sender: TObject);

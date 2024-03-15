@@ -11,6 +11,33 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.4.2\n"
 
+#: text_comparison.countlines
+msgctxt "text_comparison.countlines"
+msgid "Liczba wierszy "
+msgstr "Nb of rows"
+
+#: text_comparison.list1
+msgid "Lista nr 1"
+msgstr "List 1"
+
+#: text_comparison.list2
+msgid "Lista nr 2"
+msgstr "List 2"
+
+#: text_comparison.notext
+msgid "Nie ma tekstu"
+msgstr "No text"
+
+#: text_comparison.textfound
+#, fuzzy
+msgctxt "text_comparison.textfound"
+msgid "Tekst znaleziony"
+msgstr "Text found"
+
+#: text_comparison.uniquelist
+msgid "Lista Unikalne"
+msgstr "Unique list"
+
 #: tfabout.bitbtn1.caption
 msgctxt "tfabout.bitbtn1.caption"
 msgid "Zamknij"
@@ -107,6 +134,7 @@ msgid "Dodaj"
 msgstr "Add"
 
 #: tform1.cale.caption
+msgctxt "tform1.cale.caption"
 msgid "Cale"
 msgstr "Inches"
 
@@ -406,12 +434,12 @@ msgstr "Help"
 #: tform1.status.panels[0].text
 msgctxt "tform1.status.panels[0].text"
 msgid "Liczba liter"
-msgstr "Number of letters"
+msgstr "Nb of letters"
 
 #: tform1.status.panels[1].text
 msgctxt "tform1.status.panels[1].text"
 msgid "Liczba linii"
-msgstr "Number of lines"
+msgstr "Nb of lines"
 
 #: tform1.status.panels[2].text
 msgid "XY"
@@ -424,10 +452,6 @@ msgstr "Date"
 #: tform1.status.panels[4].text
 msgid "Info"
 msgstr "Info"
-
-#: tform1.statusbar2.panels[0].text
-msgid "Liczba wierszy"
-msgstr "Number of rows"
 
 #: tform1.tabsheet1.caption
 msgctxt "tform1.tabsheet1.caption"
@@ -514,10 +538,6 @@ msgstr "ToolButton14"
 #: tform1.toolbutton14.hint
 msgid "Wyłącz Tryb Zawsze na górze"
 msgstr "Turn off Always on top mode"
-
-#: tform1.toolbutton15.caption
-msgid "ToolButton15"
-msgstr "ToolButton15"
 
 #: tform1.toolbutton2.caption
 msgctxt "tform1.toolbutton2.caption"
@@ -905,17 +925,50 @@ msgstr "New sentence"
 
 #: unit1.countline
 msgctxt "unit1.countline"
-msgid "Liczba linii"
-msgstr "Nb of lines"
+msgid "Liczba linii "
+msgstr "Nb of lines "
 
 #: unit1.countword
 msgctxt "unit1.countword"
-msgid "Liczba liter"
-msgstr "Nb of letters"
+msgid "Liczba liter "
+msgstr "Nb of letters "
+
+#: unit1.datasaved
+msgid "Dane zapisane"
+msgstr "Data saved"
+
+#: unit1.disabledmodealwaysontop
+msgid "Wyłączony tryb zawsze na górze"
+msgstr "Disabled mode always on top"
+
+#: unit1.enabledalwaysontop
+msgid "Włączony tryb zawsze na górze"
+msgstr "Always on top mode enabled"
+
+#: unit1.enterdatafields
+msgid "Wpisz dane w pola"
+msgstr "Enter the data in the fields"
+
+#: unit1.enterkeywords
+msgid "Wpisz słowa kluczowe"
+msgstr "Enter keywords"
+
+#: unit1.entervalue
+msgid "Wpisz wartość w polu"
+msgstr "Enter a value in the field"
 
 #: unit1.filemodified
 msgid "Bieżący plik został zmodyfikowany. Zapisać zmiany?"
 msgstr "The current file has been modified. Save changes?"
+
+#: unit1.inches
+msgctxt "unit1.inches"
+msgid "Cale"
+msgstr "Inches "
+
+#: unit1.infocaptionsearch
+msgid "Informacja"
+msgstr "Information"
 
 #: unit1.isdeletealltext
 msgid "Czy usunąć cały tekst?"
@@ -942,14 +995,32 @@ msgid "Otwórz istniejący plik"
 msgstr "Open an existing file"
 
 #: unit1.positionmouse
-msgid "Pozycja: X:"
-msgstr "Position: X:"
+msgid "Pozycja: X: "
+msgstr "Position: X: "
 
 #: unit1.savefilecaption
 msgid "Zapisywanie pliku"
 msgstr "Saving the file"
 
+#: unit1.textfound
+msgctxt "unit1.textfound"
+msgid "Tekst znaleziony"
+msgstr "Text found"
+
+#: unit1.textnotfound
+msgid "Tekst nie znaleziony"
+msgstr "Text not found"
+
 #: unit1.writenewsentence
 msgid "Wpisz zdanie"
 msgstr "Enter a sentence"
+
+#: unit1.writenumbersaandb
+msgid "Wpisz liczby w A i B"
+msgstr "Write the numbers in A and B"
+
+#: ustawienia_programu.countlines
+msgctxt "ustawienia_programu.countlines"
+msgid "Liczba wierszy "
+msgstr "Nb of rows"
 

@@ -124,7 +124,6 @@ type
     ToolButton12: TToolButton;
     ToolButton13: TToolButton;
     ToolButton14: TToolButton;
-    ToolButton15: TToolButton;
     ToolButton2: TToolButton;
     ToolButton3: TToolButton;
     ToolButton4: TToolButton;
@@ -226,7 +225,6 @@ type
     procedure ToolButton14Click(Sender: TObject);
     procedure ToolButton14MouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Integer);
-    procedure ToolButton15Click(Sender: TObject);
     procedure ToolButton1Click(Sender: TObject);
     procedure ToolButton2Click(Sender: TObject);
     procedure ToolButton3Click(Sender: TObject);
@@ -236,7 +234,6 @@ type
     procedure ToolButton7Click(Sender: TObject);
     procedure ToolButton8Click(Sender: TObject);
     procedure WklejClick(Sender: TObject);
-    procedure WstawClick(Sender: TObject);
     procedure WytnijClick(Sender: TObject);
     procedure ZamknijClick(Sender: TObject);
     procedure ZapiszClick(Sender: TObject);
@@ -273,10 +270,23 @@ resourcestring
   saveFileCaption = 'Zapisywanie pliku';
   fileModified ='Bieżący plik został zmodyfikowany. Zapisać zmiany?';
   openExistingFile = 'Otwórz istniejący plik';
-  positionMouse = 'Pozycja: X:';
+  positionMouse = 'Pozycja: X: ';
   //memo
-  CountWord  ='Liczba liter';
-  CountLine  = 'Liczba linii';
+  CountWord  ='Liczba liter ';
+  CountLine  = 'Liczba linii ';
+  //Tryby
+  EnterKeywords = 'Wpisz słowa kluczowe';
+  DataSaved = 'Dane zapisane';
+  EnabledAlwaysOnTop  = 'Włączony tryb zawsze na górze';
+  DisabledModeAlwaysOnTop = 'Wyłączony tryb zawsze na górze';
+  EnterValue = 'Wpisz wartość w polu';
+  WriteNumbersAandB = 'Wpisz liczby w A i B';
+  EnterDataFields = 'Wpisz dane w pola';
+  InfoCaptionSearch ='Informacja';
+  TextNotFound = 'Tekst nie znaleziony';
+  TextFound = 'Tekst znaleziony';
+  Inches = 'Cale';
+
 implementation
 
 {$R *.lfm}
@@ -290,7 +300,7 @@ count:Integer;
 begin
   //oblicza ilosc linijek w ListBox1
   count:=ListBox1.Items.Count;
-  Statusbar2.Panels[0].Text:='Liczba wierszy: '+IntToStr(count);
+  Statusbar2.Panels[0].Text:= CountLine + ' ' +IntToStr(count);
 end;
 
 
@@ -644,35 +654,32 @@ end;
 procedure TForm1.ToolButton12Click(Sender: TObject);
 begin
     if ListBox1.Items.Text = '' then
-    MessageDlg('Wpisz słowa kluczowe',mtError,[mbOk, mbCancel],0)
+    MessageDlg(EnterKeywords,mtError,[mbOk, mbCancel],0)
   else
       ListBox1.Items.SaveToFile('klucz_slowa.txt');
-      MessageDlg('Dane zapisane',mtInformation,[mbOk],0);
+      MessageDlg(DataSaved,mtInformation,[mbOk],0);
 end;
 
 procedure TForm1.ToolButton13Click(Sender: TObject);
 begin
   Form1.FormStyle:=fsSystemStayOnTop;
-  MessageDlg('Włączony tryb zawsze na górze',mtInformation,[mbOk],0);
+  MessageDlg(EnabledAlwaysOnTop, mtInformation,[mbOk],0);
 end;
 
 procedure TForm1.ToolButton14Click(Sender: TObject);
 begin
    Form1.FormStyle:=fsNormal;
-   MessageDlg('Wyłączony tryb zawsze na górze',mtInformation,[mbOk],0);
+   MessageDlg(DisabledModeAlwaysOnTop,mtInformation,[mbOk],0);
 end;
 
 procedure TForm1.ToolButton14MouseDown(Sender: TObject; Button: TMouseButton;
   Shift: TShiftState; X, Y: Integer);
 begin
   Form1.FormStyle:=fsNormal;
-   MessageDlg('Wyłączony tryb zawsze na górze',mtInformation,[mbOk],0);
+   MessageDlg(EnabledAlwaysOnTop,mtInformation,[mbOk],0);
 end;
 
-procedure TForm1.ToolButton15Click(Sender: TObject);
-begin
 
-end;
 
 
 procedure TForm1.ToolButton1Click(Sender: TObject);
@@ -723,10 +730,6 @@ begin
   Memo1.PasteFromClipboard;
 end;
 
-procedure TForm1.WstawClick(Sender: TObject);
-begin
-
-end;
 
 procedure TForm1.WytnijClick(Sender: TObject);
 begin
@@ -827,10 +830,10 @@ procedure TForm1.ButtonAddClick(Sender: TObject);
 begin
   //ListBox1.Items.Add(Edit1.Text);
   if  Edit1.Text = '' then
-  ShowMessage('Wpisz wartość w polu')
+  ShowMessage(EnterValue)
   else
     begin
-      ListBox1.Items.Add(Edit1.Text); //если не пустое поле то добавляем запись
+      ListBox1.Items.Add(Edit1.Text);
       Edit1.Clear;
     end;
 end;
@@ -839,13 +842,13 @@ procedure TForm1.CheckBox1Change(Sender: TObject);
 begin
 If  CheckBox1.Checked then
    begin
-   Cm.Caption:='Cale';
+   Cm.Caption:= Inches;
    Cale.Caption:='Cm';
    end
 else
    begin
-    Cm.Caption:='Cm';
-   Cale.Caption:='Cale';
+   Cm.Caption:='Cm';
+   Cale.Caption:= Inches;
    end
 end;
 
@@ -854,7 +857,7 @@ begin
   case Key of
   '0'..'9',#8,',':;//dozwolone symbole
   else
-    Key:=#0;//pzostale symbbole bllokujemy
+    Key:=#0;//pzostale symbbole bllokuje
   end;
 end;
 
@@ -863,7 +866,7 @@ begin
   case Key of
   '0'..'9',#8,',':;//dozwolone symbole;
   else
-    Key:=#0;//blokujemy symbole
+    Key:=#0;//blokuje symbole
   end;
 end;
 
@@ -877,7 +880,7 @@ begin
   case Key of
   '0'..'9',#8,',':;//symbole dozwolone
   else
-    Key:=#0;// pozostale symbole blokujemy
+    Key:=#0;// pozostale symbole blokuje
   end;
 end;
 
@@ -886,7 +889,7 @@ begin
     case Key of
   '0'..'9',#8,',':;//symbole dozwolone
   else
-    Key:=#0;// pozostale symbole blokujemy
+    Key:=#0;// pozostale symbole blokuje
   end;
 end;
 
@@ -895,7 +898,7 @@ begin
     case Key of
   '0'..'9',#8,',':;//symbole dozwolone
   else
-    Key:=#0;// pozostale symbole blokujemy
+    Key:=#0;// pozostale symbole blokuje
   end;
 end;
 
@@ -906,7 +909,7 @@ a,b,d:real;
 begin
 if (Edit4.text = '') or (Edit5.text = '')  then
   begin
-    MessageDlg('Wpisz liczby w A i B',mtWarning,[mbOk],0);
+    MessageDlg(WriteNumbersAandB,mtWarning,[mbOk],0);
   end
   else
   begin
@@ -925,7 +928,7 @@ procedure TForm1.Button11Click(Sender: TObject);
   begin
   if (Edit4.text = '') or (Edit5.text = '')  then
   begin
-    MessageDlg('Wpisz liczby w A i B',mtWarning,[mbOk],0);
+    MessageDlg(WriteNumbersAandB,mtWarning,[mbOk],0);
   end
   else
   begin
@@ -942,7 +945,7 @@ procedure TForm1.Button12Click(Sender: TObject);
   begin
   if (Edit4.text = '') or (Edit5.text = '')  then
   begin
-    MessageDlg('Wpisz liczby w A i B',mtWarning,[mbOk],0);
+    MessageDlg(WriteNumbersAandB,mtWarning,[mbOk],0);
   end
   else
   begin
@@ -956,15 +959,14 @@ end;
 procedure TForm1.Button13Click(Sender: TObject);
 begin
   Edit4.Clear;
-   Edit5.Clear;
-    Edit6.Clear;
+  Edit5.Clear;
+  Edit6.Clear;
 end;
 
 procedure TForm1.Button14Click(Sender: TObject);
 begin
    Form3.Hide;
 end;
-
 
 
 procedure TForm1.Button1Click(Sender: TObject);
@@ -977,7 +979,7 @@ begin
    //sprawdzamy czy pola nie są puste
 if EditInch.Text = ''  then
   begin
-      MessageDlg('Wpisz dane w pola',mtWarning,[mbOk],0); // pokazujemy powidamienie
+      MessageDlg(EnterDataFields,mtWarning,[mbOk],0); // pokazujemy powidamienie
   end
   else
   begin
@@ -1013,11 +1015,11 @@ begin
    if nn_pos = 0 then
     begin
       //ShowMessage('Tekst nie znaleziony');
-      MessageDlg('Informacja','Tekst nie znaleziony',mtInformation,[mbOk,mbCancel],0);
+      MessageDlg(InfoCaptionSearch,TextNotFound,mtInformation,[mbOk,mbCancel],0);
     end
    else
     begin
-    MessageDlg('Informacja','Tekst znaleziony',mtInformation,[mbOk],0);
+    MessageDlg(InfoCaptionSearch, TextFound, mtInformation,[mbOk],0);
     Memo1.SetFocus;
     Memo1.SelStart := nn_pos -1; // z jakiej pozycji zaczac zanzcaczaс
     Memo1.SelLength := Length(szukaj.text); //zaznaczam tyle ile wynosi długość tekstu
@@ -1039,7 +1041,7 @@ procedure TForm1.Button6Click(Sender: TObject);
 begin
   Form3:=Tform3.Create(Self);
   Form1.InsertControl(Form3); //вставляем на первую форму будут дочерним
-  Form3.Show; //показываем форму
+  Form3.Show;
 end;
 
 procedure TForm1.Button7Click(Sender: TObject);
@@ -1049,7 +1051,7 @@ var
 begin
   if (EditLiczba.Text = '') or (EditZnizka.Text = '') then
 begin
-  MessageDlg('Wpisz dane w pola',mtWarning,[mbOk],0);
+  MessageDlg(EnterDataFields, mtWarning,[mbOk],0);
 end
 else
 begin
@@ -1078,7 +1080,7 @@ begin
 //sprawdzamy czy pola nie są puste
 if (Edit4.text = '') or (Edit5.text = '')  then
   begin
-    MessageDlg('Wpisz liczby w A i B',mtWarning,[mbOk],0);
+    MessageDlg(WriteNumbersAandB, mtWarning,[mbOk],0);
   end
   else
   begin
@@ -1107,6 +1109,7 @@ end;
 
 procedure TForm1.FormCreate(Sender: TObject);
 begin
+  LoadLang;
   //ladujemy color formy z ini
   LoadColorPalette;
   //Laduje ostatnia pozycje formy
@@ -1117,7 +1120,6 @@ begin
   Status.Panels.Items[3].Text:='Data: ' + DateToStr(Date);
   //wywołujemy procedurę PodliczLinijki
   PodliczLinijki(ListBox1, StatusBar2);
-  LoadLang;
 end;
 
 procedure TForm1.InchSumClick(Sender: TObject);

@@ -1,7 +1,7 @@
 object Form2: TForm2
-  Left = 1034
+  Left = 373
   Height = 342
-  Top = 403
+  Top = 176
   Width = 577
   BorderStyle = bsDialog
   Caption = 'Ustawienia'
@@ -54,7 +54,6 @@ object Form2: TForm2
         Width = 72
         Align = alLeft
         Caption = 'Czcionka'
-        OnClick = ButFontSettingsClick
         TabOrder = 1
       end
       object ButResetSettings: TButton
@@ -77,7 +76,6 @@ object Form2: TForm2
         DefaultCaption = True
         Kind = bkOK
         ModalResult = 1
-        OnClick = ButOkSettingsClick
         TabOrder = 3
       end
       object ButCancelSettings: TBitBtn
@@ -279,7 +277,6 @@ object Form2: TForm2
               Style = [cbStandardColors, cbExtendedColors, cbSystemColors, cbCustomColor, cbPrettyNames]
               Align = alLeft
               ItemHeight = 16
-              OnChange = ColorBoxSettingsChange
               OnCloseUp = ColorBoxSettingsCloseUp
               TabOrder = 0
             end

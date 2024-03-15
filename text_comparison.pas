@@ -81,6 +81,13 @@ type
 
 var
   Ftext_comparison: TFtext_comparison;
+resourcestring
+  CountLines  = 'Liczba wierszy ';
+  UniqueList = 'Lista Unikalne';
+  NoText = 'Nie ma tekstu';
+  TextFound = 'Tekst znaleziony';
+  List1 = 'Lista nr 1';
+  List2 = 'Lista nr 2';
 
 implementation
 
@@ -183,7 +190,7 @@ var
 count: Integer;
 begin
   count := List.Items.Count;
-  StBar.Panels[number].Text:='Liczba wierszy: '+IntToStr(count);
+  StBar.Panels[number].Text:= CountLines + ' ' + IntToStr(count);
 end;
 
 procedure TFtext_comparison.SpeedButton1Click(Sender: TObject);
@@ -193,7 +200,7 @@ end;
 
 procedure TFtext_comparison.SpeedButton2Click(Sender: TObject);
 begin
-  SaveText(ListBox3,'Lista Unikalne');
+  SaveText(ListBox3, UniqueList );
 end;
 
 procedure TFtext_comparison.ButSearchUnicClick(Sender: TObject);
@@ -209,11 +216,11 @@ begin
   NumbPos:= Pos (pole.Text, list.Items.Text);
   if NumbPos = 0 then
    begin
-     ShowMessage('Nie ma tekstu');
+     ShowMessage(NoText);
    end
  else
    begin
-  ShowMessage('Tekst znaleziony');
+  ShowMessage(TextFound);
   list.SetFocus; // aktywne
   //list.ItemIndex := NumbPos -1; // z jakiej pozycji zaczac zanzcaczaс
   if (NumbPos - 1) < list.Items.Count then // Sprawdzenie czy indeks mieści się w zakresie
@@ -253,12 +260,12 @@ end;
 
 procedure TFtext_comparison.ButSave1_listClick(Sender: TObject);
 begin
-  SaveText(ListBox1,'Lista nr 1');
+  SaveText(ListBox1, List1);
 end;
 
 procedure TFtext_comparison.ButSave2_listClick(Sender: TObject);
 begin
-  SaveText(ListBox2,'Lista nr 2');
+  SaveText(ListBox2,List2);
 end;
 
 procedure TFtext_comparison.ButSearch1Click(Sender: TObject);

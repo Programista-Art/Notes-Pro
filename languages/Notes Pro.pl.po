@@ -11,6 +11,32 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.4.2\n"
 
+#: text_comparison.countlines
+msgctxt "text_comparison.countlines"
+msgid "Liczba wierszy "
+msgstr ""
+
+#: text_comparison.list1
+msgid "Lista nr 1"
+msgstr ""
+
+#: text_comparison.list2
+msgid "Lista nr 2"
+msgstr ""
+
+#: text_comparison.notext
+msgid "Nie ma tekstu"
+msgstr ""
+
+#: text_comparison.textfound
+msgctxt "text_comparison.textfound"
+msgid "Tekst znaleziony"
+msgstr ""
+
+#: text_comparison.uniquelist
+msgid "Lista Unikalne"
+msgstr ""
+
 #: tfabout.bitbtn1.caption
 msgctxt "tfabout.bitbtn1.caption"
 msgid "Zamknij"
@@ -107,6 +133,7 @@ msgid "Dodaj"
 msgstr ""
 
 #: tform1.cale.caption
+msgctxt "tform1.cale.caption"
 msgid "Cale"
 msgstr ""
 
@@ -425,10 +452,6 @@ msgstr ""
 msgid "Info"
 msgstr ""
 
-#: tform1.statusbar2.panels[0].text
-msgid "Liczba wierszy"
-msgstr ""
-
 #: tform1.tabsheet1.caption
 msgctxt "tform1.tabsheet1.caption"
 msgid "Kalkulator"
@@ -513,10 +536,6 @@ msgstr ""
 
 #: tform1.toolbutton14.hint
 msgid "Wyłącz Tryb Zawsze na górze"
-msgstr ""
-
-#: tform1.toolbutton15.caption
-msgid "ToolButton15"
 msgstr ""
 
 #: tform1.toolbutton2.caption
@@ -877,16 +896,49 @@ msgstr ""
 
 #: unit1.countline
 msgctxt "unit1.countline"
-msgid "Liczba linii"
+msgid "Liczba linii "
 msgstr ""
 
 #: unit1.countword
 msgctxt "unit1.countword"
-msgid "Liczba liter"
+msgid "Liczba liter "
+msgstr ""
+
+#: unit1.datasaved
+msgid "Dane zapisane"
+msgstr ""
+
+#: unit1.disabledmodealwaysontop
+msgid "Wyłączony tryb zawsze na górze"
+msgstr ""
+
+#: unit1.enabledalwaysontop
+msgid "Włączony tryb zawsze na górze"
+msgstr ""
+
+#: unit1.enterdatafields
+msgid "Wpisz dane w pola"
+msgstr ""
+
+#: unit1.enterkeywords
+msgid "Wpisz słowa kluczowe"
+msgstr ""
+
+#: unit1.entervalue
+msgid "Wpisz wartość w polu"
 msgstr ""
 
 #: unit1.filemodified
 msgid "Bieżący plik został zmodyfikowany. Zapisać zmiany?"
+msgstr ""
+
+#: unit1.inches
+msgctxt "unit1.inches"
+msgid "Cale"
+msgstr ""
+
+#: unit1.infocaptionsearch
+msgid "Informacja"
 msgstr ""
 
 #: unit1.isdeletealltext
@@ -914,14 +966,32 @@ msgid "Otwórz istniejący plik"
 msgstr ""
 
 #: unit1.positionmouse
-msgid "Pozycja: X:"
+msgid "Pozycja: X: "
 msgstr ""
 
 #: unit1.savefilecaption
 msgid "Zapisywanie pliku"
 msgstr ""
 
+#: unit1.textfound
+msgctxt "unit1.textfound"
+msgid "Tekst znaleziony"
+msgstr ""
+
+#: unit1.textnotfound
+msgid "Tekst nie znaleziony"
+msgstr ""
+
 #: unit1.writenewsentence
 msgid "Wpisz zdanie"
+msgstr ""
+
+#: unit1.writenumbersaandb
+msgid "Wpisz liczby w A i B"
+msgstr ""
+
+#: ustawienia_programu.countlines
+msgctxt "ustawienia_programu.countlines"
+msgid "Liczba wierszy "
 msgstr ""
 

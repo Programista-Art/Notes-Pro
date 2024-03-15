@@ -1,13 +1,13 @@
 object Form1: TForm1
-  Left = 441
-  Height = 497
-  Top = 209
-  Width = 1041
+  Left = 477
+  Height = 498
+  Top = 143
+  Width = 1032
   Align = alClient
   BorderStyle = bsSingle
   Caption = 'Notes Pro V1.1.5.3'
-  ClientHeight = 497
-  ClientWidth = 1041
+  ClientHeight = 498
+  ClientWidth = 1032
   FormStyle = fsSystemStayOnTop
   Menu = MainMenu1
   OnClose = FormClose
@@ -16,9 +16,9 @@ object Form1: TForm1
   LCLVersion = '3.0.0.1'
   object Memo1: TMemo
     Left = 0
-    Height = 448
+    Height = 449
     Top = 26
-    Width = 716
+    Width = 664
     Align = alClient
     Color = clActiveBorder
     Font.CharSet = EASTEUROPE_CHARSET
@@ -35,14 +35,14 @@ object Form1: TForm1
     TabOrder = 0
   end
   object Panel1: TPanel
-    Left = 721
-    Height = 448
+    Left = 666
+    Height = 449
     Top = 26
-    Width = 320
+    Width = 366
     Align = alRight
     BevelColor = clBtnFace
-    ClientHeight = 448
-    ClientWidth = 320
+    ClientHeight = 449
+    ClientWidth = 366
     Color = clBtnFace
     ParentBackground = False
     ParentColor = False
@@ -51,7 +51,7 @@ object Form1: TForm1
       Left = 1
       Height = 175
       Top = 1
-      Width = 318
+      Width = 364
       ActivePage = TabSheet3
       Align = alTop
       BiDiMode = bdRightToLeft
@@ -63,13 +63,13 @@ object Form1: TForm1
       object TabSheet3: TTabSheet
         Caption = 'Edycja'
         ClientHeight = 147
-        ClientWidth = 310
+        ClientWidth = 356
         ParentBiDiMode = False
         object szukaj: TEdit
           Left = 88
           Height = 23
           Top = 10
-          Width = 216
+          Width = 264
           TabOrder = 0
         end
         object Button3: TButton
@@ -85,7 +85,7 @@ object Form1: TForm1
           Left = 88
           Height = 23
           Top = 40
-          Width = 216
+          Width = 264
           TabOrder = 2
         end
         object Button4: TButton
@@ -117,7 +117,7 @@ object Form1: TForm1
           Left = 184
           Height = 23
           Top = 82
-          Width = 120
+          Width = 168
           TabOrder = 6
         end
         object Label1: TLabel
@@ -149,19 +149,19 @@ object Form1: TForm1
           Left = 88
           Height = 23
           Top = 114
-          Width = 216
+          Width = 264
           TabOrder = 8
         end
       end
       object TabSheet1: TTabSheet
         Caption = 'Kalkulator'
         ClientHeight = 147
-        ClientWidth = 310
+        ClientWidth = 356
         object Edit4: TEdit
           AnchorSideLeft.Control = Label4
           AnchorSideTop.Control = Label4
           AnchorSideTop.Side = asrCenter
-          Left = 23
+          Left = 29
           Height = 23
           Top = 16
           Width = 40
@@ -176,7 +176,7 @@ object Form1: TForm1
           AnchorSideLeft.Control = Label7
           AnchorSideTop.Control = Label7
           AnchorSideTop.Side = asrCenter
-          Left = 80
+          Left = 95
           Height = 23
           Top = 16
           Width = 40
@@ -200,7 +200,7 @@ object Form1: TForm1
           AnchorSideLeft.Control = Edit4
           AnchorSideTop.Control = Edit4
           AnchorSideTop.Side = asrCenter
-          Left = 68
+          Left = 79
           Height = 15
           Top = 20
           Width = 7
@@ -214,7 +214,7 @@ object Form1: TForm1
           AnchorSideLeft.Control = Label8
           AnchorSideTop.Control = Label8
           AnchorSideTop.Side = asrCenter
-          Left = 136
+          Left = 159
           Height = 23
           Top = 16
           Width = 40
@@ -228,7 +228,7 @@ object Form1: TForm1
           AnchorSideLeft.Control = Edit5
           AnchorSideTop.Control = Edit5
           AnchorSideTop.Side = asrCenter
-          Left = 124
+          Left = 139
           Height = 15
           Top = 20
           Width = 8
@@ -294,7 +294,7 @@ object Form1: TForm1
           AnchorSideLeft.Control = Edit6
           AnchorSideTop.Control = Edit6
           AnchorSideTop.Side = asrCenter
-          Left = 184
+          Left = 213
           Height = 25
           Top = 14
           Width = 25
@@ -317,16 +317,16 @@ object Form1: TForm1
       object TabSheet2: TTabSheet
         Caption = 'Obliczenia'
         ClientHeight = 147
-        ClientWidth = 310
+        ClientWidth = 356
         object Panel2: TPanel
           Left = 0
           Height = 147
           Top = 0
-          Width = 310
+          Width = 356
           Align = alClient
           BevelOuter = bvNone
           ClientHeight = 147
-          ClientWidth = 310
+          ClientWidth = 356
           Color = clNone
           ParentBackground = False
           ParentColor = False
@@ -396,7 +396,7 @@ object Form1: TForm1
             Left = 248
             Height = 25
             Top = 20
-            Width = 51
+            Width = 72
             Caption = 'Oczyść'
             OnClick = Button2Click
             TabOrder = 4
@@ -404,17 +404,17 @@ object Form1: TForm1
           object Button7: TButton
             Left = 192
             Height = 25
-            Top = 62
-            Width = 48
+            Top = 64
+            Width = 80
             Caption = 'Oblicz'
             OnClick = Button7Click
             TabOrder = 5
           end
           object Button8: TButton
-            Left = 248
+            Left = 280
             Height = 25
-            Top = 62
-            Width = 48
+            Top = 64
+            Width = 72
             Caption = 'Oczyść'
             OnClick = Button8Click
             TabOrder = 6
@@ -484,9 +484,9 @@ object Form1: TForm1
     end
     object ListBox1: TListBox
       Left = 1
-      Height = 222
+      Height = 223
       Top = 202
-      Width = 318
+      Width = 364
       Align = alClient
       BorderStyle = bsNone
       Color = clBtnHighlight
@@ -520,7 +520,7 @@ object Form1: TForm1
       Left = 1
       Height = 26
       Top = 176
-      Width = 318
+      Width = 364
       Caption = 'ToolBar2'
       Color = cl3DLight
       Images = ImageList1
@@ -566,24 +566,16 @@ object Form1: TForm1
         ParentShowHint = False
         ShowHint = True
       end
-      object ToolButton15: TToolButton
-        Left = 93
-        Top = 2
-        Caption = 'ToolButton15'
-        ImageIndex = 4
-        OnClick = ToolButton15Click
-      end
     end
     object StatusBar2: TStatusBar
       Left = 1
       Height = 23
-      Top = 424
-      Width = 318
+      Top = 425
+      Width = 364
       Color = clActiveCaption
       Font.Color = clBlack
       Panels = <      
         item
-          Text = 'Liczba wierszy'
           Width = 200
         end      
         item
@@ -598,7 +590,7 @@ object Form1: TForm1
     Left = 0
     Height = 26
     Top = 0
-    Width = 1041
+    Width = 1032
     Caption = 'ToolBar1'
     Color = clBtnFace
     Images = ImageList1
@@ -714,8 +706,8 @@ object Form1: TForm1
   object Status: TStatusBar
     Left = 0
     Height = 23
-    Top = 474
-    Width = 1041
+    Top = 475
+    Width = 1032
     Color = clBtnFace
     Panels = <    
       item
@@ -784,10 +776,10 @@ object Form1: TForm1
     ParentColor = False
   end
   object Splitter1: TSplitter
-    Left = 716
-    Height = 448
+    Left = 664
+    Height = 449
     Top = 26
-    Width = 5
+    Width = 2
     Align = alRight
     ResizeAnchor = akRight
   end
@@ -841,7 +833,6 @@ object Form1: TForm1
     end
     object Wstaw: TMenuItem
       Caption = 'Wstaw'
-      OnClick = WstawClick
       object MenuItem28: TMenuItem
         Caption = 'Linie _____'
         OnClick = MenuItem28Click

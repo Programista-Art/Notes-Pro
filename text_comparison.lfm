@@ -1,7 +1,7 @@
 object Ftext_comparison: TFtext_comparison
-  Left = 1112
+  Left = 1261
   Height = 374
-  Top = 543
+  Top = 344
   Width = 595
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
