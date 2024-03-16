@@ -1,0 +1,8 @@
+{"version":1,"strings":[
+{"hash":79811728,"name":"text_comparison.countlines","sourcebytes":[76,105,99,122,98,97,32,119,105,101,114,115,122,121,32],"value":"Liczba wierszy "},
+{"hash":74142677,"name":"text_comparison.uniquelist","sourcebytes":[76,105,115,116,97,32,85,110,105,107,97,108,110,101],"value":"Lista Unikalne"},
+{"hash":56449493,"name":"text_comparison.notext","sourcebytes":[78,105,101,32,109,97,32,116,101,107,115,116,117],"value":"Nie ma tekstu"},
+{"hash":145972793,"name":"text_comparison.textfound","sourcebytes":[84,101,107,115,116,32,122,110,97,108,101,122,105,111,110,121],"value":"Tekst znaleziony"},
+{"hash":171205777,"name":"text_comparison.list1","sourcebytes":[76,105,115,116,97,32,110,114,32,49],"value":"Lista nr 1"},
+{"hash":171205778,"name":"text_comparison.list2","sourcebytes":[76,105,115,116,97,32,110,114,32,50],"value":"Lista nr 2"}
+]}

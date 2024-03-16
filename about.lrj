@@ -1,0 +1,9 @@
+{"version":1,"strings":[
+{"hash":96015461,"name":"tfabout.caption","sourcebytes":[79,32,112,114,111,103,114,97,109,105,101],"value":"O programie"},
+{"hash":8660122,"name":"tfabout.bitbtn1.caption","sourcebytes":[90,97,109,107,110,105,106],"value":"Zamknij"},
+{"hash":96015461,"name":"tfabout.tabsheet1.caption","sourcebytes":[79,32,112,114,111,103,114,97,109,105,101],"value":"O programie"},
+{"hash":135763244,"name":"tfabout.www.caption","sourcebytes":[119,119,119,46,100,105,109,105,116,97,108,97,114,116,46,112,108],"value":"www.dimitalart.pl"},
+{"hash":141043741,"name":"tfabout.email.caption","sourcebytes":[69,45,77,97,105,108,58,32,112,114,111,103,114,97,109,105,115,116,97,46,97,114,116,64,103,109,97,105,108,46,99,111,109],"value":"E-Mail: programista.art@gmail.com"},
+{"hash":261901601,"name":"tfabout.tabsheet3.caption","sourcebytes":[76,105,99,101,110,99,106,97],"value":"Licencja"},
+{"hash":258363785,"name":"tfabout.tabsheet2.caption","sourcebytes":[72,111,116,32,75,101,121],"value":"Hot Key"}
+]}
