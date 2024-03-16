@@ -15,9 +15,7 @@ type
   TForm2 = class(TForm)
     ButOkSettings: TBitBtn;
     ButCancelSettings: TBitBtn;
-    ButColorSettings: TButton;
     ButResetSettings: TButton;
-    ButFontSettings: TButton;
     ColorBox1Settings: TColorBox;
     ColorBox2Settings: TColorBox;
     ColorBoxSettings: TColorBox;
@@ -54,10 +52,8 @@ type
     ToolButton7: TToolButton;
     ToolButton8: TToolButton;
     ToolButton9: TToolButton;
-    procedure ButColorSettingsClick(Sender: TObject);
     procedure ButResetSettingsClick(Sender: TObject);
     procedure ButFontSettingsClick(Sender: TObject);
-
     procedure ColorBox1SettingsCloseUp(Sender: TObject);
     procedure ColorBox2SettingsCloseUp(Sender: TObject);
     procedure ColorBoxSettingsCloseUp(Sender: TObject);
@@ -89,23 +85,6 @@ uses
 {$R *.lfm}
 
 { TForm2 }
-
-procedure TForm2.ButColorSettingsClick(Sender: TObject);
-begin
-
-if ColorDialog1.Execute then
-begin
-  colorUi :=  ColorDialog1.Color;
-  //zapisujemy color tla
-  Ini_Settings.WriteInteger('Main','MemoColor', colorUi);
-  Ini_Settings.WriteInteger('Main','ToolBarTop', colorUi);
-  Form1.Memo1.Color:=ColorDialog1.Color;
-  Memo1.Color:=ColorDialog1.Color;
-  //Górny panel z ikonkami
-  Form1.ToolBar1.Color:= colorUi;
-end
-
-end;
 
 
 procedure TForm2.ButResetSettingsClick(Sender: TObject);

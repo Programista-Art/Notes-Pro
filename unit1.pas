@@ -354,6 +354,7 @@ end;
 procedure TForm1.MenuItem13Click(Sender: TObject);
 begin
   SetDefaultLang('en');
+  GetLocaleFormatSettings($409, DefaultFormatSettings);
   lang := 'en';
 end;
 

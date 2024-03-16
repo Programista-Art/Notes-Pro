@@ -1,9 +1,9 @@
-programista baz danych – projektuje i zarządza zbiorami danych dla konkretnych dziedzin, np. kadry, płatności
-programista aplikacyjny – tworzy oprogramowanie o różnym zastosowaniu, między innymi edytory tekstów, programy graficzne
-programista narzędziowy – opracowuje programy systemowe (np. systemy operacyjne) i specjalne (np. sterujące procesami produkcyjnymi)
-programista aplikacji internetowych – tworzy, utrzymuje i rozbudowuje serwisy internetowe
-programista systemów łączności komputerowej – pisze programy wykorzystywane w transmisji danych
-tester aplikacji – sprawdza poprawność napisanego programu
-menadżer projektów – zarządza tworzeniem całego programu na każdym etapie jego powstawania
-projektant aplikacji – na podstawie danych zebranych od klienta przygotowuje algorytm aplikacji i systematyzuje dostęp do danych
-analityk aplikacji – odpowiada za kontakty z klientem, analizuje i przedstawia jego potrzeby zespołowi.
+Database programmer - designs and manages data sets for specific domains, e.g., human resources, payments.
+Application programmer - creates software with various applications, including text editors, graphic programs.
+Tool programmer - develops system programs (e.g., operating systems) and specialized programs (e.g., controlling production processes).
+Web application programmer - creates, maintains, and expands internet services.
+Computer communication systems programmer - writes programs used in data transmission.
+Application tester - verifies the correctness of the written program.
+Project manager - manages the creation of the entire program at every stage of its development.
+Application designer - based on data gathered from the client, prepares the application algorithm and systematizes data access.
+Application analyst - responsible for client communication, analyzes and presents their needs to the team.

@@ -14,7 +14,7 @@ msgstr ""
 #: text_comparison.countlines
 msgctxt "text_comparison.countlines"
 msgid "Liczba wierszy "
-msgstr "Nb of rows"
+msgstr "Nb of rows "
 
 #: text_comparison.list1
 msgid "Lista nr 1"
@@ -29,7 +29,6 @@ msgid "Nie ma tekstu"
 msgstr "No text"
 
 #: text_comparison.textfound
-#, fuzzy
 msgctxt "text_comparison.textfound"
 msgid "Tekst znaleziony"
 msgstr "Text found"
@@ -109,7 +108,7 @@ msgstr "Replace"
 
 #: tform1.button5.caption
 msgid "Zamień zdanie"
-msgstr "Change your mind"
+msgstr "Change sentence"
 
 #: tform1.button6.caption
 msgid "Kalkulator pro"
@@ -240,7 +239,9 @@ msgid "Porównaj Tekst"
 msgstr "Compare Text"
 
 #: tform1.menuitem12.caption
-msgid "Język"
+#, fuzzy
+#| msgid "Język"
+msgid "Language"
 msgstr "Language"
 
 #: tform1.menuitem13.caption
@@ -519,7 +520,7 @@ msgstr "ToolButton12"
 
 #: tform1.toolbutton12.hint
 msgid "Zapisz słowa kluczowe"
-msgstr "Write down your keywords"
+msgstr "Save keywords"
 
 #: tform1.toolbutton13.caption
 msgctxt "tform1.toolbutton13.caption"
@@ -528,7 +529,7 @@ msgstr "ToolButton13"
 
 #: tform1.toolbutton13.hint
 msgid "Włącz Tryb Zawsze na górze"
-msgstr "Enable Always on top mode"
+msgstr "Enable always on top mode"
 
 #: tform1.toolbutton14.caption
 msgctxt "tform1.toolbutton14.caption"
@@ -537,7 +538,7 @@ msgstr "ToolButton14"
 
 #: tform1.toolbutton14.hint
 msgid "Wyłącz Tryb Zawsze na górze"
-msgstr "Turn off Always on top mode"
+msgstr "Turn off always on top mode"
 
 #: tform1.toolbutton2.caption
 msgctxt "tform1.toolbutton2.caption"
@@ -645,67 +646,46 @@ msgid "Zapisz jak"
 msgstr "Save as"
 
 #: tform2.butcancelsettings.caption
-#, fuzzy
 msgctxt "tform2.butcancelsettings.caption"
 msgid "Anuluj"
 msgstr "Cancel"
 
-#: tform2.butcolorsettings.caption
-#, fuzzy
-msgctxt "tform2.butcolorsettings.caption"
-msgid "Kolor"
-msgstr "Color"
-
-#: tform2.butfontsettings.caption
-#, fuzzy
-msgctxt "tform2.butfontsettings.caption"
-msgid "Czcionka"
-msgstr "Font"
-
 #: tform2.butresetsettings.caption
-#, fuzzy
 msgctxt "tform2.butresetsettings.caption"
 msgid "Zresetuj dane"
 msgstr "Reset data"
 
 #: tform2.caption
-#, fuzzy
 msgctxt "tform2.caption"
 msgid "Ustawienia"
 msgstr "Settings"
 
 #: tform2.tabsheet1.caption
-#, fuzzy
 msgctxt "tform2.tabsheet1.caption"
 msgid "Ustawienia"
 msgstr "Settings"
 
 #: tform2.tabsheet2.caption
-#, fuzzy
 msgctxt "tform2.tabsheet2.caption"
 msgid "Edycja"
 msgstr "Edit"
 
 #: tform2.tabsheet3.caption
-#, fuzzy
 msgctxt "tform2.tabsheet3.caption"
 msgid "Kalkulator"
 msgstr "Calculator"
 
 #: tform2.tabsheet4.caption
-#, fuzzy
 msgctxt "tform2.tabsheet4.caption"
 msgid "Obliczenia"
 msgstr "Calculations"
 
 #: tform2.toolbar1.caption
-#, fuzzy
 msgctxt "tform2.toolbar1.caption"
 msgid "ToolBar1"
 msgstr "ToolBar1"
 
 #: tform2.toolbar2.caption
-#, fuzzy
 msgctxt "tform2.toolbar2.caption"
 msgid "ToolBar2"
 msgstr "ToolBar2"
@@ -866,19 +846,16 @@ msgid "Unikalne wiersze: "
 msgstr "Unique lines: "
 
 #: tftext_comparison.menuitem1.caption
-#, fuzzy
 msgctxt "tftext_comparison.menuitem1.caption"
 msgid "Usuń wszystko"
 msgstr "Delete all"
 
 #: tftext_comparison.menuitem2.caption
-#, fuzzy
 msgctxt "tftext_comparison.menuitem2.caption"
 msgid "Usuń wszystko"
 msgstr "Delete all"
 
 #: tftext_comparison.menuitem3.caption
-#, fuzzy
 msgctxt "tftext_comparison.menuitem3.caption"
 msgid "Usuń wszystko"
 msgstr "Delete all"
@@ -964,7 +941,7 @@ msgstr "The current file has been modified. Save changes?"
 #: unit1.inches
 msgctxt "unit1.inches"
 msgid "Cale"
-msgstr "Inches "
+msgstr "Inches"
 
 #: unit1.infocaptionsearch
 msgid "Informacja"
@@ -1022,4 +999,5 @@ msgstr "Write the numbers in A and B"
 #: ustawienia_programu.countlines
 msgctxt "ustawienia_programu.countlines"
 msgid "Liczba wierszy "
-msgstr "Nb of rows"
+msgstr "Nb of rows "
+

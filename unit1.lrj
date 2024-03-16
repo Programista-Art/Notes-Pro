@@ -98,7 +98,7 @@
 {"hash":5727315,"name":"tform1.pomoc.caption","sourcebytes":[80,111,109,111,99],"value":"Pomoc"},
 {"hash":96023653,"name":"tform1.oprogramie.caption","sourcebytes":[79,32,80,114,111,103,114,97,109,105,101],"value":"O Programie"},
 {"hash":148541009,"name":"tform1.menuitem6.caption","sourcebytes":[85,115,116,97,119,105,101,110,105,97],"value":"Ustawienia"},
-{"hash":91099643,"name":"tform1.menuitem12.caption","sourcebytes":[74,196,153,122,121,107],"value":"J\u0119zyk"},
+{"hash":139375349,"name":"tform1.menuitem12.caption","sourcebytes":[76,97,110,103,117,97,103,101],"value":"Language"},
 {"hash":234648153,"name":"tform1.menuitem13.caption","sourcebytes":[65,110,103,105,101,108,115,107,105],"value":"Angielski"},
 {"hash":91634201,"name":"tform1.menuitem35.caption","sourcebytes":[80,111,108,115,107,105],"value":"Polski"},
 {"hash":112205193,"name":"tform1.menuitem41.caption","sourcebytes":[82,111,115,121,106,115,107,105],"value":"Rosyjski"},

@@ -239,7 +239,7 @@ msgid "Porównaj Tekst"
 msgstr ""
 
 #: tform1.menuitem12.caption
-msgid "Język"
+msgid "Language"
 msgstr ""
 
 #: tform1.menuitem13.caption
@@ -646,16 +646,6 @@ msgstr ""
 #: tform2.butcancelsettings.caption
 msgctxt "tform2.butcancelsettings.caption"
 msgid "Anuluj"
-msgstr ""
-
-#: tform2.butcolorsettings.caption
-msgctxt "tform2.butcolorsettings.caption"
-msgid "Kolor"
-msgstr ""
-
-#: tform2.butfontsettings.caption
-msgctxt "tform2.butfontsettings.caption"
-msgid "Czcionka"
 msgstr ""
 
 #: tform2.butresetsettings.caption

@@ -108,7 +108,7 @@ msgstr "Заменить"
 
 #: tform1.button5.caption
 msgid "Zamień zdanie"
-msgstr "Заменить предлож"
+msgstr "Зам предлож"
 
 #: tform1.button6.caption
 msgid "Kalkulator pro"
@@ -239,7 +239,9 @@ msgid "Porównaj Tekst"
 msgstr "Сравнить"
 
 #: tform1.menuitem12.caption
-msgid "Język"
+#, fuzzy
+#| msgid "Język"
+msgid "Language"
 msgstr "Language"
 
 #: tform1.menuitem13.caption
@@ -468,7 +470,6 @@ msgid "Edycja"
 msgstr "Редактирование"
 
 #: tform1.tekst.caption
-#, fuzzy
 msgctxt "tform1.tekst.caption"
 msgid "Czcionka"
 msgstr "Шрифт"
@@ -498,7 +499,6 @@ msgid "ToolButton10"
 msgstr ""
 
 #: tform1.toolbutton10.hint
-#, fuzzy
 msgctxt "tform1.toolbutton10.hint"
 msgid "Usuń"
 msgstr "Удалить"
@@ -509,7 +509,6 @@ msgid "ToolButton11"
 msgstr ""
 
 #: tform1.toolbutton11.hint
-#, fuzzy
 msgctxt "tform1.toolbutton11.hint"
 msgid "Usuń wszystko"
 msgstr "Удалить все"
@@ -584,7 +583,6 @@ msgid "ToolButton6"
 msgstr ""
 
 #: tform1.toolbutton6.hint
-#, fuzzy
 msgctxt "tform1.toolbutton6.hint"
 msgid "Wyrównaj do lewej"
 msgstr "Выровнять по левому краю"
@@ -595,7 +593,6 @@ msgid "ToolButton7"
 msgstr ""
 
 #: tform1.toolbutton7.hint
-#, fuzzy
 msgctxt "tform1.toolbutton7.hint"
 msgid "Wyrównaj do środka"
 msgstr "Выровнять по центру"
@@ -606,7 +603,6 @@ msgid "ToolButton8"
 msgstr ""
 
 #: tform1.toolbutton8.hint
-#, fuzzy
 msgctxt "tform1.toolbutton8.hint"
 msgid "Wyrównaj do prawej"
 msgstr "Выровнять по правому краю"
@@ -654,30 +650,17 @@ msgctxt "tform2.butcancelsettings.caption"
 msgid "Anuluj"
 msgstr "Отмена"
 
-#: tform2.butcolorsettings.caption
-msgctxt "tform2.butcolorsettings.caption"
-msgid "Kolor"
-msgstr "Цвет"
-
-#: tform2.butfontsettings.caption
-#, fuzzy
-msgctxt "tform2.butfontsettings.caption"
-msgid "Czcionka"
-msgstr "Шрифт"
-
 #: tform2.butresetsettings.caption
 msgctxt "tform2.butresetsettings.caption"
 msgid "Zresetuj dane"
 msgstr "Сбросить данные"
 
 #: tform2.caption
-#, fuzzy
 msgctxt "tform2.caption"
 msgid "Ustawienia"
 msgstr "Настройки"
 
 #: tform2.tabsheet1.caption
-#, fuzzy
 msgctxt "tform2.tabsheet1.caption"
 msgid "Ustawienia"
 msgstr "Настройки"
@@ -698,13 +681,11 @@ msgid "Obliczenia"
 msgstr "Расчеты"
 
 #: tform2.toolbar1.caption
-#, fuzzy
 msgctxt "tform2.toolbar1.caption"
 msgid "ToolBar1"
 msgstr "ToolBar1"
 
 #: tform2.toolbar2.caption
-#, fuzzy
 msgctxt "tform2.toolbar2.caption"
 msgid "ToolBar2"
 msgstr "ToolBar2"
@@ -824,7 +805,7 @@ msgstr "Найти"
 
 #: tftext_comparison.button1.caption
 msgid "Porównaj "
-msgstr "Сравнить"
+msgstr "Сравнить "
 
 #: tftext_comparison.caption
 msgid "Porównaj dane"
@@ -851,19 +832,16 @@ msgid "Unikalne wiersze: "
 msgstr "Уникальные строки "
 
 #: tftext_comparison.menuitem1.caption
-#, fuzzy
 msgctxt "tftext_comparison.menuitem1.caption"
 msgid "Usuń wszystko"
 msgstr "Удалить все"
 
 #: tftext_comparison.menuitem2.caption
-#, fuzzy
 msgctxt "tftext_comparison.menuitem2.caption"
 msgid "Usuń wszystko"
 msgstr "Удалить все"
 
 #: tftext_comparison.menuitem3.caption
-#, fuzzy
 msgctxt "tftext_comparison.menuitem3.caption"
 msgid "Usuń wszystko"
 msgstr "Удалить все"
@@ -890,25 +868,21 @@ msgid "Zapisz plik tekstowy"
 msgstr "Сохранить текстовый файл"
 
 #: tftext_comparison.statusbar1.panels[0].text
-#, fuzzy
 msgctxt "tftext_comparison.statusbar1.panels[0].text"
 msgid "Wierszy"
 msgstr "Кол строк"
 
 #: tftext_comparison.statusbar1.panels[1].text
-#, fuzzy
 msgctxt "tftext_comparison.statusbar1.panels[1].text"
 msgid "Wierszy"
 msgstr "Кол строк"
 
 #: tftext_comparison.statusbar1.panels[2].text
-#, fuzzy
 msgctxt "tftext_comparison.statusbar1.panels[2].text"
 msgid "Wierszy"
 msgstr "Кол строк"
 
 #: unit1.addnewsentencecaption
-#, fuzzy
 msgid "Nowe zdanie"
 msgstr "Добавить новое предложение"
 
@@ -951,7 +925,6 @@ msgid "Bieżący plik został zmodyfikowany. Zapisać zmiany?"
 msgstr "Текущий файл был изменен. Сохранить изменения?"
 
 #: unit1.inches
-#, fuzzy
 msgctxt "unit1.inches"
 msgid "Cale"
 msgstr "Дюймы"
@@ -1007,9 +980,10 @@ msgstr "Введите предложение"
 
 #: unit1.writenumbersaandb
 msgid "Wpisz liczby w A i B"
-msgstr "Напишите цифры в A и B "
+msgstr "Напишите цифры в A и B"
 
 #: ustawienia_programu.countlines
 msgctxt "ustawienia_programu.countlines"
 msgid "Liczba wierszy "
 msgstr "Кол строк "
+

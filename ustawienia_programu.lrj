@@ -1,7 +1,5 @@
 {"version":1,"strings":[
 {"hash":148541009,"name":"tform2.caption","sourcebytes":[85,115,116,97,119,105,101,110,105,97],"value":"Ustawienia"},
-{"hash":5399394,"name":"tform2.butcolorsettings.caption","sourcebytes":[75,111,108,111,114],"value":"Kolor"},
-{"hash":10510753,"name":"tform2.butfontsettings.caption","sourcebytes":[67,122,99,105,111,110,107,97],"value":"Czcionka"},
 {"hash":172637333,"name":"tform2.butresetsettings.caption","sourcebytes":[90,114,101,115,101,116,117,106,32,100,97,110,101],"value":"Zresetuj dane"},
 {"hash":75875258,"name":"tform2.butcancelsettings.caption","sourcebytes":[65,110,117,108,117,106],"value":"Anuluj"},
 {"hash":148541009,"name":"tform2.tabsheet1.caption","sourcebytes":[85,115,116,97,119,105,101,110,105,97],"value":"Ustawienia"},
