@@ -236,11 +236,11 @@ msgstr "Обычный режим"
 
 #: tform1.menuitem11.caption
 msgid "Porównaj Tekst"
-msgstr "Сравнить текст"
+msgstr "Сравнить"
 
 #: tform1.menuitem12.caption
 msgid "Język"
-msgstr "Язык"
+msgstr "Language"
 
 #: tform1.menuitem13.caption
 msgid "Angielski"
@@ -824,7 +824,7 @@ msgstr "Найти"
 
 #: tftext_comparison.button1.caption
 msgid "Porównaj "
-msgstr "Сравнить текст "
+msgstr "Сравнить"
 
 #: tftext_comparison.caption
 msgid "Porównaj dane"
@@ -844,7 +844,7 @@ msgstr "2 список"
 
 #: tftext_comparison.label3.caption
 msgid "Unikalne"
-msgstr "Уникальный"
+msgstr "Уникальные"
 
 #: tftext_comparison.label4.caption
 msgid "Unikalne wiersze: "

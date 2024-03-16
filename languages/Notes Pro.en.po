@@ -1023,4 +1023,3 @@ msgstr "Write the numbers in A and B"
 msgctxt "ustawienia_programu.countlines"
 msgid "Liczba wierszy "
 msgstr "Nb of rows"
-
