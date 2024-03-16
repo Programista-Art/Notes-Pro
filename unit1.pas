@@ -93,6 +93,10 @@ type
     MenuItem39: TMenuItem;
     MenuItem40: TMenuItem;
     MenuItem41: TMenuItem;
+    MenuItem42: TMenuItem;
+    MenuItem43: TMenuItem;
+    MenuItem44: TMenuItem;
+    MenuItem45: TMenuItem;
     MenuItem7: TMenuItem;
     MenuItem8: TMenuItem;
     MenuItem9: TMenuItem;
@@ -211,6 +215,10 @@ type
     procedure MenuItem3Click(Sender: TObject);
     procedure MenuItem40Click(Sender: TObject);
     procedure MenuItem41Click(Sender: TObject);
+    procedure MenuItem42Click(Sender: TObject);
+    procedure MenuItem43Click(Sender: TObject);
+    procedure MenuItem44Click(Sender: TObject);
+    procedure MenuItem45Click(Sender: TObject);
     procedure MenuItem4Click(Sender: TObject);
     procedure MenuItem5Click(Sender: TObject);
     procedure MenuItem6Click(Sender: TObject);
@@ -536,6 +544,30 @@ begin
   lang := 'ru';
 end;
 
+procedure TForm1.MenuItem42Click(Sender: TObject);
+begin
+  SetDefaultLang('de');
+  lang := 'de';
+end;
+
+procedure TForm1.MenuItem43Click(Sender: TObject);
+begin
+  SetDefaultLang('fr');
+  lang := 'fr';
+end;
+
+procedure TForm1.MenuItem44Click(Sender: TObject);
+begin
+  SetDefaultLang('zh');
+  lang := 'zh';
+end;
+
+procedure TForm1.MenuItem45Click(Sender: TObject);
+begin
+  SetDefaultLang('uk');
+  lang := 'uk';
+end;
+
 procedure TForm1.MenuItem4Click(Sender: TObject);
 begin
   Memo1.Font.Size:=20;
@@ -817,6 +849,19 @@ begin
     'en': SetDefaultLang('en');
     'pl': SetDefaultLang('pl');
     'ru': SetDefaultLang('ru');
+    'de': SetDefaultLang('de');
+    'pt': SetDefaultLang('pt');//portugalski
+    'es': SetDefaultLang('es');//hiszpański
+    'uk': SetDefaultLang('uk');
+    'it': SetDefaultLang('it'); //wloski
+    'hi': SetDefaultLang('hi');//hindi
+    'fr': SetDefaultLang('fr');//francuski
+    'zh': SetDefaultLang('zh');//chiński
+    'bn': SetDefaultLang('bn');//Bengalski
+    'ar': SetDefaultLang('ar');//arabski
+    'ja': SetDefaultLang('ja');//japoński
+    'pnb': SetDefaultLang('pnb');//zachodniopendżabski
+    'mr': SetDefaultLang('mr');//marathi
     else
       SetDefaultLang('en');
     end;

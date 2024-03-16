@@ -243,7 +243,7 @@ msgid "Language"
 msgstr ""
 
 #: tform1.menuitem13.caption
-msgid "Angielski"
+msgid "English"
 msgstr ""
 
 #: tform1.menuitem14.caption
@@ -381,7 +381,23 @@ msgid "20"
 msgstr ""
 
 #: tform1.menuitem41.caption
-msgid "Rosyjski"
+msgid "Русский"
+msgstr ""
+
+#: tform1.menuitem42.caption
+msgid "Deutsch"
+msgstr ""
+
+#: tform1.menuitem43.caption
+msgid "Français"
+msgstr ""
+
+#: tform1.menuitem44.caption
+msgid "中國人"
+msgstr ""
+
+#: tform1.menuitem45.caption
+msgid "Українська"
 msgstr ""
 
 #: tform1.menuitem5.caption
