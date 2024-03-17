@@ -1,11 +1,11 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Notes Pro\n"
+"Project-Id-Version: Dupa\n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dymitr Wygowski <programista.art@gmail.com>\n"
 "Language-Team: \n"
-"Language: zh_CN\n"
+"Language: hi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -14,55 +14,55 @@ msgstr ""
 #: text_comparison.countlines
 msgctxt "text_comparison.countlines"
 msgid "Liczba wierszy "
-msgstr "行数 "
+msgstr "पंक्तियों की संख्या "
 
 #: text_comparison.list1
 msgid "Lista nr 1"
-msgstr "第 1 号清单"
+msgstr "सूची #1"
 
 #: text_comparison.list2
 msgid "Lista nr 2"
-msgstr "清单 2"
+msgstr "सूची क्रमांक 2"
 
 #: text_comparison.notext
 msgid "Nie ma tekstu"
-msgstr "没有文本"
+msgstr "कोई पाठ नहीं है"
 
 #: text_comparison.textfound
 msgctxt "text_comparison.textfound"
 msgid "Tekst znaleziony"
-msgstr "找到文本"
+msgstr "पाठ मिला"
 
 #: text_comparison.uniquelist
 msgid "Lista Unikalne"
-msgstr "独特列表"
+msgstr "अनोखी सूची"
 
 #: tfabout.bitbtn1.caption
 msgctxt "tfabout.bitbtn1.caption"
 msgid "Zamknij"
-msgstr "关闭"
+msgstr "बंद करना"
 
 #: tfabout.caption
 msgctxt "tfabout.caption"
 msgid "O programie"
-msgstr "关于计划"
+msgstr "कार्यक्रम के बारे में"
 
 #: tfabout.email.caption
 msgid "E-Mail: programista.art@gmail.com"
-msgstr "电子邮件：programista.art@gmail.com"
+msgstr "ई-मेल: programmingsta.art@gmail.com"
 
 #: tfabout.tabsheet1.caption
 msgctxt "tfabout.tabsheet1.caption"
 msgid "O programie"
-msgstr "关于计划"
+msgstr "कार्यक्रम के बारे में"
 
 #: tfabout.tabsheet2.caption
 msgid "Hot Key"
-msgstr "热键"
+msgstr "हॉटकी"
 
 #: tfabout.tabsheet3.caption
 msgid "Licencja"
-msgstr "许可证"
+msgstr "लाइसेंस"
 
 #: tfabout.www.caption
 msgid "www.dimitalart.pl"
@@ -71,7 +71,7 @@ msgstr "www.dimitalart.pl"
 #: tform1.button1.caption
 msgctxt "tform1.button1.caption"
 msgid "Oblicz"
-msgstr "计算"
+msgstr "गणना"
 
 #: tform1.button10.caption
 msgid "-"
@@ -91,38 +91,38 @@ msgstr "CE"
 
 #: tform1.button14.caption
 msgid "usuń kalkulator"
-msgstr "移除计算器"
+msgstr "कैलकुलेटर हटाओ"
 
 #: tform1.button2.caption
 msgctxt "tform1.button2.caption"
 msgid "Oczyść"
-msgstr "清理"
+msgstr "शुद्ध"
 
 #: tform1.button3.caption
 msgid "Znajdź"
-msgstr "查找"
+msgstr "खोजो"
 
 #: tform1.button4.caption
 msgid "Zamień"
-msgstr "更换"
+msgstr "प्रतिस्थापित करें"
 
 #: tform1.button5.caption
 msgid "Zamień zdanie"
-msgstr "替换句子"
+msgstr "अपने विचारों को बदलो"
 
 #: tform1.button6.caption
 msgid "Kalkulator pro"
-msgstr "专业计算器"
+msgstr "प्रो कैलकुलेटर"
 
 #: tform1.button7.caption
 msgctxt "tform1.button7.caption"
 msgid "Oblicz"
-msgstr "计算"
+msgstr "गणना"
 
 #: tform1.button8.caption
 msgctxt "tform1.button8.caption"
 msgid "Oczyść"
-msgstr "清理"
+msgstr "शुद्ध"
 
 #: tform1.button9.caption
 msgid "+"
@@ -130,12 +130,12 @@ msgstr "+"
 
 #: tform1.buttonadd.caption
 msgid "Dodaj"
-msgstr "添加"
+msgstr "जोड़ना"
 
 #: tform1.cale.caption
 msgctxt "tform1.cale.caption"
 msgid "Cale"
-msgstr "英寸"
+msgstr "सभी"
 
 #: tform1.caption
 msgid "Notes Pro V1.1.5.3"
@@ -143,29 +143,29 @@ msgstr "Notes Pro V1.1.5.3"
 
 #: tform1.checkbox1.caption
 msgid "Cale w  Cm"
-msgstr "英寸（厘米"
+msgstr "इंच सेमी में"
 
 #: tform1.cm.caption
 msgid "Cm"
-msgstr "厘米"
+msgstr "सेमी"
 
 #: tform1.cm1.caption
 msgid "Cm1"
-msgstr "Cm1"
+msgstr "सेमी1"
 
 #: tform1.format.caption
 msgctxt "tform1.format.caption"
 msgid "Tekst"
-msgstr "文本"
+msgstr "मूलपाठ"
 
 #: tform1.kopiuj.caption
 msgctxt "tform1.kopiuj.caption"
 msgid "Kopiuj"
-msgstr "复制"
+msgstr "प्रतिलिपि"
 
 #: tform1.label1.caption
 msgid "Nr wiersza"
-msgstr "行号"
+msgstr "लाइन नंबर"
 
 #: tform1.label10.caption
 msgctxt "tform1.label10.caption"
@@ -174,23 +174,23 @@ msgstr "="
 
 #: tform1.label11.caption
 msgid "Liczba"
-msgstr "数量"
+msgstr "संख्या"
 
 #: tform1.label12.caption
 msgid "% Zniżka"
-msgstr "折扣百分比"
+msgstr "% छूट"
 
 #: tform1.label13.caption
 msgid "Po zniżce"
-msgstr "折扣价"
+msgstr "छूट के बाद"
 
 #: tform1.label15.caption
 msgid "Wklej link"
-msgstr "粘贴链接"
+msgstr "लिंक पेस्ट करें"
 
 #: tform1.label2.caption
 msgid "Nowy tekst"
-msgstr "新文本"
+msgstr "नया पाठ"
 
 #: tform1.label3.caption
 msgctxt "tform1.label3.caption"
@@ -199,21 +199,21 @@ msgstr "="
 
 #: tform1.label4.caption
 msgid "A"
-msgstr "A"
+msgstr "और"
 
 #: tform1.label5.caption
 msgctxt "tform1.label5.caption"
 msgid "A ="
-msgstr "A ="
+msgstr "ए ="
 
 #: tform1.label6.caption
 msgctxt "tform1.label6.caption"
 msgid "A ="
-msgstr "A ="
+msgstr "ए ="
 
 #: tform1.label7.caption
 msgid "B"
-msgstr "B"
+msgstr "बी"
 
 #: tform1.label8.caption
 msgctxt "tform1.label8.caption"
@@ -232,9 +232,10 @@ msgid "中國人"
 msgstr "中國人"
 
 #: tform1.menuenglish.caption
+#, fuzzy
 msgctxt "tform1.menuenglish.caption"
 msgid "English"
-msgstr ""
+msgstr "English"
 
 #: tform1.menufrench.caption
 #, fuzzy
@@ -261,80 +262,80 @@ msgstr ""
 #: tform1.menuitem1.caption
 msgctxt "tform1.menuitem1.caption"
 msgid "Wyrównaj do lewej"
-msgstr "向左对齐"
+msgstr "बाये को करी"
 
 #: tform1.menuitem10.caption
 msgid "Tryb normalny"
-msgstr "正常模式"
+msgstr "सामान्य मोड"
 
 #: tform1.menuitem11.caption
 msgid "Porównaj Tekst"
-msgstr "比较文本"
+msgstr "पाठ की तुलना करें"
 
 #: tform1.menuitem14.caption
 msgctxt "tform1.menuitem14.caption"
 msgid "Tekst"
-msgstr "文本"
+msgstr "मूलपाठ"
 
 #: tform1.menuitem15.caption
 msgctxt "tform1.menuitem15.caption"
 msgid "Duże litery"
-msgstr "大字母"
+msgstr "अपरकेस"
 
 #: tform1.menuitem16.caption
 msgctxt "tform1.menuitem16.caption"
 msgid "Małe litery"
-msgstr "小字"
+msgstr "छोटे अक्षर"
 
 #: tform1.menuitem17.caption
 msgctxt "tform1.menuitem17.caption"
 msgid "Czcionka"
-msgstr "字体"
+msgstr "फ़ॉन्ट"
 
 #: tform1.menuitem18.caption
 msgctxt "tform1.menuitem18.caption"
 msgid "Wyrównaj do środka"
-msgstr "向中心对齐"
+msgstr "केंद्र में संरेखित करें"
 
 #: tform1.menuitem19.caption
 msgctxt "tform1.menuitem19.caption"
 msgid "Wyrównaj do prawej"
-msgstr "向右对齐"
+msgstr "सही संरेखित"
 
 #: tform1.menuitem2.caption
 msgid "Czcionka rozmiar"
-msgstr "字体大小"
+msgstr "फ़ॉन्ट आकार"
 
 #: tform1.menuitem20.caption
 msgctxt "tform1.menuitem20.caption"
 msgid "Usuń wszystko"
-msgstr "全部删除"
+msgstr "सब कुछ मिटा दो"
 
 #: tform1.menuitem21.caption
 msgid "Wytnij"
-msgstr "裁剪"
+msgstr "काटना"
 
 #: tform1.menuitem22.caption
 msgid "Zawijanie tekstu"
-msgstr "文本换行"
+msgstr "पाठ रैपिंग"
 
 #: tform1.menuitem23.caption
 msgid "Dodaj nowe zdanie"
-msgstr "添加新句子"
+msgstr "एक नया वाक्य जोड़ें"
 
 #: tform1.menuitem24.caption
 msgctxt "tform1.menuitem24.caption"
 msgid "Małe litery"
-msgstr "小字"
+msgstr "छोटे अक्षर"
 
 #: tform1.menuitem25.caption
 msgctxt "tform1.menuitem25.caption"
 msgid "Duże litery"
-msgstr "大字母"
+msgstr "अपरकेस"
 
 #: tform1.menuitem26.caption
 msgid "Rozmiar Tekstu"
-msgstr "文字大小"
+msgstr "टेक्स्ट का साइज़"
 
 #: tform1.menuitem27.caption
 msgid "10"
@@ -342,11 +343,11 @@ msgstr "10"
 
 #: tform1.menuitem28.caption
 msgid "Linie _____"
-msgstr "行 _____"
+msgstr "पंक्तियाँ _____"
 
 #: tform1.menuitem29.caption
 msgid "Kropki ........."
-msgstr "点 ........."
+msgstr "बिंदु........."
 
 #: tform1.menuitem3.caption
 msgctxt "tform1.menuitem3.caption"
@@ -355,32 +356,32 @@ msgstr "15"
 
 #: tform1.menuitem30.caption
 msgid "LInia -----"
-msgstr "LInia -----"
+msgstr "रेखा -----"
 
 #: tform1.menuitem31.caption
 msgid "Usuń zaznaczony tekst"
-msgstr "删除选定文本"
+msgstr "चयनित पाठ हटाएँ"
 
 #: tform1.menuitem32.caption
 msgid "Dodaj do bazy"
-msgstr "添加到数据库"
+msgstr "डेटाबेस में जोड़ें"
 
 #: tform1.menuitem33.caption
 msgid "Zaznacz wszystko"
-msgstr "全部标记"
+msgstr "सबका चयन करें"
 
 #: tform1.menuitem34.caption
 msgid "Cofnij"
-msgstr "返回"
+msgstr "पूर्ववत"
 
 #: tform1.menuitem36.caption
 msgid "Tryb zawsze na wierzchu"
-msgstr "始终开启模式"
+msgstr "हमेशा शीर्ष मोड पर"
 
 #: tform1.menuitem37.caption
 msgctxt "tform1.menuitem37.caption"
 msgid "Kopiuj"
-msgstr "复制"
+msgstr "प्रतिलिपि"
 
 #: tform1.menuitem38.caption
 msgid "12"
@@ -408,20 +409,20 @@ msgstr "25"
 #: tform1.menuitem6.caption
 msgctxt "tform1.menuitem6.caption"
 msgid "Ustawienia"
-msgstr "设置"
+msgstr "समायोजन"
 
 #: tform1.menuitem7.caption
 msgctxt "tform1.menuitem7.caption"
 msgid "Usuń"
-msgstr "删除"
+msgstr "मिटाना"
 
 #: tform1.menuitem8.caption
 msgid "Narzedzia"
-msgstr "工具"
+msgstr "औजार"
 
 #: tform1.menuitem9.caption
 msgid "Zapisz"
-msgstr "节省"
+msgstr "बचाना"
 
 #: tform1.menulanguage.caption
 #, fuzzy
@@ -441,9 +442,10 @@ msgid "Português"
 msgstr ""
 
 #: tform1.menurussian.caption
+#, fuzzy
 msgctxt "tform1.menurussian.caption"
 msgid "Русский"
-msgstr ""
+msgstr "Русский"
 
 #: tform1.menuspain.caption
 msgctxt "tform1.menuspain.caption"
@@ -452,37 +454,37 @@ msgstr ""
 
 #: tform1.nowy.caption
 msgid "Nowy"
-msgstr "新"
+msgstr "नया"
 
 #: tform1.odstepy.caption
 msgid "Kolor Pola"
-msgstr "色彩领域"
+msgstr "फ़ील्ड का रंग"
 
 #: tform1.oprogramie.caption
 msgid "O Programie"
-msgstr "关于计划"
+msgstr "कार्यक्रम के बारे में"
 
 #: tform1.otworz.caption
 msgid "Otwórz"
-msgstr "开放"
+msgstr "खुला"
 
 #: tform1.plik.caption
 msgid "Plik"
-msgstr "文件"
+msgstr "फ़ाइल"
 
 #: tform1.pomoc.caption
 msgid "Pomoc"
-msgstr "帮助"
+msgstr "मदद"
 
 #: tform1.status.panels[0].text
 msgctxt "tform1.status.panels[0].text"
 msgid "Liczba liter"
-msgstr "字母数"
+msgstr "अक्षरों की संख्या"
 
 #: tform1.status.panels[1].text
 msgctxt "tform1.status.panels[1].text"
 msgid "Liczba linii"
-msgstr "行数"
+msgstr "पंक्तियों की संख्या"
 
 #: tform1.status.panels[2].text
 msgid "XY"
@@ -490,542 +492,542 @@ msgstr "XY"
 
 #: tform1.status.panels[3].text
 msgid "Data"
-msgstr "日期"
+msgstr "तारीख"
 
 #: tform1.status.panels[4].text
 msgid "Info"
-msgstr "信息"
+msgstr "जानकारी"
 
 #: tform1.tabsheet1.caption
 msgctxt "tform1.tabsheet1.caption"
 msgid "Kalkulator"
-msgstr "计算器"
+msgstr "कैलकुलेटर"
 
 #: tform1.tabsheet2.caption
 msgctxt "tform1.tabsheet2.caption"
 msgid "Obliczenia"
-msgstr "计算"
+msgstr "गणना"
 
 #: tform1.tabsheet3.caption
 msgctxt "tform1.tabsheet3.caption"
 msgid "Edycja"
-msgstr "编辑"
+msgstr "संस्करण"
 
 #: tform1.tekst.caption
 msgctxt "tform1.tekst.caption"
 msgid "Czcionka"
-msgstr "字体"
+msgstr "फ़ॉन्ट"
 
 #: tform1.toolbar1.caption
 msgctxt "tform1.toolbar1.caption"
 msgid "ToolBar1"
-msgstr "工具栏1"
+msgstr "टूलबार1"
 
 #: tform1.toolbar2.caption
 msgctxt "tform1.toolbar2.caption"
 msgid "ToolBar2"
-msgstr "工具栏2"
+msgstr "टूलबार2"
 
 #: tform1.toolbutton1.caption
 msgctxt "tform1.toolbutton1.caption"
 msgid "ToolButton1"
-msgstr "工具按钮1"
+msgstr "टूलबटन1"
 
 #: tform1.toolbutton1.hint
 msgid "Otwórz plik"
-msgstr "打开文件"
+msgstr "खुली फाइल"
 
 #: tform1.toolbutton10.caption
 msgctxt "tform1.toolbutton10.caption"
 msgid "ToolButton10"
-msgstr "工具按钮10"
+msgstr "टूलबटन10"
 
 #: tform1.toolbutton10.hint
 msgctxt "tform1.toolbutton10.hint"
 msgid "Usuń"
-msgstr "删除"
+msgstr "मिटाना"
 
 #: tform1.toolbutton11.caption
 msgctxt "tform1.toolbutton11.caption"
 msgid "ToolButton11"
-msgstr "工具按钮11"
+msgstr "टूलबटन11"
 
 #: tform1.toolbutton11.hint
 msgctxt "tform1.toolbutton11.hint"
 msgid "Usuń wszystko"
-msgstr "全部删除"
+msgstr "सब कुछ मिटा दो"
 
 #: tform1.toolbutton12.caption
 msgctxt "tform1.toolbutton12.caption"
 msgid "ToolButton12"
-msgstr "工具按钮12"
+msgstr "टूलबटन12"
 
 #: tform1.toolbutton12.hint
 msgid "Zapisz słowa kluczowe"
-msgstr "保存关键字"
+msgstr "अपने कीवर्ड लिखें"
 
 #: tform1.toolbutton13.caption
 msgctxt "tform1.toolbutton13.caption"
 msgid "ToolButton13"
-msgstr "工具按钮13"
+msgstr "टूलबटन13"
 
 #: tform1.toolbutton13.hint
 msgid "Włącz Tryb Zawsze na górze"
-msgstr "启用始终开启模式"
+msgstr "ऑलवेज़ ऑन टॉप मोड सक्षम करें"
 
 #: tform1.toolbutton14.caption
 msgctxt "tform1.toolbutton14.caption"
 msgid "ToolButton14"
-msgstr "工具按钮14"
+msgstr "टूलबटन14"
 
 #: tform1.toolbutton14.hint
 msgid "Wyłącz Tryb Zawsze na górze"
-msgstr "禁用始终开启模式"
+msgstr "ऑलवेज़ ऑन टॉप मोड को बंद करें"
 
 #: tform1.toolbutton2.caption
 msgctxt "tform1.toolbutton2.caption"
 msgid "ToolButton2"
-msgstr "工具按钮2"
+msgstr "टूलबटन2"
 
 #: tform1.toolbutton2.hint
 msgctxt "tform1.toolbutton2.hint"
 msgid "O programie"
-msgstr "关于计划"
+msgstr "कार्यक्रम के बारे में"
 
 #: tform1.toolbutton3.caption
 msgctxt "tform1.toolbutton3.caption"
 msgid "ToolButton3"
-msgstr "工具按钮3"
+msgstr "टूलबटन3"
 
 #: tform1.toolbutton3.hint
 msgid "Zapisz plik"
-msgstr "保存文件"
+msgstr "फाइल सुरक्षित करें"
 
 #: tform1.toolbutton4.caption
 msgctxt "tform1.toolbutton4.caption"
 msgid "ToolButton4"
-msgstr "工具按钮4"
+msgstr "टूलबटन4"
 
 #: tform1.toolbutton4.hint
 msgid "Wyjść"
-msgstr "退出"
+msgstr "छुट्टी"
 
 #: tform1.toolbutton5.caption
 msgctxt "tform1.toolbutton5.caption"
 msgid "ToolButton5"
-msgstr "工具按钮5"
+msgstr "टूलबटन5"
 
 #: tform1.toolbutton5.hint
 msgid "Usuwa tekst z pola"
-msgstr "删除字段中的文本"
+msgstr "फ़ील्ड से टेक्स्ट हटाता है"
 
 #: tform1.toolbutton6.caption
 msgctxt "tform1.toolbutton6.caption"
 msgid "ToolButton6"
-msgstr "工具按钮6"
+msgstr "टूलबटन6"
 
 #: tform1.toolbutton6.hint
 msgctxt "tform1.toolbutton6.hint"
 msgid "Wyrównaj do lewej"
-msgstr "向左对齐"
+msgstr "बाये को करी"
 
 #: tform1.toolbutton7.caption
 msgctxt "tform1.toolbutton7.caption"
 msgid "ToolButton7"
-msgstr "工具按钮7"
+msgstr "टूलबटन7"
 
 #: tform1.toolbutton7.hint
 msgctxt "tform1.toolbutton7.hint"
 msgid "Wyrównaj do środka"
-msgstr "向中心对齐"
+msgstr "केंद्र में संरेखित करें"
 
 #: tform1.toolbutton8.caption
 msgctxt "tform1.toolbutton8.caption"
 msgid "ToolButton8"
-msgstr "工具按钮8"
+msgstr "टूलबटन8"
 
 #: tform1.toolbutton8.hint
 msgctxt "tform1.toolbutton8.hint"
 msgid "Wyrównaj do prawej"
-msgstr "向右对齐"
+msgstr "सही संरेखित"
 
 #: tform1.toolbutton9.caption
 msgctxt "tform1.toolbutton9.caption"
 msgid "ToolButton9"
-msgstr "工具按钮9"
+msgstr "टूलबटन9"
 
 #: tform1.toolbutton9.hint
 msgid "Dodać"
-msgstr "添加"
+msgstr "जमा करना"
 
 #: tform1.widok.caption
 msgid "Widok"
-msgstr "查看"
+msgstr "देखना"
 
 #: tform1.wklej.caption
 msgid "Wklej"
-msgstr "粘贴"
+msgstr "पेस्ट करें"
 
 #: tform1.wstaw.caption
 msgid "Wstaw"
-msgstr "插入"
+msgstr "डालना"
 
 #: tform1.wyrownajtekst.caption
 msgid "Wyrównaj tekst"
-msgstr "对齐文本"
+msgstr "पाठ को संरेखित करें"
 
 #: tform1.wytnij.caption
 msgid "Usuń cały tekst"
-msgstr "删除所有文本"
+msgstr "सभी पाठ हटाएँ"
 
 #: tform1.zamknij.caption
 msgctxt "tform1.zamknij.caption"
 msgid "Zamknij"
-msgstr "关闭"
+msgstr "बंद करना"
 
 #: tform1.zapisz.caption
 msgid "Zapisz jak"
-msgstr "写下如何"
+msgstr "लिखिए कैसे"
 
 #: tform2.butcancelsettings.caption
 msgctxt "tform2.butcancelsettings.caption"
 msgid "Anuluj"
-msgstr "取消"
+msgstr "रद्द करना"
 
 #: tform2.butresetsettings.caption
 msgctxt "tform2.butresetsettings.caption"
 msgid "Zresetuj dane"
-msgstr "重置数据"
+msgstr "डेटा रीसेट करें"
 
 #: tform2.caption
 msgctxt "tform2.caption"
 msgid "Ustawienia"
-msgstr "设置"
+msgstr "समायोजन"
 
 #: tform2.tabsheet1.caption
 msgctxt "tform2.tabsheet1.caption"
 msgid "Ustawienia"
-msgstr "设置"
+msgstr "समायोजन"
 
 #: tform2.tabsheet2.caption
 msgctxt "tform2.tabsheet2.caption"
 msgid "Edycja"
-msgstr "编辑"
+msgstr "संस्करण"
 
 #: tform2.tabsheet3.caption
 msgctxt "tform2.tabsheet3.caption"
 msgid "Kalkulator"
-msgstr "计算器"
+msgstr "कैलकुलेटर"
 
 #: tform2.tabsheet4.caption
 msgctxt "tform2.tabsheet4.caption"
 msgid "Obliczenia"
-msgstr "计算"
+msgstr "गणना"
 
 #: tform2.toolbar1.caption
 msgctxt "tform2.toolbar1.caption"
 msgid "ToolBar1"
-msgstr "工具栏1"
+msgstr "टूलबार1"
 
 #: tform2.toolbar2.caption
 msgctxt "tform2.toolbar2.caption"
 msgid "ToolBar2"
-msgstr "工具栏2"
+msgstr "टूलबार2"
 
 #: tform2.toolbutton1.caption
 msgctxt "tform2.toolbutton1.caption"
 msgid "ToolButton1"
-msgstr "工具按钮1"
+msgstr "टूलबटन1"
 
 #: tform2.toolbutton10.caption
 msgctxt "tform2.toolbutton10.caption"
 msgid "ToolButton10"
-msgstr "工具按钮10"
+msgstr "टूलबटन10"
 
 #: tform2.toolbutton11.caption
 msgctxt "tform2.toolbutton11.caption"
 msgid "ToolButton11"
-msgstr "工具按钮11"
+msgstr "टूलबटन11"
 
 #: tform2.toolbutton12.caption
 msgctxt "tform2.toolbutton12.caption"
 msgid "ToolButton12"
-msgstr "工具按钮12"
+msgstr "टूलबटन12"
 
 #: tform2.toolbutton13.caption
 msgctxt "tform2.toolbutton13.caption"
 msgid "ToolButton13"
-msgstr "工具按钮13"
+msgstr "टूलबटन13"
 
 #: tform2.toolbutton14.caption
 msgctxt "tform2.toolbutton14.caption"
 msgid "ToolButton14"
-msgstr "工具按钮14"
+msgstr "टूलबटन14"
 
 #: tform2.toolbutton2.caption
 msgctxt "tform2.toolbutton2.caption"
 msgid "ToolButton2"
-msgstr "工具按钮2"
+msgstr "टूलबटन2"
 
 #: tform2.toolbutton3.caption
 msgctxt "tform2.toolbutton3.caption"
 msgid "ToolButton3"
-msgstr "工具按钮3"
+msgstr "टूलबटन3"
 
 #: tform2.toolbutton4.caption
 msgctxt "tform2.toolbutton4.caption"
 msgid "ToolButton4"
-msgstr "工具按钮4"
+msgstr "टूलबटन4"
 
 #: tform2.toolbutton5.caption
 msgctxt "tform2.toolbutton5.caption"
 msgid "ToolButton5"
-msgstr "工具按钮5"
+msgstr "टूलबटन5"
 
 #: tform2.toolbutton6.caption
 msgctxt "tform2.toolbutton6.caption"
 msgid "ToolButton6"
-msgstr "工具按钮6"
+msgstr "टूलबटन6"
 
 #: tform2.toolbutton7.caption
 msgctxt "tform2.toolbutton7.caption"
 msgid "ToolButton7"
-msgstr "工具按钮7"
+msgstr "टूलबटन7"
 
 #: tform2.toolbutton8.caption
 msgctxt "tform2.toolbutton8.caption"
 msgid "ToolButton8"
-msgstr "工具按钮8"
+msgstr "टूलबटन8"
 
 #: tform2.toolbutton9.caption
 msgctxt "tform2.toolbutton9.caption"
 msgid "ToolButton9"
-msgstr "工具按钮9"
+msgstr "टूलबटन9"
 
 #: tftext_comparison.butalldelete1_list.hint
 msgid "Usuń  wszystko z listy 1"
-msgstr "从清单 1 中全部删除"
+msgstr "सूची 1 से सब कुछ हटा दें"
 
 #: tftext_comparison.butalldelete2_list.hint
 msgid "Usuń  wszystko z listy 2"
-msgstr "从列表中全部删除 2"
+msgstr "सूची से सब कुछ हटा दें 2"
 
 #: tftext_comparison.butopen1_list.hint
 msgctxt "tftext_comparison.butopen1_list.hint"
 msgid "Otwórz plik tekstowy"
-msgstr "打开文本文件"
+msgstr "टेक्स्ट फ़ाइल खोलें"
 
 #: tftext_comparison.butopen2_lst.hint
 msgctxt "tftext_comparison.butopen2_lst.hint"
 msgid "Otwórz plik tekstowy"
-msgstr "打开文本文件"
+msgstr "टेक्स्ट फ़ाइल खोलें"
 
 #: tftext_comparison.butsave1_list.hint
 msgctxt "tftext_comparison.butsave1_list.hint"
 msgid "Zapisz plik tekstowy"
-msgstr "保存文本文件"
+msgstr "टेक्स्ट फ़ाइल सहेजें"
 
 #: tftext_comparison.butsave2_list.hint
 msgctxt "tftext_comparison.butsave2_list.hint"
 msgid "Zapisz plik tekstowy"
-msgstr "保存文本文件"
+msgstr "टेक्स्ट फ़ाइल सहेजें"
 
 #: tftext_comparison.butsearch1.hint
 msgctxt "tftext_comparison.butsearch1.hint"
 msgid "Szukaj"
-msgstr "搜索"
+msgstr "खोज"
 
 #: tftext_comparison.butsearch2.hint
 msgctxt "tftext_comparison.butsearch2.hint"
 msgid "Szukaj"
-msgstr "搜索"
+msgstr "खोज"
 
 #: tftext_comparison.butsearchunic.hint
 msgctxt "tftext_comparison.butsearchunic.hint"
 msgid "Szukaj"
-msgstr "搜索"
+msgstr "खोज"
 
 #: tftext_comparison.button1.caption
 msgid "Porównaj "
-msgstr "比较 "
+msgstr "तुलना करना "
 
 #: tftext_comparison.caption
 msgid "Porównaj dane"
-msgstr "数据比较"
+msgstr "डेटा की तुलना करें"
 
 #: tftext_comparison.groupbox1.caption
 msgid "Wyszukaj wiersz"
-msgstr "搜索行"
+msgstr "एक पंक्ति खोजें"
 
 #: tftext_comparison.label1.caption
 msgid "1 lista"
-msgstr "1 份清单"
+msgstr "1 सूची"
 
 #: tftext_comparison.label2.caption
 msgid "2  lista"
-msgstr "2 清单"
+msgstr "दूसरी सूची"
 
 #: tftext_comparison.label3.caption
 msgid "Unikalne"
-msgstr "独特性"
+msgstr "अद्वितीय"
 
 #: tftext_comparison.label4.caption
 msgid "Unikalne wiersze: "
-msgstr "独特的诗歌 "
+msgstr "अनोखी पंक्तियाँ: "
 
 #: tftext_comparison.menuitem1.caption
 msgctxt "tftext_comparison.menuitem1.caption"
 msgid "Usuń wszystko"
-msgstr "全部删除"
+msgstr "सब कुछ मिटा दो"
 
 #: tftext_comparison.menuitem2.caption
 msgctxt "tftext_comparison.menuitem2.caption"
 msgid "Usuń wszystko"
-msgstr "全部删除"
+msgstr "सब कुछ मिटा दो"
 
 #: tftext_comparison.menuitem3.caption
 msgctxt "tftext_comparison.menuitem3.caption"
 msgid "Usuń wszystko"
-msgstr "全部删除"
+msgstr "सब कुछ मिटा दो"
 
 #: tftext_comparison.searchtext.editlabel.caption
 msgid "Szukaj w Unikalnych"
-msgstr "在 \"独特 \"中搜索"
+msgstr "अद्वितीय में खोजें"
 
 #: tftext_comparison.searchtextlist1.editlabel.caption
 msgid "Lista 1"
-msgstr "清单 1"
+msgstr "सूची 1"
 
 #: tftext_comparison.searchtextlist2.editlabel.caption
 msgid "Lista 2"
-msgstr "清单 2"
+msgstr "सूची 2"
 
 #: tftext_comparison.speedbutton1.hint
 msgid "Usuń  wszystko z listy Unikalne"
-msgstr "删除唯一列表中的所有内容"
+msgstr "अद्वितीय सूची से सब कुछ हटा दें"
 
 #: tftext_comparison.speedbutton2.hint
 msgctxt "tftext_comparison.speedbutton2.hint"
 msgid "Zapisz plik tekstowy"
-msgstr "保存文本文件"
+msgstr "टेक्स्ट फ़ाइल सहेजें"
 
 #: tftext_comparison.statusbar1.panels[0].text
 msgctxt "tftext_comparison.statusbar1.panels[0].text"
 msgid "Wierszy"
-msgstr "诗歌"
+msgstr "कविता"
 
 #: tftext_comparison.statusbar1.panels[1].text
 msgctxt "tftext_comparison.statusbar1.panels[1].text"
 msgid "Wierszy"
-msgstr "诗歌"
+msgstr "कविता"
 
 #: tftext_comparison.statusbar1.panels[2].text
 msgctxt "tftext_comparison.statusbar1.panels[2].text"
 msgid "Wierszy"
-msgstr "诗歌"
+msgstr "कविता"
 
 #: unit1.addnewsentencecaption
 msgid "Nowe zdanie"
-msgstr "新句子"
+msgstr "नया वाक्य"
 
 #: unit1.countline
 msgctxt "unit1.countline"
 msgid "Liczba linii "
-msgstr "行数 "
+msgstr "पंक्तियों की संख्या "
 
 #: unit1.countword
 msgctxt "unit1.countword"
 msgid "Liczba liter "
-msgstr "字母数 "
+msgstr "अक्षरों की संख्या "
 
 #: unit1.datasaved
 msgid "Dane zapisane"
-msgstr "记录的数据"
+msgstr "डेटा सहेजा गया"
 
 #: unit1.disabledmodealwaysontop
 msgid "Wyłączony tryb zawsze na górze"
-msgstr "禁用始终开启模式"
+msgstr "अक्षम मोड हमेशा शीर्ष पर"
 
 #: unit1.enabledalwaysontop
 msgid "Włączony tryb zawsze na górze"
-msgstr "始终在顶部模式"
+msgstr "हमेशा ऑन टॉप मोड सक्षम"
 
 #: unit1.enterdatafields
 msgid "Wpisz dane w pola"
-msgstr "在字段中输入数据"
+msgstr "फ़ील्ड में डेटा दर्ज करें"
 
 #: unit1.enterkeywords
 msgid "Wpisz słowa kluczowe"
-msgstr "输入关键字"
+msgstr "संकेतशब्द अंकित करें"
 
 #: unit1.entervalue
 msgid "Wpisz wartość w polu"
-msgstr "在字段中输入数值"
+msgstr "फ़ील्ड में एक मान दर्ज करें"
 
 #: unit1.filemodified
 msgid "Bieżący plik został zmodyfikowany. Zapisać zmiany?"
-msgstr "当前文件已修改。保存更改？"
+msgstr "वर्तमान फ़ाइल को संशोधित कर दिया गया है. परिवर्तनों को सुरक्षित करें?"
 
 #: unit1.inches
 msgctxt "unit1.inches"
 msgid "Cale"
-msgstr "英寸"
+msgstr "सभी"
 
 #: unit1.infocaptionsearch
 msgid "Informacja"
-msgstr "信息"
+msgstr "जानकारी"
 
 #: unit1.isdeletealltext
 msgid "Czy usunąć cały tekst?"
-msgstr "是否应删除整个文本？"
+msgstr "क्या मुझे सारा पाठ हटा देना चाहिए?"
 
 #: unit1.isdeletealltextdatabase
 msgid "Czy napewno chcesz usunąć cały tekst?"
-msgstr "您确定要删除整个文本吗？"
+msgstr "क्या आप वाकई सभी पाठ हटाना चाहते हैं?"
 
 #: unit1.isdeletealltextinfo
 msgid "Usuwanie tekstu"
-msgstr "删除文本"
+msgstr "पाठ हटाना"
 
 #: unit1.isdeleteitem
 msgid "Czy napewno chcesz usunąć wybrany element?"
-msgstr "您确定要删除所选项目吗？"
+msgstr "क्या आप वाकई चयनित आइटम को हटाना चाहते हैं?"
 
 #: unit1.linecopy
 msgid "Wiersz skopiowany"
-msgstr "复制的诗歌"
+msgstr "लाइन कॉपी की गई"
 
 #: unit1.openexistingfile
 msgid "Otwórz istniejący plik"
-msgstr "打开现有文件"
+msgstr "कोई मौजूदा फ़ाइल खोलें"
 
 #: unit1.positionmouse
 msgid "Pozycja: X: "
-msgstr "项目： X： "
+msgstr "पद: एक्स: "
 
 #: unit1.savefilecaption
 msgid "Zapisywanie pliku"
-msgstr "保存文件"
+msgstr "फ़ाइल सहेजा जा रहा है"
 
 #: unit1.textfound
 msgctxt "unit1.textfound"
 msgid "Tekst znaleziony"
-msgstr "找到文本"
+msgstr "पाठ मिला"
 
 #: unit1.textnotfound
 msgid "Tekst nie znaleziony"
-msgstr "未找到文本"
+msgstr "पाठ नहीं मिला"
 
 #: unit1.writenewsentence
 msgid "Wpisz zdanie"
-msgstr "类型判决"
+msgstr "एक वाक्य दर्ज करें"
 
 #: unit1.writenumbersaandb
 msgid "Wpisz liczby w A i B"
-msgstr "写出 A 和 B 中的数字"
+msgstr "A और B में संख्याएँ लिखें"
 
 #: ustawienia_programu.countlines
 msgctxt "ustawienia_programu.countlines"
 msgid "Liczba wierszy "
-msgstr "行数 "
+msgstr "पंक्तियों की संख्या "
 

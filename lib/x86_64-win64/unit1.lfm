@@ -1,12 +1,12 @@
 object Form1: TForm1
   Left = 441
-  Height = 458
+  Height = 418
   Top = 140
   Width = 1032
   Align = alClient
   BorderStyle = bsSingle
   Caption = 'Notes Pro V1.1.5.3'
-  ClientHeight = 458
+  ClientHeight = 418
   ClientWidth = 1032
   FormStyle = fsSystemStayOnTop
   Menu = MainMenu1
@@ -16,7 +16,7 @@ object Form1: TForm1
   LCLVersion = '3.0.0.1'
   object Memo1: TMemo
     Left = 0
-    Height = 409
+    Height = 369
     Top = 26
     Width = 664
     Align = alClient
@@ -36,12 +36,12 @@ object Form1: TForm1
   end
   object Panel1: TPanel
     Left = 666
-    Height = 409
+    Height = 369
     Top = 26
     Width = 366
     Align = alRight
     BevelColor = clBtnFace
-    ClientHeight = 409
+    ClientHeight = 369
     ClientWidth = 366
     Color = clBtnFace
     ParentBackground = False
@@ -52,13 +52,13 @@ object Form1: TForm1
       Height = 175
       Top = 1
       Width = 364
-      ActivePage = TabSheet3
+      ActivePage = TabSheet1
       Align = alTop
       BiDiMode = bdRightToLeft
       Font.Color = clBlack
       ParentBiDiMode = False
       ParentFont = False
-      TabIndex = 0
+      TabIndex = 1
       TabOrder = 0
       object TabSheet3: TTabSheet
         Caption = 'Edycja'
@@ -285,7 +285,7 @@ object Form1: TForm1
           Left = 24
           Height = 25
           Top = 80
-          Width = 107
+          Width = 152
           Caption = 'Kalkulator pro'
           OnClick = Button6Click
           TabOrder = 7
@@ -308,7 +308,7 @@ object Form1: TForm1
           Left = 23
           Height = 25
           Top = 112
-          Width = 115
+          Width = 155
           Caption = 'usuń kalkulator'
           OnClick = Button14Click
           TabOrder = 9
@@ -484,7 +484,7 @@ object Form1: TForm1
     end
     object ListBox1: TListBox
       Left = 1
-      Height = 183
+      Height = 143
       Top = 202
       Width = 364
       Align = alClient
@@ -570,7 +570,7 @@ object Form1: TForm1
     object StatusBar2: TStatusBar
       Left = 1
       Height = 23
-      Top = 385
+      Top = 345
       Width = 364
       Color = clActiveCaption
       Font.Color = clBlack
@@ -706,7 +706,7 @@ object Form1: TForm1
   object Status: TStatusBar
     Left = 0
     Height = 23
-    Top = 435
+    Top = 395
     Width = 1032
     Color = clBtnFace
     Panels = <    
@@ -777,7 +777,7 @@ object Form1: TForm1
   end
   object Splitter1: TSplitter
     Left = 664
-    Height = 409
+    Height = 369
     Top = 26
     Width = 2
     Align = alRight
@@ -900,35 +900,47 @@ object Form1: TForm1
         OnClick = MenuItem6Click
       end
     end
-    object MenuItem12: TMenuItem
+    object MenuLanguage: TMenuItem
       Caption = 'Language'
-      object MenuItem13: TMenuItem
+      object MenuEnglish: TMenuItem
         Caption = 'English'
-        OnClick = MenuItem13Click
+        OnClick = MenuEnglishClick
       end
-      object MenuItem43: TMenuItem
+      object MenuSpain: TMenuItem
+        Caption = 'Español'
+        OnClick = MenuSpainClick
+      end
+      object MenuFrench: TMenuItem
         Caption = 'Français'
-        OnClick = MenuItem43Click
+        OnClick = MenuFrenchClick
       end
-      object MenuItem42: TMenuItem
+      object MenuGermany: TMenuItem
         Caption = 'Deutsch'
-        OnClick = MenuItem42Click
+        OnClick = MenuGermanyClick
       end
-      object MenuItem35: TMenuItem
+      object MenuItalia: TMenuItem
+        Caption = 'Italiano'
+        OnClick = MenuItaliaClick
+      end
+      object MenuPortugal: TMenuItem
+        Caption = 'Português'
+        OnClick = MenuPortugalClick
+      end
+      object MenuPolish: TMenuItem
         Caption = 'Polski'
-        OnClick = MenuItem35Click
+        OnClick = MenuPolishClick
       end
-      object MenuItem41: TMenuItem
+      object MenuRussian: TMenuItem
         Caption = 'Русский'
-        OnClick = MenuItem41Click
+        OnClick = MenuRussianClick
       end
-      object MenuItem45: TMenuItem
-        Caption = 'Українська'
-        OnClick = MenuItem45Click
-      end
-      object MenuItem44: TMenuItem
+      object MenuChinese: TMenuItem
         Caption = '中國人'
-        OnClick = MenuItem44Click
+        OnClick = MenuChineseClick
+      end
+      object MenuIHindi: TMenuItem
+        Caption = 'हिंदी'
+        OnClick = MenuIHindiClick
       end
     end
   end

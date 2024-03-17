@@ -221,6 +221,36 @@ msgctxt "tform1.label9.caption"
 msgid "="
 msgstr "="
 
+#: tform1.menuchinese.caption
+msgctxt "tform1.menuchinese.caption"
+msgid "中國人"
+msgstr ""
+
+#: tform1.menuenglish.caption
+msgctxt "tform1.menuenglish.caption"
+msgid "English"
+msgstr ""
+
+#: tform1.menufrench.caption
+msgctxt "tform1.menufrench.caption"
+msgid "Français"
+msgstr ""
+
+#: tform1.menugermany.caption
+msgctxt "tform1.menugermany.caption"
+msgid "Deutsch"
+msgstr ""
+
+#: tform1.menuihindi.caption
+msgctxt "tform1.menuihindi.caption"
+msgid "हिंदी"
+msgstr ""
+
+#: tform1.menuitalia.caption
+msgctxt "tform1.menuitalia.caption"
+msgid "Italiano"
+msgstr ""
+
 #: tform1.menuitem1.caption
 msgctxt "tform1.menuitem1.caption"
 msgid "Wyrównaj do lewej"
@@ -233,16 +263,6 @@ msgstr "Mode normal"
 #: tform1.menuitem11.caption
 msgid "Porównaj Tekst"
 msgstr "Comparez le texte"
-
-#: tform1.menuitem12.caption
-msgid "Language"
-msgstr "Langue"
-
-#: tform1.menuitem13.caption
-#, fuzzy
-#| msgid "Angielski"
-msgid "English"
-msgstr "Anglais"
 
 #: tform1.menuitem14.caption
 msgctxt "tform1.menuitem14.caption"
@@ -346,10 +366,6 @@ msgstr "Marquez tout"
 msgid "Cofnij"
 msgstr "Retour"
 
-#: tform1.menuitem35.caption
-msgid "Polski"
-msgstr "Polonais"
-
 #: tform1.menuitem36.caption
 msgid "Tryb zawsze na wierzchu"
 msgstr "Mode permanent"
@@ -378,28 +394,6 @@ msgctxt "tform1.menuitem40.caption"
 msgid "20"
 msgstr "20"
 
-#: tform1.menuitem41.caption
-#, fuzzy
-#| msgid "Rosyjski"
-msgid "Русский"
-msgstr "Russie"
-
-#: tform1.menuitem42.caption
-msgid "Deutsch"
-msgstr ""
-
-#: tform1.menuitem43.caption
-msgid "Français"
-msgstr ""
-
-#: tform1.menuitem44.caption
-msgid "中國人"
-msgstr ""
-
-#: tform1.menuitem45.caption
-msgid "Українська"
-msgstr ""
-
 #: tform1.menuitem5.caption
 msgid "25"
 msgstr "25"
@@ -421,6 +415,33 @@ msgstr "Outils"
 #: tform1.menuitem9.caption
 msgid "Zapisz"
 msgstr "Économiser"
+
+#: tform1.menulanguage.caption
+#, fuzzy
+msgctxt "tform1.menulanguage.caption"
+msgid "Language"
+msgstr "Langue"
+
+#: tform1.menupolish.caption
+#, fuzzy
+msgctxt "tform1.menupolish.caption"
+msgid "Polski"
+msgstr "Polonais"
+
+#: tform1.menuportugal.caption
+msgctxt "tform1.menuportugal.caption"
+msgid "Português"
+msgstr ""
+
+#: tform1.menurussian.caption
+msgctxt "tform1.menurussian.caption"
+msgid "Русский"
+msgstr ""
+
+#: tform1.menuspain.caption
+msgctxt "tform1.menuspain.caption"
+msgid "Español"
+msgstr ""
 
 #: tform1.nowy.caption
 msgid "Nowy"

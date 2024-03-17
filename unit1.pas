@@ -63,8 +63,8 @@ type
     MenuItem1: TMenuItem;
     MenuItem10: TMenuItem;
     MenuItem11: TMenuItem;
-    MenuItem12: TMenuItem;
-    MenuItem13: TMenuItem;
+    MenuLanguage: TMenuItem;
+    MenuEnglish: TMenuItem;
     MenuItem14: TMenuItem;
     MenuItem15: TMenuItem;
     MenuItem16: TMenuItem;
@@ -86,17 +86,20 @@ type
     MenuItem32: TMenuItem;
     MenuItem33: TMenuItem;
     MenuItem34: TMenuItem;
-    MenuItem35: TMenuItem;
+    MenuPolish: TMenuItem;
     MenuItem36: TMenuItem;
     MenuItem37: TMenuItem;
     MenuItem38: TMenuItem;
     MenuItem39: TMenuItem;
     MenuItem40: TMenuItem;
-    MenuItem41: TMenuItem;
-    MenuItem42: TMenuItem;
-    MenuItem43: TMenuItem;
-    MenuItem44: TMenuItem;
-    MenuItem45: TMenuItem;
+    MenuRussian: TMenuItem;
+    MenuGermany: TMenuItem;
+    MenuFrench: TMenuItem;
+    MenuChinese: TMenuItem;
+    MenuIHindi: TMenuItem;
+    MenuSpain: TMenuItem;
+    MenuItalia: TMenuItem;
+    MenuPortugal: TMenuItem;
     MenuItem7: TMenuItem;
     MenuItem8: TMenuItem;
     MenuItem9: TMenuItem;
@@ -188,7 +191,7 @@ type
     procedure Memo1MouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer);
     procedure MenuItem10Click(Sender: TObject);
     procedure MenuItem11Click(Sender: TObject);
-    procedure MenuItem13Click(Sender: TObject);
+    procedure MenuEnglishClick(Sender: TObject);
     procedure MenuItem17Click(Sender: TObject);
     procedure MenuItem18Click(Sender: TObject);
     procedure MenuItem19Click(Sender: TObject);
@@ -207,18 +210,21 @@ type
     procedure MenuItem32Click(Sender: TObject);
     procedure MenuItem33Click(Sender: TObject);
     procedure MenuItem34Click(Sender: TObject);
-    procedure MenuItem35Click(Sender: TObject);
+    procedure MenuPolishClick(Sender: TObject);
     procedure MenuItem36Click(Sender: TObject);
     procedure MenuItem37Click(Sender: TObject);
     procedure MenuItem38Click(Sender: TObject);
     procedure MenuItem39Click(Sender: TObject);
     procedure MenuItem3Click(Sender: TObject);
     procedure MenuItem40Click(Sender: TObject);
-    procedure MenuItem41Click(Sender: TObject);
-    procedure MenuItem42Click(Sender: TObject);
-    procedure MenuItem43Click(Sender: TObject);
-    procedure MenuItem44Click(Sender: TObject);
-    procedure MenuItem45Click(Sender: TObject);
+    procedure MenuRussianClick(Sender: TObject);
+    procedure MenuGermanyClick(Sender: TObject);
+    procedure MenuFrenchClick(Sender: TObject);
+    procedure MenuChineseClick(Sender: TObject);
+    procedure MenuIHindiClick(Sender: TObject);
+    procedure MenuSpainClick(Sender: TObject);
+    procedure MenuItaliaClick(Sender: TObject);
+    procedure MenuPortugalClick(Sender: TObject);
     procedure MenuItem4Click(Sender: TObject);
     procedure MenuItem5Click(Sender: TObject);
     procedure MenuItem6Click(Sender: TObject);
@@ -249,6 +255,7 @@ type
     procedure LastPositionForm;
     procedure DeleteAllTextinMemo;
     procedure LoadLang;
+    procedure IsClickMainMenuLanguage(number: Integer);
   private
 
   public
@@ -359,11 +366,11 @@ begin
   Ftext_comparison.ShowModal;
 end;
 
-procedure TForm1.MenuItem13Click(Sender: TObject);
+procedure TForm1.MenuEnglishClick(Sender: TObject);
 begin
   SetDefaultLang('en');
-  GetLocaleFormatSettings($409, DefaultFormatSettings);
   lang := 'en';
+  IsClickMainMenuLanguage(0);
 end;
 
 
@@ -492,10 +499,11 @@ begin
   Memo1.Undo;
 end;
 
-procedure TForm1.MenuItem35Click(Sender: TObject);
+procedure TForm1.MenuPolishClick(Sender: TObject);
 begin
   SetDefaultLang('pl');
   lang := 'pl';
+  IsClickMainMenuLanguage(6);
 end;
 
 procedure TForm1.MenuItem36Click(Sender: TObject);
@@ -538,34 +546,60 @@ begin
     ListBox1.Font.Size:=20;
 end;
 
-procedure TForm1.MenuItem41Click(Sender: TObject);
+procedure TForm1.MenuRussianClick(Sender: TObject);
 begin
   SetDefaultLang('ru');
   lang := 'ru';
+  IsClickMainMenuLanguage(7);
 end;
 
-procedure TForm1.MenuItem42Click(Sender: TObject);
+procedure TForm1.MenuGermanyClick(Sender: TObject);
 begin
   SetDefaultLang('de');
   lang := 'de';
+  IsClickMainMenuLanguage(3);
 end;
 
-procedure TForm1.MenuItem43Click(Sender: TObject);
+procedure TForm1.MenuFrenchClick(Sender: TObject);
 begin
   SetDefaultLang('fr');
   lang := 'fr';
+  IsClickMainMenuLanguage(2);
 end;
 
-procedure TForm1.MenuItem44Click(Sender: TObject);
+procedure TForm1.MenuChineseClick(Sender: TObject);
 begin
   SetDefaultLang('zh');
   lang := 'zh';
+  IsClickMainMenuLanguage(8);
 end;
 
-procedure TForm1.MenuItem45Click(Sender: TObject);
+procedure TForm1.MenuIHindiClick(Sender: TObject);
 begin
-  SetDefaultLang('uk');
-  lang := 'uk';
+  SetDefaultLang('hi');
+  lang := 'hi';
+  IsClickMainMenuLanguage(9);
+end;
+
+procedure TForm1.MenuSpainClick(Sender: TObject);
+begin
+  SetDefaultLang('es');
+  lang := 'es';
+  IsClickMainMenuLanguage(1);
+end;
+
+procedure TForm1.MenuItaliaClick(Sender: TObject);
+begin
+  SetDefaultLang('it');
+  lang := 'it';
+  IsClickMainMenuLanguage(4);
+end;
+
+procedure TForm1.MenuPortugalClick(Sender: TObject);
+begin
+  SetDefaultLang('pt');
+  lang := 'pt';
+  IsClickMainMenuLanguage(5);
 end;
 
 procedure TForm1.MenuItem4Click(Sender: TObject);
@@ -846,30 +880,107 @@ begin
   try
     lang := ini_lang.ReadString('main','langdefault','en');
     case lang of
-    'en': SetDefaultLang('en');
-    'pl': SetDefaultLang('pl');
-    'ru': SetDefaultLang('ru');
-    'de': SetDefaultLang('de');
-    'pt': SetDefaultLang('pt');//portugalski
-    'es': SetDefaultLang('es');//hiszpański
-    'uk': SetDefaultLang('uk');
-    'it': SetDefaultLang('it'); //wloski
-    'hi': SetDefaultLang('hi');//hindi
-    'fr': SetDefaultLang('fr');//francuski
-    'zh': SetDefaultLang('zh');//chiński
-    'bn': SetDefaultLang('bn');//Bengalski
-    'ar': SetDefaultLang('ar');//arabski
-    'ja': SetDefaultLang('ja');//japoński
-    'pnb': SetDefaultLang('pnb');//zachodniopendżabski
-    'mr': SetDefaultLang('mr');//marathi
+    'en':
+    begin
+      SetDefaultLang('en');
+      IsClickMainMenuLanguage(0);
+    end;
+    'pl':
+    begin
+      SetDefaultLang('pl');
+      IsClickMainMenuLanguage(6);
+    end;
+    'ru':
+    begin
+      SetDefaultLang('ru');
+      IsClickMainMenuLanguage(7);
+    end;
+    'de':
+    begin
+      SetDefaultLang('de');
+      IsClickMainMenuLanguage(3);
+    end;
+    'pt':
+    begin
+      SetDefaultLang('pt');//portugalski
+      IsClickMainMenuLanguage(5);
+    end;
+    'es':
+    begin
+      SetDefaultLang('es');//hiszpański
+      IsClickMainMenuLanguage(1);
+    end;
+    'uk':
+    begin
+      SetDefaultLang('uk');
+       //IsClickMainMenuLanguage(1);
+    end;
+    'it':
+    begin
+      SetDefaultLang('it'); //wloski
+      IsClickMainMenuLanguage(4);
+    end;
+    'hi':
+    begin
+      SetDefaultLang('hi');//hindi
+      IsClickMainMenuLanguage(9);
+    end;
+    'fr':
+    begin
+      SetDefaultLang('fr');//francuski
+      IsClickMainMenuLanguage(2);
+    end;
+    'zh':
+    begin
+      SetDefaultLang('zh');//chiński
+      IsClickMainMenuLanguage(8);
+    end;
+    'bn':
+    begin
+      SetDefaultLang('bn');//Bengalski
+      //IsClickMainMenuLanguage(8);
+    end;
+    'ar':
+    begin
+      SetDefaultLang('ar');//arabski
+      //IsClickMainMenuLanguage(8);
+    end;
+    'ja':
+    begin
+       SetDefaultLang('ja');//japoński
+       //IsClickMainMenuLanguage(8);
+    end;
+    'pnb':
+    begin
+       SetDefaultLang('pnb');//zachodniopendżabski
+       //IsClickMainMenuLanguage(8);
+    end;
+    'mr':
+    begin
+       SetDefaultLang('mr');//marathi
+       //IsClickMainMenuLanguage(8);
+    end
     else
       SetDefaultLang('en');
+      IsClickMainMenuLanguage(0);
     end;
       FreeAndNil(ini_lang);
     finally
   end;
 end;
 
+procedure TForm1.IsClickMainMenuLanguage(number: Integer);
+var
+  i: Integer;
+begin
+  for i := 0 to MainMenu1.Items[6].Count - 1 do
+  begin
+    if i <> number then // Jeśli to nie jest aktualnie wybrany element
+      MainMenu1.Items[6].Items[i].Checked := False; // Odznacz element
+  end;
+  // Zaznacz wybrany element
+  MainMenu1.Items[6].Items[number].Checked := True;
+end;
 
 
 procedure TForm1.ButtonAddClick(Sender: TObject);
