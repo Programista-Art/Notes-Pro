@@ -6,14 +6,15 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, Menus,
-  ExtCtrls, ComCtrls, Buttons, ActnList,
-  IniFiles, ustawienia_programu, forma2, about,Clipbrd,text_comparison, LCLTranslator, DefaultTranslator;
+  ExtCtrls, ComCtrls, Buttons, ActnList, IniFiles, ustawienia_programu, forma2,
+  about, Clipbrd, text_comparison, LCLTranslator, DefaultTranslator,BCMaterialDesignButton, LCLIntf;
 
 type
 
   { TForm1 }
 
   TForm1 = class(TForm)
+    ButAds: TBCMaterialDesignButton;
     Button1: TButton;
     Button10: TButton;
     Button11: TButton;
@@ -48,7 +49,6 @@ type
     Label11: TLabel;
     Label12: TLabel;
     Label13: TLabel;
-    Label15: TLabel;
     Label2: TLabel;
     Cm: TLabel;
     Label3: TLabel;
@@ -106,6 +106,7 @@ type
     PageControl1: TPageControl;
     Panel1: TPanel;
     Panel2: TPanel;
+    Panel3: TPanel;
     PopupMenuForListbox: TPopupMenu;
     FontDialog: TFontDialog;
     ImageList1: TImageList;
@@ -123,6 +124,7 @@ type
     TabSheet1: TTabSheet;
     TabSheet2: TTabSheet;
     TabSheet3: TTabSheet;
+    Timer: TTimer;
     ToolBar1: TToolBar;
     ToolBar2: TToolBar;
     ToolButton1: TToolButton;
@@ -159,6 +161,7 @@ type
     Widok: TMenuItem;
     Plik: TMenuItem;
     PopupMenu1: TPopupMenu;
+    procedure ButAdsClick(Sender: TObject);
     procedure Button10Click(Sender: TObject);
     procedure Button11Click(Sender: TObject);
     procedure Button12Click(Sender: TObject);
@@ -185,6 +188,7 @@ type
     procedure FormCreate(Sender: TObject);
     procedure InchSumClick(Sender: TObject);
     procedure KopiujClick(Sender: TObject);
+    procedure Label6Click(Sender: TObject);
     procedure ListBox1Click(Sender: TObject);
     procedure ListBox1DblClick(Sender: TObject);
     procedure Memo1Change(Sender: TObject);
@@ -234,6 +238,7 @@ type
     procedure OProgramieClick(Sender: TObject);
     procedure OtworzClick(Sender: TObject);
     procedure TekstClick(Sender: TObject);
+    procedure TimerStartTimer(Sender: TObject);
     procedure ToolButton12Click(Sender: TObject);
     procedure ToolButton13Click(Sender: TObject);
     procedure ToolButton14Click(Sender: TObject);
@@ -718,6 +723,11 @@ begin
     end
 end;
 
+procedure TForm1.TimerStartTimer(Sender: TObject);
+begin
+  //BCLabeAds.
+end;
+
 procedure TForm1.ToolButton12Click(Sender: TObject);
 begin
     if ListBox1.Items.Text = '' then
@@ -1077,6 +1087,11 @@ if (Edit4.text = '') or (Edit5.text = '')  then
    end;
 end;
 
+procedure TForm1.ButAdsClick(Sender: TObject);
+begin
+  OpenURL('https://wygowski.art/');
+end;
+
 
 
 procedure TForm1.Button11Click(Sender: TObject);
@@ -1287,6 +1302,11 @@ end;
 procedure TForm1.KopiujClick(Sender: TObject);
 begin
    Memo1.CopyToClipboard;
+end;
+
+procedure TForm1.Label6Click(Sender: TObject);
+begin
+  OpenURL('https://wygowski.art/');
 end;
 
 end.

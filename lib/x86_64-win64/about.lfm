@@ -1,8 +1,8 @@
 object fAbout: TfAbout
   Cursor = crHelp
-  Left = 1392
+  Left = 1466
   Height = 169
-  Top = 215
+  Top = 248
   Width = 309
   BorderStyle = bsToolWindow
   Caption = 'O programie'
@@ -101,11 +101,11 @@ object fAbout: TfAbout
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
         Lines.Strings = (
-          'Program Notes Pro stworzony przez '
+          'Notes Pro created by'
           'Dymitr Wygowski'
-          'W środowisku Lazarus 3.0RC1'
-          'Wersja FPC: 3.2.2'
-          'V1.1.5.3 (12.03.2024)'
+          'In the Lazarus 3.0RC1 environment'
+          'FPC version: 3.2.2'
+          'V1.1.5.3 (18/03/2024)'
         )
         ParentBidiMode = False
         ParentDoubleBuffered = False
@@ -209,20 +209,21 @@ object fAbout: TfAbout
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
         Lines.Strings = (
-          'Przyciski Hot Key'
+          'Hot Key'
           ''
-          'Ctrł +N     Nowy Plik'
-          'Ctrl +O     Otwórz Plik'
-          'Ctrl+S       Zapisz Plik'
-          'Ctrl+J        Zapisz Jak'
+          'Ctrł +N     New File'
+          'Ctrl +O     Open File'
+          'Ctrl+S       Save file'
+          'Ctrl+J        Save as'
           ''
-          'Tekst'
-          'Ctrl+D        Duże Litery'
-          'Ctrl+M       Male Litery'
+          'Text'
+          ''
+          'Ctrl+D        Uppercase'
+          'Ctrl+M       Lower case'
           'Ctrl+A        Zaznacz wszystko'
-          'Ctrl+C        Kopiuj'
-          'Ctrl+V        Wklej'
-          'Ctrl+X        Wytnij'
+          'Ctrl+C        Copy'
+          'Ctrl+V        Paste'
+          'Ctrl+X        Cut'
         )
         ParentFont = False
         ReadOnly = True

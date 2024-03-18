@@ -68,6 +68,10 @@ msgstr ""
 msgid "www.dimitalart.pl"
 msgstr ""
 
+#: tform1.butads.caption
+msgid "SPRAWDŹ"
+msgstr ""
+
 #: tform1.button1.caption
 msgctxt "tform1.button1.caption"
 msgid "Oblicz"
@@ -184,10 +188,6 @@ msgstr ""
 msgid "Po zniżce"
 msgstr ""
 
-#: tform1.label15.caption
-msgid "Wklej link"
-msgstr ""
-
 #: tform1.label2.caption
 msgid "Nowy tekst"
 msgstr ""
@@ -207,8 +207,7 @@ msgid "A ="
 msgstr ""
 
 #: tform1.label6.caption
-msgctxt "tform1.label6.caption"
-msgid "A ="
+msgid "Karykatura jako Wyjątkowy Prezent zamów na www.wygowski.art"
 msgstr ""
 
 #: tform1.label7.caption
