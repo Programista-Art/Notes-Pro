@@ -54,7 +54,7 @@ type
     Label3: TLabel;
     Label4: TLabel;
     Label5: TLabel;
-    Label6: TLabel;
+    LabAds: TLabel;
     Label7: TLabel;
     Label8: TLabel;
     Cale: TLabel;
@@ -188,7 +188,7 @@ type
     procedure FormCreate(Sender: TObject);
     procedure InchSumClick(Sender: TObject);
     procedure KopiujClick(Sender: TObject);
-    procedure Label6Click(Sender: TObject);
+    procedure LabAdsClick(Sender: TObject);
     procedure ListBox1Click(Sender: TObject);
     procedure ListBox1DblClick(Sender: TObject);
     procedure Memo1Change(Sender: TObject);
@@ -306,6 +306,7 @@ resourcestring
   TextNotFound = 'Tekst nie znaleziony';
   TextFound = 'Tekst znaleziony';
   Inches = 'Cale';
+  //Reklama
 
 implementation
 
@@ -1292,6 +1293,8 @@ begin
   Status.Panels.Items[3].Text:='Data: ' + DateToStr(Date);
   //wywołujemy procedurę PodliczLinijki
   PodliczLinijki(ListBox1, StatusBar2);
+  //Reklama
+  //LabAds.Caption := CaptionAds;
 end;
 
 procedure TForm1.InchSumClick(Sender: TObject);
@@ -1304,7 +1307,7 @@ begin
    Memo1.CopyToClipboard;
 end;
 
-procedure TForm1.Label6Click(Sender: TObject);
+procedure TForm1.LabAdsClick(Sender: TObject);
 begin
   OpenURL('https://wygowski.art/');
 end;

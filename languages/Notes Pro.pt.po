@@ -70,7 +70,7 @@ msgstr "www.diitalart.pl"
 
 #: tform1.butads.caption
 msgid "SPRAWDŹ"
-msgstr ""
+msgstr "VER"
 
 #: tform1.button1.caption
 msgctxt "tform1.button1.caption"
@@ -167,6 +167,11 @@ msgctxt "tform1.kopiuj.caption"
 msgid "Kopiuj"
 msgstr "Cópia de"
 
+#: tform1.labads.caption
+msgctxt "tform1.labads.caption"
+msgid "Karykatura jako Wyjątkowy Prezent zamów na www.wygowski.art"
+msgstr "Encomenda de uma caricatura como prenda única em www.wygowski.art"
+
 #: tform1.label1.caption
 msgid "Nr wiersza"
 msgstr "Núm. linha"
@@ -206,10 +211,6 @@ msgctxt "tform1.label5.caption"
 msgid "A ="
 msgstr "UMA ="
 
-#: tform1.label6.caption
-msgid "Karykatura jako Wyjątkowy Prezent zamów na www.wygowski.art"
-msgstr ""
-
 #: tform1.label7.caption
 msgid "B"
 msgstr "B"
@@ -225,37 +226,31 @@ msgid "="
 msgstr "="
 
 #: tform1.menuchinese.caption
-#, fuzzy
 msgctxt "tform1.menuchinese.caption"
 msgid "中國人"
 msgstr "中國人"
 
 #: tform1.menuenglish.caption
-#, fuzzy
 msgctxt "tform1.menuenglish.caption"
 msgid "English"
 msgstr "English"
 
 #: tform1.menufrench.caption
-#, fuzzy
 msgctxt "tform1.menufrench.caption"
 msgid "Français"
 msgstr "Français"
 
 #: tform1.menugermany.caption
-#, fuzzy
 msgctxt "tform1.menugermany.caption"
 msgid "Deutsch"
 msgstr "Deutsch"
 
 #: tform1.menuihindi.caption
-#, fuzzy
 msgctxt "tform1.menuihindi.caption"
 msgid "हिंदी"
 msgstr "हिंदी"
 
 #: tform1.menuitalia.caption
-#, fuzzy
 msgctxt "tform1.menuitalia.caption"
 msgid "Italiano"
 msgstr "Italiano"
@@ -382,7 +377,7 @@ msgstr "Sempre no modo superior"
 #: tform1.menuitem37.caption
 msgctxt "tform1.menuitem37.caption"
 msgid "Kopiuj"
-msgstr "cópia de"
+msgstr "Cópia"
 
 #: tform1.menuitem38.caption
 msgid "12"
@@ -426,31 +421,26 @@ msgid "Zapisz"
 msgstr "Salvar"
 
 #: tform1.menulanguage.caption
-#, fuzzy
 msgctxt "tform1.menulanguage.caption"
 msgid "Language"
 msgstr "Language"
 
 #: tform1.menupolish.caption
-#, fuzzy
 msgctxt "tform1.menupolish.caption"
 msgid "Polski"
 msgstr "Polski"
 
 #: tform1.menuportugal.caption
-#, fuzzy
 msgctxt "tform1.menuportugal.caption"
 msgid "Português"
 msgstr "Português"
 
 #: tform1.menurussian.caption
-#, fuzzy
 msgctxt "tform1.menurussian.caption"
 msgid "Русский"
 msgstr "Русский"
 
 #: tform1.menuspain.caption
-#, fuzzy
 msgctxt "tform1.menuspain.caption"
 msgid "Español"
 msgstr "Español"
@@ -604,7 +594,7 @@ msgstr "BotãoFerramenta3"
 
 #: tform1.toolbutton3.hint
 msgid "Zapisz plik"
-msgstr "salvar Arquivo"
+msgstr "Guardar o ficheiro"
 
 #: tform1.toolbutton4.caption
 msgctxt "tform1.toolbutton4.caption"
@@ -1033,4 +1023,3 @@ msgstr "Escreva os números em A e B"
 msgctxt "ustawienia_programu.countlines"
 msgid "Liczba wierszy "
 msgstr "Numero de linhas "
-

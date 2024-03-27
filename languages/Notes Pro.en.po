@@ -70,7 +70,7 @@ msgstr "www.dimitalart.pl"
 
 #: tform1.butads.caption
 msgid "SPRAWDŹ"
-msgstr ""
+msgstr "SEE"
 
 #: tform1.button1.caption
 msgctxt "tform1.button1.caption"
@@ -167,6 +167,11 @@ msgctxt "tform1.kopiuj.caption"
 msgid "Kopiuj"
 msgstr "Copy"
 
+#: tform1.labads.caption
+msgctxt "tform1.labads.caption"
+msgid "Karykatura jako Wyjątkowy Prezent zamów na www.wygowski.art"
+msgstr "Caricature as a Unique Gift order at www.wygowski.art"
+
 #: tform1.label1.caption
 msgid "Nr wiersza"
 msgstr "Line No"
@@ -206,10 +211,6 @@ msgctxt "tform1.label5.caption"
 msgid "A ="
 msgstr "A ="
 
-#: tform1.label6.caption
-msgid "Karykatura jako Wyjątkowy Prezent zamów na www.wygowski.art"
-msgstr ""
-
 #: tform1.label7.caption
 msgid "B"
 msgstr "B"
@@ -227,32 +228,32 @@ msgstr "="
 #: tform1.menuchinese.caption
 msgctxt "tform1.menuchinese.caption"
 msgid "中國人"
-msgstr ""
+msgstr "中國人"
 
 #: tform1.menuenglish.caption
 msgctxt "tform1.menuenglish.caption"
 msgid "English"
-msgstr ""
+msgstr "English"
 
 #: tform1.menufrench.caption
 msgctxt "tform1.menufrench.caption"
 msgid "Français"
-msgstr ""
+msgstr "Français"
 
 #: tform1.menugermany.caption
 msgctxt "tform1.menugermany.caption"
 msgid "Deutsch"
-msgstr ""
+msgstr "Deutsch"
 
 #: tform1.menuihindi.caption
 msgctxt "tform1.menuihindi.caption"
 msgid "हिंदी"
-msgstr ""
+msgstr "हिंदी"
 
 #: tform1.menuitalia.caption
 msgctxt "tform1.menuitalia.caption"
 msgid "Italiano"
-msgstr ""
+msgstr "Italiano"
 
 #: tform1.menuitem1.caption
 msgctxt "tform1.menuitem1.caption"
@@ -422,28 +423,27 @@ msgstr "Save"
 #: tform1.menulanguage.caption
 msgctxt "tform1.menulanguage.caption"
 msgid "Language"
-msgstr ""
+msgstr "Language"
 
 #: tform1.menupolish.caption
-#, fuzzy
 msgctxt "tform1.menupolish.caption"
 msgid "Polski"
-msgstr "Polish"
+msgstr "Polski"
 
 #: tform1.menuportugal.caption
 msgctxt "tform1.menuportugal.caption"
 msgid "Português"
-msgstr ""
+msgstr "Português"
 
 #: tform1.menurussian.caption
 msgctxt "tform1.menurussian.caption"
 msgid "Русский"
-msgstr ""
+msgstr "Русский"
 
 #: tform1.menuspain.caption
 msgctxt "tform1.menuspain.caption"
 msgid "Español"
-msgstr ""
+msgstr "Español"
 
 #: tform1.nowy.caption
 msgid "Nowy"
@@ -817,7 +817,7 @@ msgstr "Delete everything from the list 1"
 
 #: tftext_comparison.butalldelete2_list.hint
 msgid "Usuń  wszystko z listy 2"
-msgstr "Delete everything from the list 2"
+msgstr "Remove all from the list 2"
 
 #: tftext_comparison.butopen1_list.hint
 msgctxt "tftext_comparison.butopen1_list.hint"
@@ -1037,4 +1037,3 @@ msgstr "Write the numbers in A and B"
 msgctxt "ustawienia_programu.countlines"
 msgid "Liczba wierszy "
 msgstr "Nb of rows "
-

@@ -70,7 +70,7 @@ msgstr "www.dimitalart.pl"
 
 #: tform1.butads.caption
 msgid "SPRAWDŹ"
-msgstr ""
+msgstr "ПОСМОТРИТЕ"
 
 #: tform1.button1.caption
 msgctxt "tform1.button1.caption"
@@ -167,6 +167,11 @@ msgctxt "tform1.kopiuj.caption"
 msgid "Kopiuj"
 msgstr "Копировать"
 
+#: tform1.labads.caption
+msgctxt "tform1.labads.caption"
+msgid "Karykatura jako Wyjątkowy Prezent zamów na www.wygowski.art"
+msgstr "Шарж как уникальный подарок - закажи на www.wygowski.art"
+
 #: tform1.label1.caption
 msgid "Nr wiersza"
 msgstr "Нр строки"
@@ -206,10 +211,6 @@ msgctxt "tform1.label5.caption"
 msgid "A ="
 msgstr "A ="
 
-#: tform1.label6.caption
-msgid "Karykatura jako Wyjątkowy Prezent zamów na www.wygowski.art"
-msgstr ""
-
 #: tform1.label7.caption
 msgid "B"
 msgstr "B"
@@ -227,32 +228,32 @@ msgstr "="
 #: tform1.menuchinese.caption
 msgctxt "tform1.menuchinese.caption"
 msgid "中國人"
-msgstr ""
+msgstr "中國人"
 
 #: tform1.menuenglish.caption
 msgctxt "tform1.menuenglish.caption"
 msgid "English"
-msgstr ""
+msgstr "English"
 
 #: tform1.menufrench.caption
 msgctxt "tform1.menufrench.caption"
 msgid "Français"
-msgstr ""
+msgstr "Français"
 
 #: tform1.menugermany.caption
 msgctxt "tform1.menugermany.caption"
 msgid "Deutsch"
-msgstr ""
+msgstr "Deutsch"
 
 #: tform1.menuihindi.caption
 msgctxt "tform1.menuihindi.caption"
 msgid "हिंदी"
-msgstr ""
+msgstr "हिंदी"
 
 #: tform1.menuitalia.caption
 msgctxt "tform1.menuitalia.caption"
 msgid "Italiano"
-msgstr ""
+msgstr "Italiano"
 
 #: tform1.menuitem1.caption
 msgctxt "tform1.menuitem1.caption"
@@ -422,10 +423,9 @@ msgstr "Сохранить"
 #: tform1.menulanguage.caption
 msgctxt "tform1.menulanguage.caption"
 msgid "Language"
-msgstr ""
+msgstr "Language"
 
 #: tform1.menupolish.caption
-#, fuzzy
 msgctxt "tform1.menupolish.caption"
 msgid "Polski"
 msgstr "Polski"
@@ -433,17 +433,17 @@ msgstr "Polski"
 #: tform1.menuportugal.caption
 msgctxt "tform1.menuportugal.caption"
 msgid "Português"
-msgstr ""
+msgstr "Português"
 
 #: tform1.menurussian.caption
 msgctxt "tform1.menurussian.caption"
 msgid "Русский"
-msgstr ""
+msgstr "Русский"
 
 #: tform1.menuspain.caption
 msgctxt "tform1.menuspain.caption"
 msgid "Español"
-msgstr ""
+msgstr "Español"
 
 #: tform1.nowy.caption
 msgid "Nowy"
@@ -907,17 +907,17 @@ msgstr "Сохранить текстовый файл"
 #: tftext_comparison.statusbar1.panels[0].text
 msgctxt "tftext_comparison.statusbar1.panels[0].text"
 msgid "Wierszy"
-msgstr "Кол строк"
+msgstr "Количество строк"
 
 #: tftext_comparison.statusbar1.panels[1].text
 msgctxt "tftext_comparison.statusbar1.panels[1].text"
 msgid "Wierszy"
-msgstr "Кол строк"
+msgstr "Количество строк"
 
 #: tftext_comparison.statusbar1.panels[2].text
 msgctxt "tftext_comparison.statusbar1.panels[2].text"
 msgid "Wierszy"
-msgstr "Кол строк"
+msgstr "Количество строк"
 
 #: unit1.addnewsentencecaption
 msgid "Nowe zdanie"
@@ -926,12 +926,12 @@ msgstr "Добавить новое предложение"
 #: unit1.countline
 msgctxt "unit1.countline"
 msgid "Liczba linii "
-msgstr "Кол строк "
+msgstr "Количество строк "
 
 #: unit1.countword
 msgctxt "unit1.countword"
 msgid "Liczba liter "
-msgstr "Кол букв "
+msgstr "Количество букв "
 
 #: unit1.datasaved
 msgid "Dane zapisane"
@@ -1022,5 +1022,4 @@ msgstr "Напишите цифры в A и B"
 #: ustawienia_programu.countlines
 msgctxt "ustawienia_programu.countlines"
 msgid "Liczba wierszy "
-msgstr "Кол строк "
-
+msgstr "Количество строк "

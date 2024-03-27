@@ -1,13 +1,13 @@
 object Form1: TForm1
-  Left = 447
-  Height = 466
-  Top = 203
-  Width = 1032
+  Left = 368
+  Height = 543
+  Top = 175
+  Width = 955
   Align = alClient
   BorderStyle = bsSingle
   Caption = 'Notes Pro V1.1.5.3'
-  ClientHeight = 466
-  ClientWidth = 1032
+  ClientHeight = 543
+  ClientWidth = 955
   FormStyle = fsSystemStayOnTop
   Menu = MainMenu1
   OnClose = FormClose
@@ -16,9 +16,9 @@ object Form1: TForm1
   LCLVersion = '3.0.0.1'
   object Memo1: TMemo
     Left = 0
-    Height = 382
+    Height = 459
     Top = 26
-    Width = 664
+    Width = 587
     Align = alClient
     Color = clActiveBorder
     Font.CharSet = EASTEUROPE_CHARSET
@@ -35,13 +35,13 @@ object Form1: TForm1
     TabOrder = 0
   end
   object Panel1: TPanel
-    Left = 666
-    Height = 382
+    Left = 589
+    Height = 459
     Top = 26
     Width = 366
     Align = alRight
     BevelColor = clBtnFace
-    ClientHeight = 382
+    ClientHeight = 459
     ClientWidth = 366
     Color = clBtnFace
     ParentBackground = False
@@ -484,7 +484,7 @@ object Form1: TForm1
     end
     object ListBox1: TListBox
       Left = 1
-      Height = 156
+      Height = 233
       Top = 202
       Width = 364
       Align = alClient
@@ -570,7 +570,7 @@ object Form1: TForm1
     object StatusBar2: TStatusBar
       Left = 1
       Height = 23
-      Top = 358
+      Top = 435
       Width = 364
       Color = clActiveCaption
       Font.Color = clBlack
@@ -590,7 +590,7 @@ object Form1: TForm1
     Left = 0
     Height = 26
     Top = 0
-    Width = 1032
+    Width = 955
     Caption = 'ToolBar1'
     Color = clBtnFace
     Images = ImageList1
@@ -706,8 +706,8 @@ object Form1: TForm1
   object Status: TStatusBar
     Left = 0
     Height = 23
-    Top = 443
-    Width = 1032
+    Top = 520
+    Width = 955
     Color = clBtnFace
     Panels = <    
       item
@@ -759,8 +759,8 @@ object Form1: TForm1
     ParentColor = False
   end
   object Splitter1: TSplitter
-    Left = 664
-    Height = 382
+    Left = 587
+    Height = 459
     Top = 26
     Width = 2
     Align = alRight
@@ -769,13 +769,13 @@ object Form1: TForm1
   object Panel3: TPanel
     Left = 0
     Height = 35
-    Top = 408
-    Width = 1032
+    Top = 485
+    Width = 955
     Align = alBottom
     ClientHeight = 35
-    ClientWidth = 1032
+    ClientWidth = 955
     TabOrder = 5
-    object Label6: TLabel
+    object LabAds: TLabel
       Cursor = crHandPoint
       Left = 11
       Height = 28
@@ -792,7 +792,7 @@ object Form1: TForm1
       Font.Quality = fqDraft
       Font.Style = [fsBold]
       ParentFont = False
-      OnClick = Label6Click
+      OnClick = LabAdsClick
     end
     object ButAds: TBCMaterialDesignButton
       Cursor = crHandPoint

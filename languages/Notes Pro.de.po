@@ -14,7 +14,7 @@ msgstr ""
 #: text_comparison.countlines
 msgctxt "text_comparison.countlines"
 msgid "Liczba wierszy "
-msgstr "Zeilenanzahl"
+msgstr "Zeilenanzahl "
 
 #: text_comparison.list1
 msgid "Lista nr 1"
@@ -70,7 +70,7 @@ msgstr "www.dimitalart.pl"
 
 #: tform1.butads.caption
 msgid "SPRAWDŹ"
-msgstr ""
+msgstr "SEHE"
 
 #: tform1.button1.caption
 msgctxt "tform1.button1.caption"
@@ -104,7 +104,7 @@ msgstr "Aufräumen"
 
 #: tform1.button3.caption
 msgid "Znajdź"
-msgstr "finden"
+msgstr "Finden"
 
 #: tform1.button4.caption
 msgid "Zamień"
@@ -134,7 +134,7 @@ msgstr "+"
 
 #: tform1.buttonadd.caption
 msgid "Dodaj"
-msgstr "hinzufügen"
+msgstr "Hinzufügen"
 
 #: tform1.cale.caption
 msgctxt "tform1.cale.caption"
@@ -167,9 +167,14 @@ msgctxt "tform1.kopiuj.caption"
 msgid "Kopiuj"
 msgstr "Kopieren"
 
+#: tform1.labads.caption
+msgctxt "tform1.labads.caption"
+msgid "Karykatura jako Wyjątkowy Prezent zamów na www.wygowski.art"
+msgstr "Karikatur als einzigartiges Geschenk bestellen bei www.wygowski.art"
+
 #: tform1.label1.caption
 msgid "Nr wiersza"
-msgstr "Zeile Nr."
+msgstr "Zeile Nr"
 
 #: tform1.label10.caption
 msgctxt "tform1.label10.caption"
@@ -206,10 +211,6 @@ msgctxt "tform1.label5.caption"
 msgid "A ="
 msgstr "A ="
 
-#: tform1.label6.caption
-msgid "Karykatura jako Wyjątkowy Prezent zamów na www.wygowski.art"
-msgstr ""
-
 #: tform1.label7.caption
 msgid "B"
 msgstr "B"
@@ -227,20 +228,19 @@ msgstr "="
 #: tform1.menuchinese.caption
 msgctxt "tform1.menuchinese.caption"
 msgid "中國人"
-msgstr ""
+msgstr "中國人"
 
 #: tform1.menuenglish.caption
 msgctxt "tform1.menuenglish.caption"
 msgid "English"
-msgstr ""
+msgstr "English"
 
 #: tform1.menufrench.caption
 msgctxt "tform1.menufrench.caption"
 msgid "Français"
-msgstr ""
+msgstr "Français"
 
 #: tform1.menugermany.caption
-#, fuzzy
 msgctxt "tform1.menugermany.caption"
 msgid "Deutsch"
 msgstr "Deutsch"
@@ -248,17 +248,17 @@ msgstr "Deutsch"
 #: tform1.menuihindi.caption
 msgctxt "tform1.menuihindi.caption"
 msgid "हिंदी"
-msgstr ""
+msgstr "हिंदी"
 
 #: tform1.menuitalia.caption
 msgctxt "tform1.menuitalia.caption"
 msgid "Italiano"
-msgstr ""
+msgstr "Italiano"
 
 #: tform1.menuitem1.caption
 msgctxt "tform1.menuitem1.caption"
 msgid "Wyrównaj do lewej"
-msgstr "Links ausrichten"
+msgstr "Linksbündig"
 
 #: tform1.menuitem10.caption
 msgid "Tryb normalny"
@@ -421,13 +421,11 @@ msgid "Zapisz"
 msgstr "Speichern Sie"
 
 #: tform1.menulanguage.caption
-#, fuzzy
 msgctxt "tform1.menulanguage.caption"
 msgid "Language"
 msgstr "Language"
 
 #: tform1.menupolish.caption
-#, fuzzy
 msgctxt "tform1.menupolish.caption"
 msgid "Polski"
 msgstr "Polski"
@@ -435,17 +433,17 @@ msgstr "Polski"
 #: tform1.menuportugal.caption
 msgctxt "tform1.menuportugal.caption"
 msgid "Português"
-msgstr ""
+msgstr "Português"
 
 #: tform1.menurussian.caption
 msgctxt "tform1.menurussian.caption"
 msgid "Русский"
-msgstr ""
+msgstr "Русский"
 
 #: tform1.menuspain.caption
 msgctxt "tform1.menuspain.caption"
 msgid "Español"
-msgstr ""
+msgstr "Español"
 
 #: tform1.nowy.caption
 msgid "Nowy"
@@ -474,12 +472,12 @@ msgstr "Hilfe"
 #: tform1.status.panels[0].text
 msgctxt "tform1.status.panels[0].text"
 msgid "Liczba liter"
-msgstr "Anzahl der Buchstaben "
+msgstr "Anzahl der Buchstaben"
 
 #: tform1.status.panels[1].text
 msgctxt "tform1.status.panels[1].text"
 msgid "Liczba linii"
-msgstr "Anzahl der Zeilen "
+msgstr "Anzahl der Zeilen"
 
 #: tform1.status.panels[2].text
 msgid "XY"
@@ -506,7 +504,7 @@ msgstr "Berechnungen"
 #: tform1.tabsheet3.caption
 msgctxt "tform1.tabsheet3.caption"
 msgid "Edycja"
-msgstr "bearbeiten"
+msgstr "Bearbeiten"
 
 #: tform1.tekst.caption
 msgctxt "tform1.tekst.caption"
@@ -653,7 +651,7 @@ msgstr "WerkzeugButton9"
 
 #: tform1.toolbutton9.hint
 msgid "Dodać"
-msgstr "hinzufügen"
+msgstr "Hinzufügen"
 
 #: tform1.widok.caption
 msgid "Widok"
@@ -665,7 +663,7 @@ msgstr "Kleister"
 
 #: tform1.wstaw.caption
 msgid "Wstaw"
-msgstr "einfügen."
+msgstr "Einfügen"
 
 #: tform1.wyrownajtekst.caption
 msgid "Wyrównaj tekst"
@@ -707,7 +705,7 @@ msgstr "Einstellungen"
 #: tform2.tabsheet2.caption
 msgctxt "tform2.tabsheet2.caption"
 msgid "Edycja"
-msgstr "bearbeiten"
+msgstr "Bearbeiten"
 
 #: tform2.tabsheet3.caption
 msgctxt "tform2.tabsheet3.caption"
@@ -928,12 +926,12 @@ msgstr "Neuer Satz"
 #: unit1.countline
 msgctxt "unit1.countline"
 msgid "Liczba linii "
-msgstr "Zeilenanzahl"
+msgstr "Zeilenanzahl "
 
 #: unit1.countword
 msgctxt "unit1.countword"
 msgid "Liczba liter "
-msgstr "Anzahl Buchstaben"
+msgstr "Anzahl buchstaben "
 
 #: unit1.datasaved
 msgid "Dane zapisane"

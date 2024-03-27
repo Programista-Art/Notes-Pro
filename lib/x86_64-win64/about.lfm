@@ -220,7 +220,7 @@ object fAbout: TfAbout
           ''
           'Ctrl+D        Uppercase'
           'Ctrl+M       Lower case'
-          'Ctrl+A        Zaznacz wszystko'
+          'Ctrl+A        Select all'
           'Ctrl+C        Copy'
           'Ctrl+V        Paste'
           'Ctrl+X        Cut'

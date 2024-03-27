@@ -70,7 +70,7 @@ msgstr "www.dimitalart.pl"
 
 #: tform1.butads.caption
 msgid "SPRAWDŹ"
-msgstr ""
+msgstr "जाँच करना"
 
 #: tform1.button1.caption
 msgctxt "tform1.button1.caption"
@@ -167,6 +167,11 @@ msgctxt "tform1.kopiuj.caption"
 msgid "Kopiuj"
 msgstr "प्रतिलिपि"
 
+#: tform1.labads.caption
+msgctxt "tform1.labads.caption"
+msgid "Karykatura jako Wyjątkowy Prezent zamów na www.wygowski.art"
+msgstr "एक अनूठे उपहार के रूप में एक कैरिकेचर ऑर्डर करें www.wygowski.art पर"
+
 #: tform1.label1.caption
 msgid "Nr wiersza"
 msgstr "लाइन नंबर"
@@ -206,10 +211,6 @@ msgctxt "tform1.label5.caption"
 msgid "A ="
 msgstr "ए ="
 
-#: tform1.label6.caption
-msgid "Karykatura jako Wyjątkowy Prezent zamów na www.wygowski.art"
-msgstr ""
-
 #: tform1.label7.caption
 msgid "B"
 msgstr "बी"
@@ -225,25 +226,21 @@ msgid "="
 msgstr "="
 
 #: tform1.menuchinese.caption
-#, fuzzy
 msgctxt "tform1.menuchinese.caption"
 msgid "中國人"
 msgstr "中國人"
 
 #: tform1.menuenglish.caption
-#, fuzzy
 msgctxt "tform1.menuenglish.caption"
 msgid "English"
 msgstr "English"
 
 #: tform1.menufrench.caption
-#, fuzzy
 msgctxt "tform1.menufrench.caption"
 msgid "Français"
 msgstr "Français"
 
 #: tform1.menugermany.caption
-#, fuzzy
 msgctxt "tform1.menugermany.caption"
 msgid "Deutsch"
 msgstr "Deutsch"
@@ -251,12 +248,12 @@ msgstr "Deutsch"
 #: tform1.menuihindi.caption
 msgctxt "tform1.menuihindi.caption"
 msgid "हिंदी"
-msgstr ""
+msgstr "हिंदी"
 
 #: tform1.menuitalia.caption
 msgctxt "tform1.menuitalia.caption"
 msgid "Italiano"
-msgstr ""
+msgstr "Italiano"
 
 #: tform1.menuitem1.caption
 msgctxt "tform1.menuitem1.caption"
@@ -424,13 +421,11 @@ msgid "Zapisz"
 msgstr "बचाना"
 
 #: tform1.menulanguage.caption
-#, fuzzy
 msgctxt "tform1.menulanguage.caption"
 msgid "Language"
 msgstr "Language"
 
 #: tform1.menupolish.caption
-#, fuzzy
 msgctxt "tform1.menupolish.caption"
 msgid "Polski"
 msgstr "Polski"
@@ -438,10 +433,9 @@ msgstr "Polski"
 #: tform1.menuportugal.caption
 msgctxt "tform1.menuportugal.caption"
 msgid "Português"
-msgstr ""
+msgstr "Português"
 
 #: tform1.menurussian.caption
-#, fuzzy
 msgctxt "tform1.menurussian.caption"
 msgid "Русский"
 msgstr "Русский"
@@ -449,7 +443,7 @@ msgstr "Русский"
 #: tform1.menuspain.caption
 msgctxt "tform1.menuspain.caption"
 msgid "Español"
-msgstr ""
+msgstr "Español"
 
 #: tform1.nowy.caption
 msgid "Nowy"
@@ -1029,4 +1023,3 @@ msgstr "A और B में संख्याएँ लिखें"
 msgctxt "ustawienia_programu.countlines"
 msgid "Liczba wierszy "
 msgstr "पंक्तियों की संख्या "
-
